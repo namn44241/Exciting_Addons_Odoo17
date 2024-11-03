@@ -1,0 +1,87 @@
+@if $backend_all_icon_style == 'style_1'{
+    .o_menu_systray {
+        .o_debug_manager {
+            .fa.fa-bug {
+                &::before {
+                    content: '\f188' !important;font-family: 'fontAwesome';font-size: 14px;
+                }
+            }
+        }
+        .todo {
+            .fash-icon-tasks1 {
+                &::before {
+                    content: '\f0ae' !important;font-family: 'fontAwesome' !important;font-size: 14px;
+                }
+            }
+        }
+        .o_MessagingMenu {
+            .o_MessagingMenu_toggler {
+                .fa.fa-comments {
+                    &::before {
+                        content: '\f086' !important;font-family: 'fontAwesome' !important;
+                    }
+                }
+            }
+            .o_MessagingMenu_icon {
+                &:before {
+                    font-size: 14px;
+                }
+            }
+        }
+        .o_mail_systray_item.dropdown {
+            .fa-clock-o {
+                &::before {
+                    content: '\f017' !important;font-family: 'fontAwesome' !important;
+                }
+            }
+        }
+        .sh_calc_util {
+            .fash-icon-calculator1 {
+                &::before {
+                    content: '\f1ec' !important;font-family: 'fontAwesome' !important;font-size: 14px;
+                }
+            }
+        }
+        .o_night_mode {
+            .fash-icon-moon {
+                &::before {
+                    content: '\f186' !important;font-family: 'fontAwesome' !important;
+                }
+            }
+            .fash-icon-sun {
+                &::before {
+                    content: '\f185' !important;font-family: 'fontAwesome' !important;
+                }
+            }
+        }
+        .sh_language_icon {
+            .fash-icon-language-selector {
+                &::before {
+                    content: '\f1ab' !important;font-family: 'fontAwesome' !important;font-size: 15px;
+                }
+            }
+        }
+        .sh_bookmark {
+            .fa-bookmark-o {
+                &::before {
+                    content: '\f097' !important;font-family: 'fontAwesome' !important;
+                }
+            }
+            .fa-bookmark {
+                &::before {
+                    content: '\f02e' !important;font-family: 'fontAwesome' !important;
+                }
+            }
+        }
+        .o_mail_systray_item {
+            .dropdown-toggle {
+                .fa.fa-clock-o {
+                    &::before {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    
+}

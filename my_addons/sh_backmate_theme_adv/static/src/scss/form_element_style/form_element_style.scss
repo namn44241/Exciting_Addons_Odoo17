@@ -1,0 +1,366 @@
+@if $form_element_style == 'style_1'{
+    .o_input {
+        padding-right: 0;padding-left: 0;background-color: transparent;background-repeat: no-repeat;-webkit-background-size: 0 2px, 100% 1px;background-size: 0 2px, 100% 1px;-webkit-transition: background 0s ease-out;-o-transition: background 0s ease-out;transition: background 0s ease-out;border-bottom: 1px solid #ccc;border-left: 0px;border-right: 0px;border-top: 0px;padding: .429rem 1.072rem;border-radius: 0px;background-position: center bottom, center -webkit-calc(100% - 1px);
+        &:focus {
+            -webkit-background-size: 100% 2px, 100% 1px;background-size: 100% 2px, 100% 1px;outline: 0;-webkit-transition-duration: .3s;-o-transition-duration: .3s;transition-duration: .3s;float: none;background-image: -webkit-gradient(linear, left top, left bottom, from($primaryColor), to($primaryColor)), -webkit-gradient(linear, left top, left bottom, from($primaryColor), to($primaryColor));background-image: -webkit-linear-gradient($primaryColor, $primaryColor), -webkit-linear-gradient($primaryColor, $primaryColor);background-image: -o-linear-gradient($primaryColor, $primaryColor), -o-linear-gradient($primaryColor, $primaryColor);background-image: linear-gradient($primaryColor, $primaryColor), linear-gradient($primaryColor, $primaryColor);border: 0;border-radius: 0;-webkit-box-shadow: none;box-shadow: none;
+        }
+        &:focus-within {
+            -webkit-background-size: 100% 2px, 100% 1px;background-size: 100% 2px, 100% 1px;outline: 0;-webkit-transition-duration: .3s;-o-transition-duration: .3s;transition-duration: .3s;float: none;background-image: -webkit-gradient(linear, left top, left bottom, from($primaryColor), to($primaryColor)), -webkit-gradient(linear, left top, left bottom, from($primaryColor), to($primaryColor));background-image: -webkit-linear-gradient($primaryColor, $primaryColor), -webkit-linear-gradient($primaryColor, $primaryColor);background-image: -o-linear-gradient($primaryColor, $primaryColor), -o-linear-gradient($primaryColor, $primaryColor);background-image: linear-gradient($primaryColor, $primaryColor), linear-gradient($primaryColor, $primaryColor);border: 0;border-radius: 0;box-shadow: none;
+        }
+    }
+    .o_required_modifier.o_input {
+        background: transparent !important;font-size: 14px !important;border-bottom: 2px solid $primaryColor;
+    }
+    .o_required_modifier {
+        .o_input {
+            background: transparent !important;font-size: 14px !important;border-bottom: 2px solid $primaryColor;
+        }
+    }
+    .o_field_number.o_input {
+        background: transparent !important;font-size: 14px !important;border-bottom: 2px solid $primaryColor;
+    }
+    .o_field_number {
+        .o_input {
+            background: transparent !important;font-size: 14px !important;border-bottom: 2px solid $primaryColor;
+        }
+    }
+}
+@if $form_element_style == 'style_2'{
+    .o_input {
+        border: 1.5px solid rgba(0, 0, 0, .15);transition: all .7s ease;box-shadow: none;outline: none;background-color: transparent;padding: 6px 10px;border-radius: 0px;position: relative;margin-bottom: 5px !important;
+        &:hover {
+            border-color: rgba(0, 0, 0, .35);box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+        }
+    }
+    .o_required_modifier.o_input {
+        &:hover {
+            border-color: rgba(0, 0, 0, .35);box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+        }
+        background-color: #ececec !important;font-size: 14px !important;
+    }
+    .o_required_modifier {
+        .o_input {
+            &:hover {
+                border-color: rgba(0, 0, 0, .35);box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+            }
+            background-color: #ececec !important;font-size: 14px !important;
+        }
+    }
+    .o_field_number.o_input {
+        &:hover {
+            border-color: rgba(0, 0, 0, .35);box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+        }
+        background-color: #ececec !important;font-size: 14px !important;
+    }
+    .o_field_number {
+        .o_input {
+            &:hover {
+                border-color: rgba(0, 0, 0, .35);box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+            }
+            background-color: #ececec !important;font-size: 14px !important;
+        }
+    }
+    .o_field_widget {
+        .o_input_dropdown {
+            .o_dropdown_button {
+                right: 16px;
+            }
+        }
+        &.o_field_invalid {
+            --o-input-border-color: #dc3545 !important;--o-caret-color: #dc3545 !important;
+        }
+    }
+
+}
+@if $form_element_style == 'style_3'{
+    .o_input {
+        border: 1.5px solid rgba(0, 0, 0, .15);transition: all .7s ease;box-shadow: 0 1px 15px 1px rgba(69 ,65, 78 , 0.08);outline: none;background-color: #fff;padding: 6px 10px;border-radius: 5px;position: relative;margin-bottom: 5px !important;
+        &:hover {
+            border: 1.5px solid #999;background-color: #fff;border-color: $primaryColor;box-shadow: 0 5px 30px 0px rgba(0, 0, 0, 0.2);
+        }
+        &:focus {
+            border: 1.5px solid #999;background-color: #fff;border-color: $primaryColor;box-shadow: 0 5px 30px 0px rgba(0, 0, 0, 0.2);
+        }
+        &:focus-within {
+            border: 1.5px solid #999;background-color: #fff;border-color: $primaryColor;box-shadow: 0 5px 30px 0px rgba(0, 0, 0, 0.2);
+        }
+    }
+    .o_required_modifier.o_input {
+        &:hover {
+            border: 1.5px solid #999;background-color: #fff;border-color: $primaryColor;box-shadow: 0 5px 30px 0px rgba(0, 0, 0, 0.2);
+        }
+        &:focus {
+            border: 1.5px solid #999;background-color: #fff;border-color: $primaryColor;box-shadow: 0 5px 30px 0px rgba(0, 0, 0, 0.2);
+        }
+        background-color: #efefef !important;font-size: 14px !important;
+    }
+    .o_required_modifier {
+        .o_input {
+            &:hover {
+                border: 1.5px solid #999;background-color: #fff;border-color: $primaryColor;box-shadow: 0 5px 30px 0px rgba(0, 0, 0, 0.2);
+            }
+            &:focus {
+                border: 1.5px solid #999;background-color: #fff;border-color: $primaryColor;box-shadow: 0 5px 30px 0px rgba(0, 0, 0, 0.2);
+            }
+            background-color: #efefef !important;font-size: 14px !important;
+        }
+    }
+    .o_field_number.o_input {
+        &:hover {
+            border: 1.5px solid #999;background-color: #fff;border-color: $primaryColor;box-shadow: 0 5px 30px 0px rgba(0, 0, 0, 0.2);
+        }
+        &:focus {
+            border: 1.5px solid #999;background-color: #fff;border-color: $primaryColor;box-shadow: 0 5px 30px 0px rgba(0, 0, 0, 0.2);
+        }
+        background-color: #efefef !important;font-size: 14px !important;
+    }
+    .o_field_number {
+        .o_input {
+            &:hover {
+                border: 1.5px solid #999;background-color: #fff;border-color: $primaryColor;box-shadow: 0 5px 30px 0px rgba(0, 0, 0, 0.2);
+            }
+            &:focus {
+                border: 1.5px solid #999;background-color: #fff;border-color: $primaryColor;box-shadow: 0 5px 30px 0px rgba(0, 0, 0, 0.2);
+            }
+            background-color: #efefef !important;font-size: 14px !important;
+        }
+    }
+    .o_field_widget {
+        .o_input_dropdown {
+            .o_dropdown_button {
+                right: 16px;
+            }
+        }
+        &.o_field_invalid {
+            --o-input-border-color: #dc3545 !important;--o-caret-color: #dc3545 !important;
+        }
+    }
+}
+@if $form_element_style == 'style_4'{
+    .o_input {
+        border: 0px;border-bottom: 2px solid rgba(0, 0, 0, .2);transition: all .9s ease;box-shadow: none;outline: none;background-color: #fafafa;padding: 6px 10px;border-radius: 0px;position: relative;margin-bottom: 5px !important;
+        &:focus {
+            border-color: rgba(0, 0, 0, .3);box-shadow: 0 -50px 0 #ececec inset;
+        }
+        &:focus-within {
+            border-color: rgba(0, 0, 0, .3);box-shadow: 0 -50px 0 #ececec inset;
+        }
+    }
+    .o_field_widget {
+        .o_input_dropdown {
+            .o_dropdown_button {
+                right: 18px;
+            }
+        }
+        &.o_field_invalid {
+            --o-input-border-color: #dc3545 !important;--o-caret-color: #dc3545 !important;
+        }
+    }
+    .o_required_modifier.o_input {
+        background-color: #ececec !important;font-size: 14px !important;
+    }
+    .o_required_modifier {
+        .o_input {
+            background-color: #ececec !important;font-size: 14px !important;
+        }
+    }
+    .o_field_number.o_input {
+        background-color: #ececec !important;font-size: 14px !important;
+    }
+    .o_field_number {
+        .o_input {
+            background-color: #ececec !important;font-size: 14px !important;
+        }
+    }
+
+}
+@if $form_element_style == 'style_5'{
+    .o_input {
+        border: 1.5px solid rgba(0, 0, 0, .15);transition: all .7s ease;box-shadow: none;outline: none;background-color: transparent;padding: 6px 10px;border-radius: 0px 15px 0px 15px;position: relative;margin-bottom: 5px !important;
+        &:hover {
+            border: 1.5px solid $primaryColor;box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2) !important;transition: all .7s ease;
+        }
+    }
+    .o_field_widget {
+        .o_input_dropdown {
+            .o_dropdown_button {
+                right: 18px;
+            }
+        }
+        &.o_field_invalid {
+            --o-input-border-color: #dc3545 !important;--o-caret-color: #dc3545 !important;
+        }
+    }
+    .o_required_modifier.o_input {
+        background-color: #ececec !important;font-size: 14px !important;
+    }
+    .o_required_modifier {
+        .o_input {
+            background-color: #ececec !important;font-size: 14px !important;
+        }
+    }
+    .o_field_number.o_input {
+        background-color: #ececec !important;font-size: 14px !important;
+    }
+    .o_field_number {
+        .o_input {
+            background-color: #ececec !important;font-size: 14px !important;
+        }
+    }
+    .badge.badge-pill.dropdown {
+        border-radius: 0px 15px 0px 15px !important;
+    }
+
+}
+@if $form_element_style == 'style_6'{
+    .o_input {
+        background-color: transparent;background-color: #f5f5f5;background-repeat: no-repeat;-webkit-background-size: 0 1px, 100% 1px;background-size: 0 1px, 100% 1px;-webkit-transition: background 0s ease-out;-o-transition: background 0s ease-out;transition: background 0s ease-out;border-bottom: 2px solid #ccc;border-left: 0px;border-right: 0px;border-top: 0px;padding: 7px 10px !important;border-radius: 0px;margin-bottom: 5px !important;background-position: left bottom, left -webkit-calc(100% - 1px);
+        &:focus {
+            -webkit-background-size: 100% 1px, 100% 1px !important;background-size: 100% 1px, 100% 1px !important;outline: 0;-webkit-transition-duration: .7s;-o-transition-duration: .7s;transition-duration: .7s;float: none;background-image: -webkit-gradient(linear, left top, left bottom, from($primaryColor), to($primaryColor)), -webkit-gradient(linear, left top, left bottom, from($primaryColor), to($primaryColor));background-image: -webkit-linear-gradient($primaryColor, $primaryColor), -webkit-linear-gradient($primaryColor, $primaryColor);background-image: -o-linear-gradient($primaryColor, $primaryColor), -o-linear-gradient($primaryColor, $primaryColor);background-image: linear-gradient($primaryColor, $primaryColor), linear-gradient($primaryColor, $primaryColor);border: 0;border-radius: 0;-webkit-box-shadow: none;box-shadow: none;
+        }
+        &:focus-within {
+            -webkit-background-size: 100% 1px, 100% 1px !important;background-size: 100% 1px, 100% 1px !important;outline: 0;-webkit-transition-duration: .7s;-o-transition-duration: .7s;transition-duration: .7s;float: none;background-image: -webkit-gradient(linear, left top, left bottom, from($primaryColor), to($primaryColor)), -webkit-gradient(linear, left top, left bottom, from($primaryColor), to($primaryColor));background-image: -webkit-linear-gradient($primaryColor, $primaryColor), -webkit-linear-gradient($primaryColor, $primaryColor);background-image: -o-linear-gradient($primaryColor, $primaryColor), -o-linear-gradient($primaryColor, $primaryColor);background-image: linear-gradient($primaryColor, $primaryColor), linear-gradient($primaryColor, $primaryColor);border: 0;border-radius: 0;-webkit-box-shadow: none;box-shadow: none;
+        }
+    }
+    .o_field_widget {
+        .o_input_dropdown {
+            .o_dropdown_button {
+                right: 18px;
+            }
+        }
+        &.o_field_invalid {
+            --o-input-border-color: #dc3545 !important;--o-caret-color: #dc3545 !important;
+        }
+    }
+    .o_required_modifier.o_input {
+        background-color: #ececec !important;font-size: 14px !important;
+    }
+    .o_required_modifier {
+        .o_input {
+            background-color: #ececec !important;font-size: 14px !important;
+        }
+    }
+    .o_field_number.o_input {
+        background-color: #ececec !important;font-size: 14px !important;
+    }
+    .o_field_number {
+        .o_input {
+            background-color: #ececec !important;font-size: 14px !important;
+        }
+    }
+
+}
+@if $form_element_style == 'style_7'{
+    .o_input {
+        line-height: 34px;background-color: #fff;-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;padding: 0 20px;color: #666;-webkit-transition: all .7s ease;-o-transition: all .7s ease;-moz-transition: all .7s ease;transition: all .7s ease;margin-bottom: 5px !important;border: 1px solid #ccc;border-top: 2px solid #ccc !important;align-items: center !important;
+        &:focus {
+            border-top: 2px solid $primaryColor !important;
+        }
+        &:hover {
+            border-top: 2px solid $primaryColor !important;
+        }
+    }
+    .o_field_widget {
+        .o_input_dropdown {
+            .o_dropdown_button {
+                right: 18px;
+            }
+        }
+        &.o_field_invalid {
+            --o-input-border-color: #dc3545 !important;--o-caret-color: #dc3545 !important;
+        }
+    }
+    .o_required_modifier.o_input {
+        background-color: #ececec !important;font-size: 14px !important;
+    }
+    .o_required_modifier {
+        .o_input {
+            background-color: #ececec !important;font-size: 14px !important;
+        }
+    }
+    .o_field_number.o_input {
+        background-color: #ececec !important;font-size: 14px !important;
+    }
+    .o_field_number {
+        .o_input {
+            background-color: #ececec !important;font-size: 14px !important;
+        }
+    }
+
+}
+@if $form_element_style == 'style_8'{
+    .o_input {
+        line-height: 22px;background-color: #fff;border-radius: 50rem !important;padding: 5px 12px !important;border-bottom: 3px solid $secondaryColor !important;transition: all .5s;padding: 0 20px;color: #666;-webkit-transition: all .7s ease;-o-transition: all .7s ease;-moz-transition: all .7s ease;transition: all .7s ease;margin-bottom: 5px !important;border: 1px solid $secondaryColor;
+        &:focus {
+            box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.014), 0 6px 10px -5px $secondaryColor !important;border-bottom: 3px solid $primaryColor !important;border: 1px solid $primaryColor;
+        }
+        &:hover {
+            box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.014), 0 6px 10px -5px $secondaryColor !important;border-bottom: 3px solid $primaryColor !important;border: 1px solid $primaryColor;
+        }
+        .o_input {
+            &:hover {
+                border: none !important;padding: 0px !important;margin-bottom: 0px !important;
+            }
+            &:focus {
+                border: none !important;
+                padding: 0px !important;
+                margin-bottom: 0px !important;
+            }
+            border: none !important;
+            padding: 0px !important;
+            margin-bottom: 0px !important;
+        }
+    }
+    .o_field_widget {
+        .o_input_dropdown {
+            .o_dropdown_button {
+                right: 18px;
+            }
+        }
+        &.o_field_invalid {
+            --o-input-border-color: #dc3545 !important;
+            --o-caret-color: #dc3545 !important;
+        }
+    }
+    td {
+        .o_input {
+            &:focus {
+                box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.014), 0 6px 10px -5px $secondaryColor !important;
+                border-bottom: 3px solid $primaryColor !important;
+                border: 1px solid $primaryColor;
+            }
+            &:hover {
+                box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.014), 0 6px 10px -5px $secondaryColor !important;
+                border-bottom: 3px solid $primaryColor !important;
+                border: 1px solid $primaryColor;
+            }
+        }
+    }
+    .o_required_modifier.o_input {
+        background-color: #efefef !important;
+        font-size: 14px !important;
+    }
+    .o_required_modifier {
+        .o_input {
+            background-color: #efefef !important;
+            font-size: 14px !important;
+        }
+    }
+    .o_field_number.o_input {
+        background-color: #efefef !important;
+        font-size: 14px !important;
+    }
+    .o_field_number {
+        .o_input {
+            background-color: #efefef !important;
+            font-size: 14px !important;
+        }
+    }
+    textarea.o_input {
+        border-radius: 20px !important;
+    }
+    .o_field_many2manytags.o_input {
+        border-radius: 20px !important;
+    }
+
+}

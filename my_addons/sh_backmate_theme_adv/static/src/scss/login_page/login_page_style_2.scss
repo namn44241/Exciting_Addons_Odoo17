@@ -1,0 +1,315 @@
+@if $login_page_style == "style_2" {
+    body.bg-100 {
+        .o_rtl{
+            direction: rtl;
+        }
+        font-family: $body_font_family !important;
+        background-color: $login_page_box_color !important;
+        color: $primaryColor !important;
+        .oe_login_form {
+            .justify-content-between.mt-2 {
+                margin-top: 1rem !important;
+            }
+            .ou-login-buttons{
+                .btn-primary {
+                    padding: 10px 20px !important;
+                }
+            }
+        }
+        .o_database_list {
+            font-family: $body_font_family !important;
+            max-width: 100% !important;
+            border-radius: 0px;
+            padding: 0px 25px;
+            background-color: $login_page_box_color !important;
+            align-items: center;height: 100vh;min-height: 100vh;justify-content: center;display: flex;
+            .justify-content-between.mt-2.d-flex.small {
+                justify-content: center !important;
+                a {
+                    color: #919191;
+                    padding-top: 15px;
+                    font-weight: 600;
+                }
+            }
+            .text-center.small.mt-4.pt-3.border-top {
+                margin-top: 0.5rem !important;
+                a {
+                    color: $primaryColor;
+                    font-weight: 600;
+                    letter-spacing: 0.4px;
+                }
+            }
+            .btn.btn-link.btn-sm {
+                color: $primaryColor;
+                padding-top: 15px;
+            }
+            .form-control {
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+            input[type="text"] {
+                color: #0d0d0d;
+                text-align: left;
+                font-size: 16px;
+                padding: 10px 10px;
+                background-position: center bottom, center -webkit-calc(100% - 1px);
+                padding-right: 0;
+                padding-left: 0;
+                background-color: transparent;
+                background-repeat: no-repeat;
+                -webkit-background-size: 0 2px, 100% 1px;
+                background-size: 0 2px, 100% 1px;
+                -webkit-transition: background 0s ease-out;
+                -o-transition: background 0s ease-out;
+                transition: background 0s ease-out;
+                border-bottom: 1px solid #ccc;
+                border-left: 0px;
+                border-right: 0px;
+                border-top: 0px;
+                padding: .429rem 1.072rem;
+                border-radius: 0px;
+                &:focus {
+                    -webkit-background-size: 100% 2px, 100% 1px;
+                    background-size: 100% 2px, 100% 1px;
+                    outline: 0;
+                    -webkit-transition-duration: .3s;
+                    -o-transition-duration: .3s;
+                    transition-duration: .3s;
+                    float: none;
+                    background-image: -webkit-gradient(linear, left top, left bottom, from($primaryColor), to($primaryColor)), -webkit-gradient(linear, left top, left bottom, from($primaryColor), to($primaryColor));
+                    background-image: -webkit-linear-gradient($primaryColor, $primaryColor), -webkit-linear-gradient($primaryColor, $primaryColor);
+                    background-image: -o-linear-gradient($primaryColor, $primaryColor), -o-linear-gradient($primaryColor, $primaryColor);
+                    background-image: linear-gradient($primaryColor, $primaryColor), linear-gradient($primaryColor, $primaryColor);
+                    border: 0;
+                    border-radius: 0;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                }
+                &:focus-within {
+                    -webkit-background-size: 100% 2px, 100% 1px;
+                    background-size: 100% 2px, 100% 1px;
+                    outline: 0;
+                    -webkit-transition-duration: .3s;
+                    -o-transition-duration: .3s;
+                    transition-duration: .3s;
+                    float: none;
+                    background-image: -webkit-gradient(linear, left top, left bottom, from($primaryColor), to($primaryColor)), -webkit-gradient(linear, left top, left bottom, from($primaryColor), to($primaryColor));
+                    background-image: -webkit-linear-gradient($primaryColor, $primaryColor), -webkit-linear-gradient($primaryColor, $primaryColor);
+                    background-image: -o-linear-gradient($primaryColor, $primaryColor), -o-linear-gradient($primaryColor, $primaryColor);
+                    background-image: linear-gradient($primaryColor, $primaryColor), linear-gradient($primaryColor, $primaryColor);
+                    border: 0;
+                    border-radius: 0;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                }
+            }
+            input[type="password"] {
+                color: #0d0d0d;
+                text-align: left;
+                font-size: 16px;
+                background-position: center bottom, center -webkit-calc(100% - 1px);
+                padding-right: 0;
+                padding-left: 0;
+                background-color: transparent;
+                background-repeat: no-repeat;
+                -webkit-background-size: 0 2px, 100% 1px;
+                background-size: 0 2px, 100% 1px;
+                -webkit-transition: background 0s ease-out;
+                -o-transition: background 0s ease-out;
+                transition: background 0s ease-out;
+                border-bottom: 1px solid #ccc;
+                border-left: 0px;
+                border-right: 0px;
+                border-top: 0px;
+                padding: .429rem 1.072rem;
+                border-radius: 0px;
+                &:focus {
+                    -webkit-background-size: 100% 2px, 100% 1px;
+                    background-size: 100% 2px, 100% 1px;
+                    outline: 0;
+                    -webkit-transition-duration: .3s;
+                    -o-transition-duration: .3s;
+                    transition-duration: .3s;
+                    float: none;
+                    background-image: -webkit-gradient(linear, left top, left bottom, from($primaryColor), to($primaryColor)), -webkit-gradient(linear, left top, left bottom, from($primaryColor), to($primaryColor));
+                    background-image: -webkit-linear-gradient($primaryColor, $primaryColor), -webkit-linear-gradient($primaryColor, $primaryColor);
+                    background-image: -o-linear-gradient($primaryColor, $primaryColor), -o-linear-gradient($primaryColor, $primaryColor);
+                    background-image: linear-gradient($primaryColor, $primaryColor), linear-gradient($primaryColor, $primaryColor);
+                    border: 0;
+                    border-radius: 0;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                }
+                &:focus-within {
+                    -webkit-background-size: 100% 2px, 100% 1px;
+                    background-size: 100% 2px, 100% 1px;
+                    outline: 0;
+                    -webkit-transition-duration: .3s;
+                    -o-transition-duration: .3s;
+                    transition-duration: .3s;
+                    float: none;
+                    background-image: -webkit-gradient(linear, left top, left bottom, from($primaryColor), to($primaryColor)), -webkit-gradient(linear, left top, left bottom, from($primaryColor), to($primaryColor));
+                    background-image: -webkit-linear-gradient($primaryColor, $primaryColor), -webkit-linear-gradient($primaryColor, $primaryColor);
+                    background-image: -o-linear-gradient($primaryColor, $primaryColor), -o-linear-gradient($primaryColor, $primaryColor);
+                    background-image: linear-gradient($primaryColor, $primaryColor), linear-gradient($primaryColor, $primaryColor);
+                    border: 0;
+                    border-radius: 0;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                }
+            }
+            input {
+                &:-webkit-autofill {
+                    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+                    box-shadow: 0 0 0px 1000px white inset !important;
+                    &:hover {
+                        -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+                        box-shadow: 0 0 0px 1000px white inset !important;
+                    }
+                    &:focus {
+                        -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+                        box-shadow: 0 0 0px 1000px white inset !important;
+                    }
+                    &:active {
+                        -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+                        box-shadow: 0 0 0px 1000px white inset !important;
+                    }
+                }
+            }
+            .btn-primary {
+                border: none;
+                color: #fff;
+                padding: 12px 80px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                text-transform: uppercase;
+                font-size: 13px;
+                -webkit-border-radius: 5px 5px 5px 5px;
+                border-radius: 5px 5px 5px 5px;
+                -webkit-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -ms-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+                background-color: $primaryColor;
+                box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px !important;
+                color: #fff;
+                background-color: $primaryColor;
+                &:not(:disabled) {
+                    &:not(.disabled) {
+                        &:active {
+                            background-color: $primaryColor;
+                            border-color: $primaryColor;
+                        }
+                    }
+                    &:not(.disabled).active {
+                        background-color: $primaryColor;
+                        border-color: $primaryColor;
+                    }
+                }
+            }
+            .btn-secondary {
+                background-color: $primaryColor;
+                border-color: $primaryColor;
+            }
+            .show {
+                >.btn-primary.dropdown-toggle {
+                    background-color: $primaryColor;
+                    border-color: $primaryColor;
+                }
+            }
+            .oe_login_buttons {
+                a.btn {
+                    padding-top: 25px;
+                }
+            }
+            .field-login {
+                label {
+                    color: $primaryColor;
+                }
+            }
+            .field-password {
+                label {
+                    color: $primaryColor;
+                }
+            }
+            .field-db {
+                label.col-form-label {
+                    color: $primaryColor;
+                }
+            }
+            .card-body {
+                .border-bottom {
+                    border-bottom: 0 !important;
+                    margin-bottom: 0 !important;
+                }
+            }
+        }
+        a {
+            text-decoration: none !important;
+        }
+        .btn.btn-link.btn-sm {
+            color: $primaryColor !important;
+        }
+        .btn-group-sm {
+            >.btn.btn-link {
+                body.bg-100 {
+                    color: $primaryColor !important;
+                }
+            }
+        }
+        .sh_backmate_th_login_left_img_st_2 {
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #292626;
+                opacity: .5;
+            }
+            background: url("/web/image?model=sh.back.theme.config.settings&id=1&field=login_page_banner_image");
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+            background-position-x: center;
+            background-position: center;
+            position: relative;
+            img {
+                width: 100%;
+            }
+            @include media-breakpoint-down(lg) {
+                display: none;
+            }
+        }
+        .o_database_list.mt-5 {
+            margin-top: 0rem !important;
+        }
+        .sh_backmate_th_login_left_img_st_2.col-lg-6 {
+            padding: 0px;
+        }
+        .container-fluid.pb-5 {
+            padding-bottom: 0rem !important;
+        }
+        .container-fluid.mb-5 {
+            margin-bottom: 0rem !important;
+        }
+        .container {
+            .bg-100 {
+                background-color: $login_page_box_color !important;
+                color: #212529;
+                background-color: $login_page_box_color !important;
+            }
+        }
+        .justify-content-between.mt-2.d-flex.small {
+            a {
+                &:last-child {
+                    color: $primaryColor;
+                }
+            }
+        }
+    }
+}

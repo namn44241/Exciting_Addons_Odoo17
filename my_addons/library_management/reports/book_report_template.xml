@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_book_report" model="ir.actions.report">
+        <field name="name">Book Report</field>
+        <field name="model">library.book</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">library_management.book_report_template</field>
+        <field name="report_file">library_management.book_report_template</field>
+        <field name="binding_model_id" ref="model_library_book"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <template id="book_report_template">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <div class="page">
+                    <h2>Báo cáo về sách trong thư viện</h2>
+
+                    <!-- Lặp qua từng cuốn sách -->
+                    <t t-foreach="docs" t-as="book">
+                        <div class="mt-4" style="page-break-inside: avoid;">
+                            <h3>
+                                <span t-field="book.name"/>
+                            </h3>
+                            <table class="table table-bordered">
+                                <tr>
+                                    <td width="20%"><strong>Author</strong></td>
+                                    <td><span t-field="book.author"/></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ISBN</strong></td>
+                                    <td><span t-field="book.isbn"/></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Status</strong></td>
+                                    <td><span t-field="book.state"/></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Description</strong></td>
+                                    <td><span t-field="book.description"/></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!-- Thêm ngắt trang giữa các sách -->
+                        <t t-if="not book_last">
+                            <div style="page-break-after: always;"/>
+                        </t>
+                    </t>
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>

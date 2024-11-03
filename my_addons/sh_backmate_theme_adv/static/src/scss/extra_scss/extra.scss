@@ -1,0 +1,1724 @@
+	// ace view editor issue start //
+	.o_ace_view_editor {
+		.ace_editor {
+			h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, a, label, b, p, div, span, body{
+				font-family: unset !important;
+			}
+		}
+	}
+	// ace view editor issue end //
+	/*== old == */
+	.o_list_table_ungrouped {
+		tr {
+			th {
+				vertical-align: middle !important;
+			}
+		}
+	}
+	.o_action_manager {
+		.o_spreadsheet_dashboard_action{
+			margin: 0.8rem !important;
+		}
+		.o_graph_view,
+		.o_activity_view,
+		.o_form_view,
+		.o_list_view {
+			.o_content{
+				margin: 0.8rem !important;
+				@include media-breakpoint-down(md) {
+					margin: 0 !important;
+				}
+			}
+		}
+		.o_view_controller {
+			.o_cp_controller {
+				border-bottom: 1px solid #dee2e6;
+			}
+		}
+	}
+	.oe_product {
+		section {
+			position: relative;
+		}
+	}
+	.o_list_view {
+		.o_list_table {
+			th {
+				text-transform: uppercase;
+			}
+		}
+		.o_optional_columns_dropdown_toggle {
+			top: 7px;
+		}
+	}
+	.nav-tabs {
+		.nav-link {
+			border-bottom: 0px !important;
+		}
+	}
+	.nav.nav-tabs {
+		.nav-link {
+			margin-bottom: 0 !important;
+		}
+	}
+	.o_notebook {
+		.tab-content {
+			.o_group.o_inner_group {
+				>tbody {
+					>tr {
+						>td {
+							padding: 0 !important;
+						}
+					}
+				}
+			}
+		}
+	}
+	.o_form_view {
+		.o_group.o_inner_group {
+			>tbody {
+				>tr {
+					>td {
+						padding: 0px 36px 0px 0px !important;
+					}
+				}
+			}
+		}
+	}
+	.modal-content {
+		.modal-body.o_act_window {
+			.o_searchview {
+				.o_searchview_input_container {
+					width: 40em;
+				}
+			}
+		}
+	}
+	.modal-body {
+		.o-export-panel {
+			.o_left_panel {
+				.o_left_field_panel {
+					.o_export_tree_item {
+						span.fa.pull-right {
+							margin: auto !important;
+							margin-left: .3em !important;
+						}
+					}
+				}
+			}
+		}
+	}
+	.o_right_panel {
+		.o_right_field_panel {
+			.o_fields_list {
+				.o_export_field {
+					.fa.pull-right {
+						margin: auto !important;
+						margin-left: .3em !important;
+					}
+				}
+			}
+		}
+	}
+	
+	
+	/*== latest ==*/
+	
+	@if $body_background_type == 'bg_img'{
+		html {
+			.o_web_client {
+				>.o_action_manager {
+					>.o_action {
+						>.o_content {
+							background: #ebedf6!important;
+							
+						}
+					}
+					.o_kanban_view{
+						>.o_content {
+							background: transparent!important;
+							
+						}	
+					}
+				}
+			}
+		}
+		
+	}
+    .o_form_sheet_bg {
+		.o_form_statusbar {
+			.o_statusbar_status.o_field_widget {
+				.btn {
+					box-shadow: none !important;
+					border: 0 !important;
+					&:hover {
+						border: 0px !important;
+					}
+				}
+			}
+		}
+	}
+	.o_kanban_view {
+		.o_kanban_record {
+			.oe_kanban_details {
+				.oe_kanban_action_a {
+					.rounded-pill {
+						background-color: $secondaryColor;
+						border-color: $secondaryColor;
+					}
+				}
+			}
+		}
+	}
+	.o_list_view {
+		.table-responsive {
+			.o_field_widget.o_field_badge {
+				padding: 4px 5px 4px !important;
+			}
+		}
+	}
+	.badge-pill {
+		border-radius: 3px !important;
+	}
+	.tooltip {
+		color: #fff !important;
+	}
+	
+	@if $separator_style == 'style_7'{
+		.o_horizontal_separator {
+			&:before {
+				height: 2px !important;
+			}
+		}
+		
+	}
+	.table.o_list_table th, .table.o_list_table td{border-top: 0px !important;vertical-align: middle;}
+	@if $predefined_list_view_boolean == "False"{
+		.o_list_view {
+			.o_list_table.table {
+				tbody {
+					tr {
+						&:nth-of-type(odd){
+							&:hover{
+								--table-hover-bg: unset !important;--table-accent-bg: unset !important;background-color:$list_view_odd_row_color!important;
+							}
+						}
+						&:nth-of-type(even){
+							&:hover{
+								-table-hover-bg: unset !important;--table-accent-bg: unset !important;background-color:$list_view_even_row_color!important;
+							}
+						}
+					}
+				}
+			}
+		}
+		
+	}
+	
+	.o_kanban_view.o_kanban_dashboard.o_salesteam_kanban.o_kanban_ungrouped {
+		.o_kanban_record {
+			.o_kanban_primary_bottom.bottom_block {
+				border-bottom-left-radius: 4px;
+				border-bottom-right-radius: 4px;
+			}
+		}
+	}
+	.o_list_view {
+		.o_list_table {
+			tfoot {
+				>tr {
+					>td {
+						border-top: 2px solid #dee2e6 !important;
+					}
+				}
+			}
+		}
+	}
+	.o_base_settings {
+		.o_setting_container {
+			.settings {
+				>.app_settings_block {
+					h2 {
+						background-color: #f4f4f7 !important;
+						box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
+						font-weight: 500 !important;
+						font-size: 15px !important;
+					}
+				}
+			}
+			.settings_tab {
+				background: #f4f4f7;
+				border-right: 1px solid #d9d9d9;
+				.tab {
+					color: #6d6969;
+					font-weight: 600;
+				}
+				.selected {
+					background-color: $primaryColor;
+					box-shadow: inset 3px 0 0 $primaryColor;
+				}
+			}
+		}
+		.o_control_panel {
+			.o_panel {
+				.o_setting_search {
+					.searchInput {
+						padding: .4em 1em !important;
+						height: 35px !important;
+						border: 1px solid #ccc !important;
+						border-radius: 5px !important;
+					}
+					.searchIcon {
+						background-color: transparent !important;
+						border-color: transparent !important;
+						color: #495057 !important;
+					}
+				}
+			}
+		}
+		.o_form_statusbar {
+			padding-left: 0px !important;
+		}
+	}
+	.o_form_view {
+		.o_form_statusbar {
+			>.o_statusbar_status {
+				>.o_arrow_button {
+					&:not(:first-child) {
+						&:before {
+							right: -12px;
+						}
+					}
+				}
+				>.o_arrow_button.btn-primary.disabled {
+					&:after {
+						border-left-color: $primaryColor !important;
+					}
+				}
+			}
+		}
+	}
+	.o_form_sheet_bg {
+		.o_form_statusbar {
+			.o_statusbar_status.o_field_widget {
+				.btn.btn-secondary {
+					background: #e8e8e8 !important;
+					border-radius: 0px !important;
+				}
+			}
+		}
+	}
+	.tooltip-inner {
+		color: $primaryColor !important;
+		box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14%), 0 6px 10px -5px $primaryColor !important;
+		color: #fff !important;
+	}
+	.tooltip {
+		.tooltip-inner {
+			.oe_tooltip_string {
+				color: $primaryColor !important;
+			}
+		}
+	}
+	.o_kanban_view {
+		.o_kanban_record {
+			a.o_form_uri.o_field_widget {
+				color: $primaryColor !important;
+			}
+		}
+	}
+	.oe_tooltip_technical {
+		color: #fff !important;
+	}
+	nav.o_main_navbar {
+		.o_menu_systray {
+			.sh_calc_util {
+				>.open_calc {
+					line-height: 30px !important;
+				}
+			}
+			div.dropdown.o_night_mode {
+				span {
+					font-size: 17px !important;
+				}
+				height: 30px !important;
+				width: 30px !important;
+				line-height: 30px !important;
+				padding: 0px 7px !important;
+				margin: 0 10px !important;
+			}
+			.theme_settings {
+				.theme_setting_img {
+					font-size: 19px !important;
+				}
+			}
+		}
+		.o_user_menu {
+			img.oe_topbar_avatar {
+				transform: translateY(-2px) !important;
+			}
+		}
+	}
+	.o_action_manager {
+		.o_controller_with_searchpanel {
+			.o_search_panel {
+				background: #f4f4f7;
+				border-right: 1px solid #d9d9d9;
+				.list-group {
+					margin-bottom: 15px;
+					box-shadow: 0 1px 3px rgba(0, 0, 0, .12%), 0 1px 2px rgba(0, 0, 0, .24%);
+				}
+				.list-group-item {
+					header.active {
+						background-color: $primaryColor;
+						color: #fff;
+						border-radius: 3px 3px 0px 0px;
+						.o_search_panel_label_title {
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+	.o_search_panel {
+		.list-group {
+			padding-bottom: 0px;
+		}
+	}
+	.o_Discuss {
+		.o_Discuss_content {
+			.o_MessageList {
+				.o_Message.o-not-discussion {
+					justify-content: left;
+				}
+			}
+		}
+		.o_DiscussSidebar.o_Discuss_sidebar {
+			background: #f4f4f7;
+			color: #6d6969;
+			border-right: 1px solid #d9d9d9;
+			border-top: 1px solid #d9d9d9;
+			.o_DiscussSidebarItem {
+				&:hover {
+					background: $primaryColor;
+					color: #fff !important;
+				}
+			}
+		}
+	}
+	.o_form_sheet {
+		.o_notebook {
+			.o_kanban_view {
+				.o_kanban_record {
+					.o_kanban_image {
+						img {
+							box-shadow: 0 3px 6px rgba(0 ,0, 0, .16%), 0 3px 6px rgba(0, 0, 0,.23%);
+							border-radius: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+	.tooltip.bs-tooltip-right {
+		.arrow {
+			&::after {
+				border-right-color: $primaryColor !important;
+			}
+		}
+	}
+	.tooltip.bs-tooltip-auto[x-placement^="right"] {
+		.arrow {
+			&::after {
+				border-right-color: $primaryColor !important;
+			}
+		}
+	}
+	.tooltip.bs-tooltip-left {
+		.arrow {
+			&::after {
+				border-left-color: $primaryColor !important;
+			}
+		}
+	}
+	.tooltip.bs-tooltip-auto[x-placement^="left"] {
+		.arrow {
+			&::after {
+				border-left-color: $primaryColor !important;
+			}
+		}
+	}
+	.tooltip.bs-tooltip-top {
+		.arrow {
+			&::after {
+				border-top-color: $primaryColor !important;
+			}
+		}
+	}
+	.tooltip.bs-tooltip-auto[x-placement^="top"] {
+		.arrow {
+			&::after {
+				border-top-color: $primaryColor !important;
+			}
+		}
+	}
+	.tooltip.bs-tooltip-bottom {
+		.arrow {
+			&::after {
+				border-bottom-color: $primaryColor !important;
+			}
+		}
+	}
+	.tooltip.bs-tooltip-auto[x-placement^="bottom"] {
+		.arrow {
+			&::after {
+				border-bottom-color: $primaryColor !important;
+			}
+		}
+	}
+	
+	
+	/* == latest == */
+	
+
+	@media only screen and (max-width: 767px) {
+		.modal-dialog {
+			margin: 0 auto;
+		}
+		.o_list_view {
+			.o_list_table {
+				.o_list_record_selector {
+					.custom-control {
+						padding-left: 0px;
+					}
+				}
+			}
+		}
+		.o_mail_discuss {
+			position: unset;
+		}
+		.fa-remove {
+			&:before {
+				position: unset;
+			}
+		}
+		.fa-close {
+			&:before {
+				position: unset;
+			}
+		}
+		.fa-times {
+			&:before {
+				position: unset;
+			}
+		}
+		.o_form_view {
+			.o_form_statusbar {
+				>.o_statusbar_status {
+					padding-left: 10px !important;
+				}
+			}
+		}
+		.o_notebook {
+			.nav-tabs {
+				.nav-item {
+					width: auto;
+				}
+				border: 0px;
+				border-bottom: 1px solid #dee2e6;
+			}
+		}
+		.show {
+			.list-inline {
+				min-width: auto !important;
+			}
+		}
+	}
+	@media only screen and (min-width: 768px) and (max-width: 991px) {
+		.o_form_view {
+			.oe_button_box {
+				.btn.oe_stat_button {
+					display: inline-block;
+				}
+			}
+		}
+	}
+	@media only screen and (max-width: 992px) {
+		.o_list_view {
+			.o_list_table {
+				.o_list_record_selector {
+					z-index: 0 !important;
+				}
+			}
+		}
+		.fa-calendar-o.fa-stack-2x {
+			font-size: 2.2em !important;
+		}
+		.o_form_view {
+			.oe_button_box {
+				.btn.oe_stat_button {
+					margin: 0px;
+				}
+			}
+		}
+		.o_content {
+			.o_form_view.o_lead_opportunity_form {
+				.o_form_sheet_bg {
+					.o_form_sheet {
+						width: 100%;
+					}
+				}
+			}
+		}
+		.modal-content {
+			.modal-body.o_act_window {
+				.o_searchview {
+					.o_searchview_input_container {
+						width: 100%;
+					}
+				}
+			}
+		}
+		.o_main_navbar {
+			>ul {
+				>li {
+					>a {
+						span.icon-activity {
+							font-size: 16px;
+							vertical-align: middle;
+							padding-left: 3px;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	.backmate_theme_layout.sh_theme_model {
+		.theme_header {
+			i.fa {
+				cursor: pointer;
+			}
+		}
+	}
+	.badge.badge-pill {
+		border-radius: 3px;
+	}
+	.o_form_view {
+		.o_group {
+			.o_field_boolean.o_boolean_toggle.o_field_widget.custom-control.custom-checkbox {
+				>[type='checkbox'] {
+					+ {
+						label {
+							&:not(.lever) {
+								&:before {
+									border: 1.5px solid #adb5bd !important;
+								}
+							}
+						}
+					}
+				}
+			}
+			.custom-control.custom-checkbox.o_field_boolean.o_field_widget {
+				+ {
+					label.o_form_label {
+						padding-left: 8px !important;
+					}
+				}
+			}
+		}
+		.oe_subtotal_footer.oe_right {
+			.o_td_label {
+				+ {
+					td {
+						padding-right: 0px;
+					}
+				}
+			}
+		}
+		.o_form_sheet_bg {
+			.o_form_sheet {
+				.o_field_email.o_form_uri.o_field_widget {
+					>a {
+						color: #fff !important;
+					}
+				}
+				.o_field_phone.o_form_uri.o_field_widget {
+					>a {
+						color: #fff !important;
+					}
+				}
+				.o_field_url.o_form_uri.o_field_widget {
+					>a {
+						color: #fff !important;
+					}
+				}
+				a.o_field_phone_sms {
+					color: $primaryColor !important;
+				}
+				a.o_phone_form_link {
+					color: $primaryColor !important;
+				}
+				a.o_form_uri.o_field_widget {
+					color: #fff !important;
+					>span {
+						&:first-child {
+							color: #fff !important;
+						}
+					}
+				}
+				.o_notebook {
+					.btn.btn-link {
+						color: #fff !important;
+					}
+				}
+			}
+		}
+		.o_form_sheet {
+			.o_notebook {
+				.sh_refresh {
+					display: none !important;
+				}
+			}
+		}
+	}
+	.o_main_navbar {
+		.o_menu_systray {
+			.o-dropdown.dropdown.o_user_menu {
+				.dropdown-toggle {
+					.o_user_avatar {
+						margin-right: 0px;
+					}
+				}
+			}
+		}
+		.sh_backmate_theme_appmenu_div {
+			.dropdown {
+				.dropdown-toggle {
+					height: unset;
+				}
+			}
+		}
+	}
+	.o_content {
+		.o_form_view {
+			.o_form_sheet_bg {
+				.o_form_sheet {
+					.o_notebook {
+						.o_group {
+							.o_field_one2many.o_field_widget {
+								.o_list_view {
+									.table-responsive {
+										.list_table.table {
+											.o_data_cell.o_field_cell.o_list_many2one {
+												.o_field_widget.o_field_many2one {
+													.o_field_many2one_selection {
+														width: 94%;
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.o_list_view {
+			.table-responsive {
+				.o_list_table.table {
+					.o_data_cell.o_field_cell.o_many2many_tags_cell {
+						.o_field_widget.o_field_many2manytags {
+							.badge {
+								.o_badge_text {
+									white-space: nowrap;
+									max-width: 72px;
+									overflow: hidden;
+									text-overflow: ellipsis;
+								}
+							}
+						}
+					}
+					.o_data_cell.o_list_button {
+						.btn.btn-link.o_icon_button {
+							color: #fff !important;
+						}
+					}
+				}
+			}
+		}
+		.o_calendar_container {
+			.o_calendar_sidebar_container {
+				.o_calendar_sidebar {
+					.o_calendar_filter {
+						.o_calendar_filter_items {
+							.o_calendar_filter_item {
+								>[type='checkbox'] {
+									&:checked {
+										+ {
+											label {
+												&:not(.lever) {
+													&:before {
+														left: -3px !important;
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.o_form_view.o_base_settings {
+			.o_control_panel {
+				.o_panel {
+					.o_setting_search {
+						.searchInput {
+							&:focus {
+								border: 1px solid $primaryColor !important;
+							}
+							&:hover {
+								border: 1px solid $primaryColor !important;
+							}
+							&:active {
+								border: 1px solid $primaryColor !important;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.modal {
+		.modal-dialog {
+			.modal-content {
+				.modal-body {
+					.o_form_view.o_form_nosheet {
+						padding-left: 16px;
+						padding-right: 16px;
+					}
+				}
+				.modal-header {
+					.dropdown.o_debug_manager.o-dropdown {
+						.dropdown-toggle.btn.btn-link {
+							color: #fff !important;
+						}
+					}
+				}
+			}
+		}
+	}
+	.o_timeoff_calendar {
+		.o_content {
+			.o_timeoff_container {
+				z-index: 2;
+			}
+		}
+	}
+	.o_base_settings {
+		.o_setting_container {
+			.settings_tab {
+				.tab.selected {
+					color: #fff !important;
+				}
+			}
+		}
+	}
+	.o_navbar_apps_menu.sh_backmate_theme_appmenu_div {
+		.dropdown-menu.d-block.o-dropdown--menu {
+			.cssmenu {
+				>.direct_menu.active {
+					&:before {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	.o_FormRenderer_chatterContainer {
+		.o_Chatter_fixedPanel {
+			.o_ChatterTopbar.o_Chatter_topbar {
+				.o_ChatterTopbar_actions {
+					.o_ChatterTopbar_rightSection {
+						.btn.btn-link.o_ChatterTopbar_button.o_ChatterTopbar_buttonAttachments {
+							color: #fff !important;
+							color: #fff !important;
+						}
+						.o_FollowerListMenu.o_ChatterTopbar_button.o_ChatterTopbar_followerListMenu {
+							.o_FollowerListMenu_buttonFollowers.btn.btn-link {
+								color: #fff !important;
+							}
+						}
+					}
+				}
+			}
+		}
+		.o_Chatter {
+			.o_AttachmentBox.o_Chatter_attachmentBox {
+				.o_AttachmentBox_content {
+					.o_AttachmentBox_buttonAdd.btn.btn-link {
+						color: #fff !important;
+					}
+				}
+			}
+		}
+	}
+	.o_calendar_view {
+		.o_cw_popover.popover.card {
+			.o_cw_body {
+				.list-group {
+					.list-group-item {
+						.o_form_uri.o_field_widget {
+							color: #fff !important;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+
+
+	// v16 // 
+	.o_main_navbar {
+		.o_menu_systray {
+			.o_user_menu {
+				.oe_topbar_name {
+					display: none !important;
+				}
+			}
+		}
+	}
+	.sh_backmate_theme_appmenu_div {
+		ul.dropdown-menu {
+			.dropdown-header {
+				font-weight: normal;
+			}
+		}
+		ul.o-dropdown-menu {
+			.dropdown-header {
+				font-weight: normal;
+			}
+		}
+	}
+	.o_ThreadView_core {
+		.o_CallView {
+			.o_CallMainView {
+				.o_CallMainView_controls {
+					.o_CallMainView_controlsOverlayContainer {
+						.o_CallActionList {
+							.o_CallActionList_buttons {
+								.o_CallActionList_button {
+									.o_CallActionList_buttonIconWrapper {
+										display: flex;
+										justify-content: center;
+										align-items: center;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	body {
+		a.o_form_uri {
+			color: $primaryColor;
+		}
+		.text-odoo {
+			color: $primaryColor;
+		}
+	}
+	.ui-widget.ui-autocomplete {
+		.ui-menu-item.o_m2o_dropdown_option {
+			>a {
+				color: $primaryColor;
+			}
+		}
+	}
+	.o_form_view {
+		.o_form_uri {
+			>span {
+				&:first-child {
+					color: $primaryColor;
+					&:hover {
+						border-bottom: 1px solid $primaryColor;
+					}
+					&:focus {
+						border-bottom: 1px solid $primaryColor;
+					}
+				}
+				&:first-child.focus {
+					border-bottom: 1px solid $primaryColor;
+				}
+			}
+		}
+		.o_form_sheet_bg {
+			.o_form_sheet {
+				.o_field_widget.o_field_email {
+					a {
+						color: $primaryColor;
+						&:hover {
+							color: $primaryColor;
+						}
+					}
+				}
+				.o_field_widget.o_field_url {
+					a {
+						color: $primaryColor;
+						&:hover {
+							color: $primaryColor;
+						}
+					}
+				}
+			}
+			.o_notebook {
+				.o_field_widget.o_field_chatbot_steps_one2many[name="script_step_ids"] {
+					width: 100%;
+				}
+			}
+		}
+		.oe_button_box {
+			.oe_stat_button {
+				.o_stat_value {
+					color: $primaryColor;
+				}
+			}
+		}
+		.o_notebook {
+			.o_kanban_ungrouped {
+				.o_kanban_record {
+					.oe_kanban_global_click {
+						.oe_kanban_details {
+							.o_field_widget.o_field_email {
+								display: initial;
+							}
+						}
+					}
+				}
+			}
+		}
+		.oe_button_box.o_full {
+			.o_dropdown_more {
+				box-shadow: none !important;
+				border: 0px !important;
+				span.dropdown-item.focus {
+					background: transparent !important;
+				}
+			}
+		}
+	}
+	.o_list_view {
+		.o_list_table {
+			.o_field_widget {
+				a.o_form_uri {
+					color: $primaryColor;
+				}
+			}
+		}
+	}
+	.o_mrp_bom_report_page {
+		a {
+			color: $primaryColor;
+		}
+	}
+	.o_stock_reports_page {
+		.o_stock_reports_table {
+			a {
+				color: $primaryColor;
+			}
+		}
+	}
+	.o_search_panel {
+		.o_search_panel_section {
+			.o_search_panel_section_header {
+				.o_search_panel_section_icon {
+					color: $primaryColor;
+				}
+			}
+		}
+	}
+	.o_notebook {
+		.o_notebook_content {
+			.o_field_hr_org_chart {
+				.o_org_chart_entry_manager {
+					a.o_employee_redirect {
+						color: $primaryColor;
+					}
+				}
+			}
+		}
+	}
+	.o_kanban_view {
+		.oe_kanban_content {
+			a.o_form_uri {
+				color: $primaryColor;
+			}
+			a.o_field_phone_sms {
+				color: $primaryColor;
+			}
+		}
+		.o_res_partner_kanban {
+			.oe_kanban_action_a {
+				&:hover {
+					>.badge {
+						background: $primaryColor !important;
+						color: #ffffff !important;
+					}
+				}
+			}
+		}
+		.o_kanban_renderer.o_crm_team_member_kanban {
+			.o_kanban_group {
+				.o_kanban_record {
+					box-shadow: none !important;
+				}
+			}
+		}
+	}
+	.o-form-buttonbox {
+		.btn.oe_stat_button {
+			>.o_stat_info {
+				.o_stat_value {
+					color: $primaryColor;
+				}
+			}
+			>span {
+				.o_stat_value {
+					color: $primaryColor;
+				}
+			}
+			>.o_field_statinfo {
+				.o_stat_value {
+					color: $primaryColor;
+				}
+			}
+		}
+	}
+	.o_kanban_renderer {
+		.o_kanban_record {
+			.o_kanban_card_content {
+				.o_field_sales_team_progressbar {
+					a.sale_progressbar_form_link {
+						color: $primaryColor;
+					}
+				}
+			}
+		}
+	}
+	.o_list_renderer {
+		.o_data_row.o_selected_row {
+			>.o_data_cell.o_required_modifier {
+				&:not(.o_readonly_modifier) {
+					border-bottom: 1px solid $primaryColor;
+				}
+			}
+		}
+	}
+	.modal {
+		.modal-content {
+			.o_cp_buttons {
+				.sh_refresh {
+					display: none !important;
+				}
+			}
+		}
+	}
+			
+			
+		
+		
+			// survey {
+				.o_form_view {
+					.o_form_sheet_bg {
+						.o_notebook {
+							.o_field_widget.o_field_question_page_one2many[name="question_and_page_ids"] {
+								width: 100%;
+							}
+						}
+					}
+				}
+
+		// Employee 
+				.o_form_view {
+					.o_employee_form {
+						.o_form_sheet {
+							.o_employee_avatar {
+								top: 82px;
+							}
+						}
+					}
+				}
+		
+		// Accural plans 
+				 
+					.o_kanban_renderer {
+						.o_kanban_record {
+							&:focus {
+								.oe_kanban_global_click.o_hr_holidays_body {
+									border: 0px;
+									outline: none;
+								}
+							}
+						}
+					}
+
+		// smart button div{
+
+						.o_form_view {
+							.o_form_view_container {
+								.o_form_sheet_bg {
+									.o_form_sheet {
+										.o-form-buttonbox.oe_button_box {
+											margin: 0px 0px 20px 0px;
+											box-shadow: none;
+										}
+									}
+								}
+							}
+						}
+
+	.o_field_selector_popover {
+		&:not(.o_legacy_field_selector_popover) {
+			.o_field_selector_popover_header {
+				.o_field_selector_search {
+					>.o_input {
+						color: #888;
+					}
+				}
+			}
+			.o_field_selector_popover_footer {
+				>input {
+					color: #888;
+				}
+			}
+		}
+	}
+	.o_field_selector_popover_header {
+		.o_field_selector_popover_option {
+			cursor: pointer;
+		}
+	}
+
+	
+	@media only screen and (min-width: 993px){
+		.o_field_highlight {
+			.o_field_widget {
+				.o_input {
+					border-color: $primaryColor;
+				}
+			}
+		}
+		.o_field_highlight.o_field_widget {
+			.o_input {
+				border-color: $primaryColor;
+			}
+		}
+		
+	}
+	@if $form_element_style != 'style_2'{
+		.o_field_highlight {
+			.o_field_widget {
+				.o_input {
+					&:not(:hover) {
+						&:not(:focus) {
+							border-color: #efefef;
+						}
+					}
+				}
+			}
+		}
+		.o_field_highlight.o_field_widget {
+			.o_input {
+				&:not(:hover) {
+					&:not(:focus) {
+						border-color: #efefef;
+					}
+				}
+			}
+		}
+	}		
+	.o_Message_core {
+		.o_Message_bubbleWrap {
+			.o_Message_bubble {
+				overflow: auto;
+			}
+		}
+	}
+	
+
+
+//navbar
+.o_main_navbar{
+    box-shadow: none!important;background-color: transparent !important;border-color: transparent !important;box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);transition: transform 400ms ease, height 400ms ease, border-bottom 400ms ease;width: 100%;position: relative;height: 4rem;min-height: 4rem;border-bottom: 1px solid #ffffff;background-color: #ffffff;color: #787373;
+	.o_menu_systray {
+		.sh_bookmark.active {
+			.sh_bookmark_icon {
+				display: none;
+			}
+			.sh_bookmarked_icon {
+				display: block;
+			}
+		}
+		.sh_bookmark {
+			.sh_bookmarked_icon {
+				display: none;
+			}
+		}
+        div{
+            &.dropdown{
+                @include media-breakpoint-down(md) {
+                    padding: 0 !important;
+                }
+                
+            }
+        }
+	}
+	.o_switch_company_menu {
+		>.dropdown-toggle {
+			.oe_topbar_name {
+				display: none !important;
+			}
+		}
+	}
+}
+//navbar
+
+
+body .text-primary{
+    color: $primaryColor !important;
+}
+
+.o_control_panel{
+    border-bottom: 0px solid #e0e0e0!important;
+}
+//o_kanban_view
+
+
+
+// ============================================ o-dropdown--menu ============================================ //
+
+.o_kanban_record{
+    .o_dropdown_kanban{
+        .o-dropdown--menu{
+            border-radius: 1rem !important;box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);background-color: #fff;;border: 0px;font-weight: 500;color: #6f7e92;
+            a{
+                font-weight: 500;color: #6f7e92;border: 1px solid transparent;margin: 5px 0px;font-size: 14px;
+                &:hover{
+                    background: transparent;color:$primaryColor;
+                }
+            }
+            .focus{
+                background: transparent;border-radius: 20px;color:$primaryColor;
+            }
+        }
+        .dropdown-item.focus{
+           background-color: transparent!important;border-radius: 20px;color:$primaryColor;
+        }
+    }
+}
+.o_list_controller,.o_cp_action_menus{
+    .o-dropdown--menu{
+        border-radius: 1rem !important;box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);background-color: #fff;padding: 1rem;border: 0px;font-weight: 500;color: #6f7e92;
+        .dropdown-item.focus{
+            background-color: transparent!important;border-radius: 20px;color:$primaryColor;
+        }
+        span{
+            font-weight: 500;color: #6f7e92;border: 1px solid transparent;font-size: 14px;text-transform: capitalize;
+            
+        }
+       
+    }
+}
+.o_dropdown_container{
+    .o_menu_item{
+        font-weight: 500;color: #6f7e92;border: 1px solid transparent;margin: 5px 0px;font-size: 14px;
+        &:hover{
+            background: transparent;border-radius: 20px;color:$primaryColor;
+        }
+    }
+    .selected{
+        background: transparent;border-radius: 20px;color:$primaryColor;
+    }
+    
+    .o_accordion{
+        .o_accordion_values{
+            .btn-primary{
+                background-color: $primaryColor;border-color: $primaryColor;border-radius: 9999px;padding: 7px 15px;font-weight: 600;margin-right: 5px!important;box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+                &:hover{
+                    background-color: #fff;color: $primaryColor;border-color: #fff!important;
+                }
+            }
+        }
+    }
+    span{
+        font-weight: 500;color: #6f7e92;border: 1px solid transparent;font-size: 14px;
+        
+    }
+    .focus{
+        background-color: transparent!important;border-radius: 20px;color:$primaryColor;
+    }
+}
+
+//.......... Navbar o_menu_systray dropdown ........ //
+
+//"The scss code of the design inside the Navbar systray dropdown is written."//
+.o_main_navbar{
+    .o_menu_systray{
+        display: flex;
+        .sh_language_selector{
+            .o-dropdown--menu{
+                padding: 0px ;box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+                .o-mail-ActivityMenu{
+                    min-height: auto;width: auto;
+                    .o-mail-ActivityGroup{
+                        align-items: center;border: 1px solid transparent;
+                        .sh_lang_flag{
+                            height:25px;width: 25px;border-radius: 20px;margin-right: 5px;
+                        }
+						&:hover{
+                            background-color: transparent !important;border-radius: 20px;color: $primaryColor;
+                        }
+                        
+                    }
+					
+                }
+            }
+        }
+        .sh_bookmark{
+            .sh_wqm_quick_menu_submenu_list_cls{
+                transition: all .4s;overflow: auto;transform-origin: 100% 0px;position: absolute;right: 0px !important;bottom: auto;left: auto !important;width: 25rem;top: 45px;
+                a{
+                    font-weight: 500;color: #6f7e92;border: 1px solid transparent;margin: 5px 0px;font-size: 14px;padding: 5px 20px;
+                    &:hover{
+                        background-color: transparent !important;border-radius: 20px;color: $primaryColor;
+                    }
+                    svg{
+                        margin-right:8px;fill:$primaryColor;
+                    }
+                }
+            }
+        }
+        .sh_calc_util{
+            .sh_calc_results{
+                border-top: 1px solid #dee2e6;box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);background-color: #fff;border: 0px;
+                .numberPad{
+                    .clear,#sqrt,#square,#divide,#multiply,#subtract,#add,#equals{
+                        align-items: center;display: flex;justify-content: center;background: $primaryColor!important;font-size: 20px;box-shadow: 0 0 0 transparent;outline: 0;color: #fff !important;width: 40px;height: 40px;margin: 5px;border: transparent;
+                    }
+                    button.btn-calc{
+                        display: flex;align-items: center;justify-content: center;background: #fff; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);color: #111c43;width: 40px;height: 40px;margin: 5px;border: none;
+                    }
+                    .focus{
+                        color: #111c43;
+                    }
+                }
+                .calculator{
+                    .displayText{
+                        margin: 0 !important;background: 0 0;border: none;color: #FFF;font-size: 25px !important;display: inline-block;overflow: hidden;overflow-x: auto;padding: 8px 0px;
+                    }
+                }
+            }
+        }
+        .todo_layout {
+            background: white;min-width: 420px;max-width: 420px;z-index: 10;position: fixed;top: 0;right: 0;bottom: 0;margin-right: -625px;transition: all ease-in-out 0.3s;box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);padding: 0.9rem;
+           .theme_header{
+            display: -webkit-box;display: -webkit-flex;display: flex;justify-content: space-between;align-items: center;padding: 13px 20px;background-color: $primaryColor;color: #fff;box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);padding: 1.1rem;
+                h3{
+                    margin-bottom: 0; color: #fff;font-weight: 600;     
+                } 
+                .close_todo_setting {
+                    cursor: pointer;
+                }   
+            }
+            .add_todo_section{
+                padding: 10px 0px;
+                .sh_add_todo_input{
+                    padding: 7px 1.375rem !important;font-weight: 500; 
+                }
+                .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback){
+                    margin-left: -20px;
+                }
+            }
+            #accordion{
+                overflow: auto;height: 100%;
+                .card-header{
+                    background: #ebedf6;box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);padding: 1.1rem;margin-bottom: 15px;
+                    .sh-card-header-button{
+                        display: flex;justify-content: end;align-items: center;position: relative;right: 5px;top: -15px;margin-left: auto;
+                        .sh_to_do_edit_btn{
+                            margin-right: 5px;cursor: pointer;
+                        }
+                        .sh_to_do_remove_btn{
+                            cursor: pointer;
+                        }
+                        .sh_to_do_save_btn{
+                            margin-right: 5px;cursor: pointer;
+                        }
+                    }
+                    
+                }
+            }
+        }
+        .todo_layout.sh_theme_model{
+            display: block;margin-right: 0px;
+        }
+        .o_switch_company_menu{
+            .o-dropdown--menu{
+                .toggle_company{
+                    background-color: #fff;
+                    span{
+                        .fa{
+                            color: $primaryColor;
+                        }
+                    }
+                }
+                .alert-primary{
+                    color: #111c43 ;background-color: #fff;border-color: #fff;
+                }
+            }
+        }
+        .o_user_menu{
+            .o-dropdown--menu{
+                a,>span{
+                    font-weight: 500;color: #6f7e92;border: 1px solid transparent;margin: 5px 0px;font-size: 14px;
+                    &:hover{
+                        background-color: transparent !important;border-radius: 20px;color: $primaryColor;
+                    }
+                }
+                
+                .focus{
+                   background-color: transparent !important;border-radius: 20px;color: $primaryColor;
+                }
+            }
+        }
+
+    }
+
+}
+
+//.......... Navbar o_menu_systray dropdown ........ //
+
+
+//============================================ o-dropdown--menu ============================================== //
+
+
+
+//========================================= o_control_panel_breadcrumbs ========================================//
+.o_control_panel_breadcrumbs{
+    flex-wrap: wrap !important;
+    .o_breadcrumb{
+        li{
+            a{
+                color: #111c43;
+            }
+        }
+    }
+}
+//========================================= o_control_panel_breadcrumbs ========================================//
+
+
+//========================================= o_avatar ========================================//
+.o_avatar img, .o_avatar .o_avatar_empty, img.o_avatar,.o-mail-Message-avatar{
+    border-radius: 20px!important;
+ }
+//========================================= o_avatar ========================================//
+.btn-link{
+    color: #475569;
+}
+.o_data_cell{
+    .btn-link,.text-warning{
+        color: #475569;
+            &:hover{
+                color: #fff;
+            }
+    }
+}
+
+
+//========================================= o_hierarchy_renderer ========================================//
+.o_hierarchy_renderer{
+    .o_hierarchy_container{
+        .o_hierarchy_row{
+            .o_hierarchy_node_container{
+                .o_hierarchy_node {
+                    border-radius: 1rem !important;box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);background-color: #fff;padding: 1.2rem;
+                    .o_hierarchy_node_content{
+                        .o_hierarchy_node_header{
+                            border-radius: 5px;
+                        }
+                    }
+                }
+                
+            }
+        }
+        .o_hierarchy_separator{
+            .o_hierarchy_line_part{
+                border-top: 2px solid $primaryColor!important;
+            }
+            .o_hierarchy_line_left{
+                &::before{
+                    border-top: 2px solid $primaryColor!important;
+                    border-left: 2px solid $primaryColor!important;
+                }
+                &::after{
+                    border-bottom: 2px solid $primaryColor!important;border-right: 2px solid $primaryColor!important;
+                }
+               
+            }
+            .o_hierarchy_line_right{
+                &::before{
+                    border-bottom: 2px solid $primaryColor!important;
+                    border-left: 2px solid $primaryColor!important;
+                }
+                &::after{
+                    border-top: 2px solid $primaryColor!important;border-right: 2px solid $primaryColor!important;
+                }
+            }
+        }
+    }
+}
+//========================================= o_hierarchy_renderer ========================================//
+
+.sh_zoom_view_layout{
+    .sh-zoom-panel{
+        position: absolute;top: 100%;right: 0px;z-index: 2;border-radius: 1rem !important;box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);background-color: #fff;padding: 0.3rem 0.8rem;border: 0px;font-weight: 500;color: #6f7e92;
+    }
+}
+
+//inner page design scss start
+.o_content{
+    border-radius: 11px;box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);background: #fff !important;
+}
+.o_action_manager{
+    .o_form_view_container{
+        .o_content{
+            .o_form_renderer{
+                .o_form_sheet_bg{
+                    .o_form_sheet{
+                        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);background: #fff;
+                        .oe_title{
+                            .o_field_widget{
+                                span{
+                                    color: $primaryColor ;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    .o_graph_view{
+        .o_content{
+            background:transparent;
+        }
+    }
+}
+//inner page design scss end
+
+
+
+//dashboard
+.o_action_manager{
+    .o_spreadsheet_dashboard_action{
+        border-radius: 11px;box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);margin: 0px 0.8rem;background: #fff;
+        .o_control_panel {
+            background-color: #fff!important;
+        }
+    }
+}
+//dashboard
+
+.o_kanban_card_content{
+    .o_kanban_primary_right{
+        a.oe_kanban_action_a{
+            color: $primaryColor;
+        }
+    }
+}
+
+.o_popover{
+    border-radius: 1rem !important;
+    .o_avatar_card{
+        border-radius: 1rem !important;padding: 0px;box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        .card-body{
+            border-radius: 1rem !important;
+            .o_card_user_infos{
+                a{
+                    color:$primaryColor;
+                }
+            }
+        }
+        
+    }
+}
+.o_tag_popover{
+    .o_colorlist{
+        button{
+            border-radius: 1rem !important;width: 17px!important;
+        }
+    }
+
+}
+.o_form_view{
+    .o_form_uri{
+        color: $primaryColor;
+    }
+}
+.modal-body{
+    .o-mail-FollowerSubtypeDialog-subtype{
+        label{
+            &:hover{
+                background-color:#fff
+            }
+        }
+    }
+}
+.o-mail-Chatter-top{z-index: 2;}
+
+
+//dashboard
+
+h1{font-size:28px !important;}
+h2{font-size:17px !important;}
+h3{font-size:18px !important;}
+h4{font-size:13px !important;}
+h5{font-size:13px !important;}
+h6{font-size:12px !important;}
+p{font-size:13px !important;}
+
+/*--font-family--*/
+
+@if $is_used_google_font == "True"{
+    h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 ,a ,label , b ,p ,div,span, body{font-family: $body_google_font_family;}
+}
+@if $is_used_google_font == "False"{
+    h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 ,a ,label , b ,p ,div,span, body{font-family: $body_font_family;}
+}
+.fa{font: normal normal normal 14px/1 FontAwesome;}
+/*--font-family--*/
+
+
+.nav-link{
+    color: $primaryColor;
+}
+.o_field_x2many_list_row_add{
+    a {
+        color: $primaryColor !important;
+        &:hover{
+            color: #fff;
+        }
+    }
+}
+
+
+

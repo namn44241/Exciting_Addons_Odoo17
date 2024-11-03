@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+<t t-name="sh_quick_create.QuickCreateWebsiteSystray">
+    <t t-if="quick_create_view">
+        <div class="sh_droupdown">
+            <Dropdown title="actionsMenuTitleText">
+                    <t t-set-slot="toggler">
+                        <i class="fa fa-plus  sh_create_icon"></i>
+                    </t>    
+                    <div class=" sh_dropdown_inner dropdown-inner d-flex justify-content-between align-items-center p-3 border-bottom">
+                        <h5 class="sh_create_title">Quick Create</h5>
+                        <div class='sh_create_btn_group'>
+                            <t t-if='!state.showForm'>
+
+                                <t t-if='!state.IsEditMode'>
+                                    <a href="#" class="" accesskey="e" t-on-click.prevent="EditQuickAction">
+                                        <span class="fa fa-edit"/>
+                                    </a>
+                                    
+                                    <a href="#" class="" accesskey="f" t-on-click.prevent="AddNewQuickAction">
+                                        <span class="fa fa-plus-circle"/>
+                                    </a>
+                                </t>
+                                <t t-if='state.IsEditMode'>
+                                    <a href="#" class="" accesskey="f" t-on-click.prevent="QuitEditMode">
+                                        <span class="fa fa-check-circle"/>
+                                    </a>
+                                </t>
+                            </t>
+                            <t t-if='state.showForm'>
+                                <a href="#" class="" accesskey="f" t-on-click.prevent="AddNewQuickAction">
+                                    <span class="fa fa-times-circle"/>
+                                </a>
+                            </t>
+                        </div>
+                    </div>
+                    <t t-if='!state.showForm'>
+                        <t t-if='state.quick_action_data'>
+                                <div class="sh_create_record_main">
+                                    <t t-if='!state.IsEditMode'>
+                                        <ul class="sh_create_record_ul my-2">
+                                            <t t-foreach="state.quick_action_data" t-as="action" t-key="action.id">
+                                                <li class="sh_quick_create_item">
+                                                    <a href="#" t-att-data-id="action.id"
+                                                    t-att-data-model-id="action.model_id"
+                                                    t-att-data-model-name="action.model_name"
+                                                    t-att-data-model-model="action.model"
+                                                    t-att-data-sequence="action.sequence"
+                                                    t-att-data-icon="action.icon"
+                                                    t-att-data-name="action.name"
+                                                    t-on-click.prevent="(ev) => this.onActionSelected(ev, action)">
+                                                        <em t-att-class="'icon me-2 ' + action.icon"></em>
+                                                        <span t-esc="action.name"></span>
+                                                    </a>
+                                                </li>
+                                            </t>
+                                        </ul>
+                                    </t>
+                                    <t t-else=''>                 
+                                        <ul class="sh_create_record_ul my-2">
+                                            <t t-foreach="state.quick_action_data" t-as="editaction" t-key="editaction.id">
+                                                <li class="sh_quick_create_item">
+                                                    <a href="#" t-att-data-id="editaction.id"
+                                                    t-att-data-model-id="editaction.model_id"
+                                                    t-att-data-model-name="editaction.model_name"
+                                                    t-att-data-model-model="editaction.model"
+                                                    t-att-data-sequence="editaction.sequence"
+                                                    t-att-data-icon="editaction.icon"
+                                                    t-att-data-name="editaction.name"
+                                                    t-on-click.prevent="(ev) => this.onActionSelectedEdit(ev, editaction)">
+                                                        <em t-att-class="'icon me-2 ' + editaction.icon"></em>
+                                                        <span t-esc="editaction.name"></span>
+                                                        <i class="icon-edit-mode fa fa-pencil ms-2"></i>
+                                                    </a>
+                                                </li>
+                                            </t>
+                                        </ul>
+                                    </t>
+                            </div>
+                        </t>
+                        <t t-else=''>
+                            <div class="p-3 text-center">
+                                <span>No Records Found</span>
+                            </div>
+                        </t>
+                        
+                    </t>
+                    <form t-if='state.showForm' class='sh_create_record'>
+                        <div class="col-12 ">
+                            <div id="quick_create_errors_msg" class='d-none'>
+                                <div class="alert alert-danger py-1 fs-14px mb-2">Please fill all the required fields first!</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="model" class="form-label">Model * </label>
+
+                                <ModelSelection
+                                modelid="state.modelId"
+                                modelname="state.modelname"
+                                onUpdateModel.bind="onUpdateModel"/>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Name * </label>
+                                <input type="text" name="name" t-att-value="state.modelname" id="name" class="form-control o_input form-control-sm sh_input_data" autofocus="autofocus"
+                                    autocapitalize="off" required="required"/>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="icon" class="form-label">Icon * </label>
+                                <input type="text" name="icon" t-att-value="this.state.icon" id="icon" class="form-control o_input form-control-sm sh_input_data" autofocus="autofocus"
+                                autocapitalize="off" required="required"/>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="sequence" class="form-label">Sequence * </label>
+                                <input type="number" name="sequence" t-att-value="this.state.sequence" id="sequence" class="o_input form-control form-control-sm sh_input_data" autofocus="autofocus"
+                                autocapitalize="off" required="required"/>
+                            </div>
+                        </div>
+                        <div class="col-12 text-end">
+                            <t t-if='!state.IsEditMode'>
+                                <a href="#" class="btn btn-primary" t-on-click.prevent="SaveAction">
+                                    Add
+                                </a>
+                            </t>
+                            <t t-if='state.IsEditMode'>
+                                <a href="#" class="btn btn-primary me-2" t-on-click.prevent="SaveAction">
+                                    Save
+                                </a>
+                                <a href="#" class="btn btn-danger" t-on-click.prevent="DeleteNewAction">
+                                    Delete
+                                </a>
+                            </t>
+                        </div>
+                    </form>
+            </Dropdown>
+        </div>
+    </t>
+</t>
+
+
+<t t-name="sh_quick_create.ModelSelection">
+    <div class="model_selection pb-1">
+        <div class="red">
+        <Many2XAutocomplete
+            value="props.modelname"
+            resModel="'ir.model'"
+            getDomain="getDomain"
+            fieldString="props.modelname"
+            activeActions="{}"
+            update.bind="props.onUpdateModel"
+        />
+        </div>
+    </div>
+</t>
+</templates>

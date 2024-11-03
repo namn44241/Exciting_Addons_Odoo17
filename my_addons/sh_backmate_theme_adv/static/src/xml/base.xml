@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+
+	<t t-name="sh_backmate_theme.SHSearchBar" owl="1">
+	<div class="sh_mobile_search_icon">
+		<button class="o_enable_searchview btn btn-link fa fa-search" t-on-click="_onSearchClick"/>
+		 <button class="o_toggle_searchview_full o_hidden btn fa fa-filter" t-on-click="_toggleMobileSearchView"/>
+		 
+		 <div class="o_mobile_search o_hidden">
+		 	<div class="o_mobile_search_header">
+	        <span class="o_mobile_search_close float-left mt16 mb16 mr8 ml16" t-on-click="_toggleMobileSearchView">
+	            <i class="fa fa-arrow-left"/>
+	            <strong class="float-right ml8">FILTER</strong>
+	        </span>
+	    </div>
+	    <div class="o_mobile_search_filter o_search_options mb8 mt8 ml16 mr16">
+	    
+	    	<t t-if="props.withSearchBar">
+                        <FilterMenu t-if="props.searchMenuTypes.includes('filter')"
+                            class="o_filter_menu"
+                            fields="fields"
+                        />
+                        <GroupByMenu t-if="props.searchMenuTypes.includes('groupBy')"
+                            class="o_group_by_menu"
+                            fields="fields"
+                        />
+                        <ComparisonMenu t-if="props.searchMenuTypes.includes('comparison') and model.get('filters', f => f.type === 'comparison').length"
+                            class="o_comparison_menu"
+                        />
+                        <FavoriteMenu t-if="props.searchMenuTypes.includes('favorite')"
+                            class="o_favorite_menu"
+                        />
+                    </t>
+                </div>
+	    <div class="btn btn-primary o_mobile_search_show_result fixed-bottom" t-on-click="_toggleMobileSearchView">SEE RESULT</div>
+		 </div>
+		 
+    
+    
+	</div>
+	  
+
+	</t>
+	
+	<t t-extend="web.Legacy.ControlPanel" t-inherit="web.Legacy.ControlPanel" t-inherit-mode="extension">
+	
+
+		 <xpath expr="//nav[hasclass('o_cp_switch_buttons')]" position="replace">
+			
+			<nav t-if="props.views.length gt 1" class="btn-group o_cp_switch_buttons" role="toolbar" aria-label="View switcher">
+					<t t-if="env.device.isMobileDevice">
+						<button class="btn btn-link btn-sm" data-toggle="dropdown" aria-expanded="false">
+
+                            <t t-if="env.view.type == 'list'">
+                                <span class="fa fa-list"/>
+                            </t>
+                            <t t-if="env.view.type == 'kanban'">
+                                <span class="fa fa-th"/>
+                            </t>
+                            <t t-if="env.view.type == 'calendar'">
+                                <span class="fa fa-calendar"/>
+                            </t>
+                            <t t-if="env.view.type == 'activity'">
+                                <span class="fa fa-clock-o"/>
+                            </t>
+					    </button>
+					    <ul class="dropdown-menu dropdown-menu-right list-inline">
+					         <li t-foreach="props.views" t-as="view" t-key="view.type">
+					           <t t-call="web.ViewSwitcherButton"/>
+					        </li>
+					    </ul>
+					</t>
+					<t t-else="">
+						 <t t-foreach="props.views" t-as="view" t-key="view.type">
+	                        <t t-call="web.ViewSwitcherButton"/>
+	                    </t>
+					</t>
+                </nav>
+		        
+		</xpath>
+		 
+		<xpath expr="//div[hasclass('o_cp_top_right')]" position="replace">
+            <div class="o_cp_top_right">
+                <div class="o_cp_searchview"
+                    role="search"
+                    t-ref="searchView"
+                    >
+                   
+                    <div t-if="props.withSearchBar" class="o_searchview" role="search" aria-autocomplete="list" >
+                       
+         				 <t t-if="env.device.isMobileDevice">
+                         <SHSearchBar/>
+                         </t>
+                         <t t-else="">
+                          <i class="o_searchview_icon fa fa-search"
+                            title="Search..."
+                            role="img"
+                            aria-label="Search..."
+                        /> 
+                         </t>
+                          <SearchBar t-if="props.withSearchBar" fields="fields" /> 
+                       
+                    </div>
+                </div>
+            </div>
+        </xpath>
+	
+        
+    </t>
+	<t t-extend="ListView.buttons">
+		<t t-jquery=".o_list_buttons" t-operation="append">
+			<button name="sh_refresh" class="btn btn-primary sh_refresh">
+				<i class="fa fa-refresh"></i>
+			</button>
+		</t>
+	</t>
+	<t t-extend="BillsListView.buttons">
+       <t t-jquery=".o_list_buttons" t-operation="append">
+            <button name="sh_refresh" class="btn btn-primary sh_refresh">
+				<i class="fa fa-refresh"></i>
+			</button>
+        </t>
+    </t>
+	<t t-extend="FormView.buttons">
+		<t t-jquery=".o_form_buttons_view" t-operation="append">
+			<button name="sh_refresh" class="btn btn-primary sh_refresh">
+				<i class="fa fa-refresh"></i>
+			</button>
+		</t>
+	</t>
+	<t t-extend="KanbanView.buttons">
+		<t t-jquery="div" t-operation="append">
+			<button name="sh_refresh" class="btn btn-primary sh_refresh">
+				<i class="fa fa-refresh"></i>
+			</button>
+		</t>
+	</t>
+	
+
+</templates>

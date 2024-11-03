@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="sh_recently_viewed_records.RecentRecordsSystray">
+        <t t-if="sh_enable_recent_record_view">
+            <div class="sh_recently_viewed_o_systray_item o_systray_item o-dropdown" t-on-click.prevent.stop="toggleDropdown">
+                <i class="fa fa-eye"/>
+                <div class="o_recent_records_dropdown" t-on-click.stop="" style="display:none;">
+                    <div class="tabs">
+                        <button t-on-click="() => switchTab('records')"
+                                t-att-class="{'active': state.activeTab === 'records'}">Records</button>
+                        <button t-on-click="() => switchTab('bookmarks')"
+                                t-att-class="{'active': state.activeTab === 'bookmarks'}">Bookmarks</button>
+                    </div>
+                    <div t-if="state.activeTab === 'records'">
+                        <t t-if="total_record_count.length >= 10">
+                            <div class="sh_record_input_box">
+                                <input type="text" class="form-control o_input" placeholder="Search records..." t-on-keydown="searchRecords" t-model="state.searchQuery"/>
+                            </div>
+                        </t>
+                        <t t-if="records.length > 0">
+                            <div class="o_recent_record_main">
+                                <t t-foreach="records" t-as="record" t-key="record.id">
+                                    <div class="o_recent_record" t-on-click.prevent.stop="() => this.openRecord(record)">
+                                        <div class="sh_record_name">
+                                            <t t-esc="record.name"/>
+                                        </div>
+                                        <button  t-on-click.prevent.stop="() => markAsBookmark(record)"><i class="fa fa-bookmark-o"/><i class="fa fa-bookmark"/></button>
+                                        <button  t-on-click.prevent.stop="() => removeRecord(record)"><i class="fa fa-close"/></button>
+                                    </div>
+                                </t>
+                            </div>
+                            <div class="text-end sh_clear_records">
+                                <button class="btn me-2 btn-secondary" t-on-click.prevent="handleDocumentClick">Discard</button>
+                                <button class="btn btn-primary text-white" t-on-click.prevent="() => this.clearRecords(records)">Clear Records</button>
+                            </div>
+                        </t>
+                        <t t-if="!records.length > 0">
+                            <div class="p-3 text-center">
+                                <span>No Records Found</span>
+                            </div>
+                        </t>
+                    </div>
+                    <div t-if="state.activeTab === 'bookmarks'" >
+                        <t t-if="bookmarks.length > 0">
+                            <div class="o_recent_record_main">
+                                <t t-foreach="bookmarks" t-as="bookmark" t-key="bookmark.id">
+                                    <div class="o_recent_record" t-on-click.prevent.stop="() => this.openBookmark(bookmark)">
+                                        <div class="sh_record_name">
+                                            <t t-esc="bookmark.name"/>
+                                        </div>
+                                        <button  t-on-click.prevent.stop="() => removeRecord(bookmark)"><i class="fa fa-close"/></button>
+                                    </div>
+                                </t>
+                            </div>
+                            <div class="text-end sh_clear_records">
+                                <button class="btn me-2 btn-secondary" t-on-click.prevent="handleDocumentClick">Discard</button>
+                                <button t-on-click.prevent="() => this.clearRecords(bookmarks)" class="text-white btn btn-primary ">Clear Records</button>
+                            </div>
+
+                        </t>
+                        <t t-if="!bookmarks.length > 0">
+                            <div class="p-3 text-center">
+                                <span>No Records Found</span>
+                            </div>
+                        </t>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </t>
+</templates>

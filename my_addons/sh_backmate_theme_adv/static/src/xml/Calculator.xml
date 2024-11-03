@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="sh_backmate_theme_adv.Calculator">
+        <div class="o_systray_item o_calculator_systray calculator">
+            <input type="text" id="sh_calculator_input" class="calculator_input" t-on-keypress="on_keypress" t-att-autofocus="true"/>
+            <div class="row numberPad">
+                <div class="col-md-12">
+         <div class="row">
+            <button class="btn clear hvr-back-pulse" t-on-click="on_button_click" id="clear" data-value="C">C</button>
+             <button class="btn btn-calc hvr-radial-out" t-on-click="on_button_click" id="sqrt" title="Alt + Shift + K"
+                     data-value="√">√</button>
+             <button class="btn btn-calc hvr-radial-out hvr-radial-out" t-on-click="on_button_click" id="square" title="Alt + Shift + L" data-value="^">x<sup>2</sup></button>
+             <button id="divide" class="btn btn-operation hvr-fade" t-on-click="on_button_click"
+                     data-value="/">÷</button>
+         </div>
+                    <div class="row">
+            <button class="btn btn-calc hvr-radial-out" id="seven" t-on-click="on_button_click"
+                    data-value="7">7</button>
+                        <button class="btn btn-calc hvr-radial-out" id="eight" t-on-click="on_button_click"
+                                data-value="8">8</button>
+                        <button class="btn btn-calc hvr-radial-out" id="nine" t-on-click="on_button_click"
+                                data-value="9">9</button>
+                        <button id="multiply" class="btn btn-operation hvr-fade" t-on-click="on_button_click"
+                                data-value="*">×</button>
+         </div>
+                    <div class="row">
+            <button class="btn btn-calc hvr-radial-out" id="four" t-on-click="on_button_click" data-value="4">4</button>
+                        <button class="btn btn-calc hvr-radial-out" id="five" t-on-click="on_button_click"
+                                data-value="5">5</button>
+                        <button class="btn btn-calc hvr-radial-out" id="six" t-on-click="on_button_click"
+                                data-value="6">6</button>
+                        <button id="subtract" class="btn btn-operation hvr-fade" t-on-click="on_button_click"
+                                data-value="-">−</button>
+         </div>
+                    <div class="row">
+            <button class="btn btn-calc hvr-radial-out" id="one" t-on-click="on_button_click" data-value="1">1</button>
+                        <button class="btn btn-calc hvr-radial-out" id="two" t-on-click="on_button_click"
+                                data-value="2">2</button>
+                        <button class="btn btn-calc hvr-radial-out" id="three" t-on-click="on_button_click"
+                                data-value="3">3</button>
+                        <button id="add" class="btn btn-operation hvr-fade" t-on-click="on_button_click" data-value="+">+</button>
+         </div>
+                    <div class="row">
+            <button class="btn btn-calc hvr-radial-out" id="percentage" t-on-click="on_button_click" data-value="%">%</button>
+                        <button class="btn btn-calc hvr-radial-out" id="zero" t-on-click="on_button_click"
+                                data-value="0">0</button>
+                        <button class="btn btn-calc hvr-radial-out" id="decimal" t-on-click="on_button_click"
+                                data-value=".">.</button>
+                        <button id="equals" class="btn btn-operation equals hvr-back-pulse" t-on-click="on_button_click"
+                                data-value="=">=</button>
+         </div>
+      </div>
+            </div>
+        
+        </div>
+    </t>
+
+
+    <t t-name="sh_backmate_theme_adv.CalculatorTemplate">
+        <t t-if="sh_enable_calculator_mode">
+        <div class="sh_calc_util">
+            <span class="open_calc float-right fa fa-calculator" t-on-click="onClickCalculator"
+                  style="font-size: 16px;"/>
+            <div class="sh_calc_results col-md-10 ml-auto mr-auto">
+            </div>
+       </div>
+        </t>
+   </t>
+    
+</templates>

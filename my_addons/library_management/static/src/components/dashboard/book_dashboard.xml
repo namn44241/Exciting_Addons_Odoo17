@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="library_management.BookDashboard" owl="1">
+        <Layout>
+            <div class="container p-4">
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Tổng lượng sách</h5>
+                                <div class="display-4">
+                                    <t t-esc="stats.total"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Số sách còn trong kho</h5>
+                                <div class="display-4 text-success">
+                                    <t t-esc="stats.available"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Số sách được mượn</h5>
+                                <div class="display-4 text-warning">
+                                    <t t-esc="stats.borrowed"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12 text-center">
+                        <button class="btn btn-primary" t-on-click="openBookList">
+                            Xem tổng số sách
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </Layout>
+    </t>
+</templates>

@@ -1,0 +1,187 @@
+
+
+	/*== old ==*/
+	.o_searchview {
+		.o_searchview_input_container {
+			.o_searchview_input {
+				&.o_input {
+					&.w-auto{
+						padding: 0 !important;
+					}
+				}
+			}
+			.o_searchview_facet {
+				border-radius: 4px;
+				.o_facet_values {
+					background-color: #fff;
+				}
+			}
+		}
+		.o_searchview_more {
+			border-radius: 4px;padding: 11px 25px;
+		}
+	}
+	.btn-secondary {
+		&:not(.o_external_button) {
+			&:not(:disabled) {
+				&:not(.disabled) {
+					&:active {
+						border-color: $primaryColor;border-color: $primaryColor;
+					}
+				}
+				&:not(.disabled).active {
+					border-color: $primaryColor;
+				}
+			}
+		}
+	}
+	.show {
+		>.btn-secondary.dropdown-toggle {
+			border-color: $primaryColor;
+		}
+	}
+	.o_searchview_quick {
+		.o_searchview {
+			.o_toggle_searchview_full {
+				background-color: $secondaryColor;border-color: $secondaryColor;margin-right: 5px;
+			}
+			.o_enable_searchview {
+				background-color: $secondaryColor;border-color: $secondaryColor;
+			}
+		}
+	}
+	.o_search_options {
+		.o_dropdown_toggler_btn {
+			&:first-child {
+				margin-right: 10px;
+			}
+		}
+	}
+	.o_control_panel {
+		border-bottom: 1px solid #e0e0e0;
+	}
+	
+	/*== latest ==*/
+
+	.o_control_panel {
+		.o_form_buttons_view {
+			>button {
+				&:first-child {
+					float: none;
+				}
+			}
+		}
+		.o_cp_action_menus {
+			.o_dropdown {
+				margin-right: 4px !important;
+				margin-left: 0px !important;
+			}
+		}
+	}
+	
+	
+	.o_search_options {
+		.dropdown {
+			.dropdown-toggle.btn {
+				padding: 5px 4px !important;text-transform: uppercase;
+			}
+		}
+	}
+	
+	
+	/* == old == */
+	@media (max-width: 992px){
+		.o_searchview_quick {
+			.o_searchview {
+				.btn.o_enable_searchview {
+					margin-left: 0 !important;
+				}
+			}
+		}
+		.o_view_controller {
+			.o_control_panel {
+				.o_cp_searchview.o_searchview_quick {
+					flex: 0 0 100% !important;
+				}
+			}
+		}
+		.o_touch_device {
+			.o_control_panel {
+				.o_cp_searchview.o_searchview_quick {
+					flex: 0 0 100% !important;
+				}
+			}
+		}
+		.o_control_panel {
+			.o_cp_searchview {
+				.o_searchview {
+					border: 0px;
+				}
+			}
+			.o_cp_searchview.o_searchview_quick {
+				flex: 0 0 100%;
+				.o_searchview {
+					border: 1px solid #ccc;
+					&:hover {
+						border-color: $primaryColor;
+					}
+				}
+				.btn.o_enable_searchview {
+					padding-right: 0.75rem;
+				}
+			}
+			.btn.o_enable_searchview {
+				padding-right: 0px;font-size: 18px !important;
+			}
+		}
+		
+    }
+	@media only screen and (min-width: 768px) and (max-width: 992px){
+		.o_searchview {
+			.o_searchview_more {
+				padding: 8px 25px;
+			}
+		}
+		.o_control_panel {
+			.o_cp_searchview {
+				.o_searchview {
+					border: 1px solid #dee2e6;display: flex;
+				}
+			}
+		}
+		
+   }
+	@media only screen and (max-width: 992px){
+		.o_control_panel {
+			.o_cp_searchview {
+				.o_searchview {
+					text-align: left;
+				}
+			}
+		}
+		.o_searchview_quick {
+			.o_searchview {
+				.btn.o_enable_searchview {
+					color: #212529;padding: .4rem 0.75rem;margin-left: 3px !important;
+				}
+			}
+		}
+		.o_cp_searchview.o_searchview_quick {
+			.o_searchview {
+				display: flex;align-items: center;
+				.o_searchview_input_container {
+					padding-right: 5px;
+				}
+			}
+		}
+		.o_touch_device {
+			.o_control_panel {
+				.o_cp_searchview.o_searchview_quick {
+					.o_searchview {
+						width: 100% !important;
+					}
+				}
+			}
+		}
+		
+	}

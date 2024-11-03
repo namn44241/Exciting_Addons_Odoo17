@@ -1,0 +1,23 @@
+@if $kanban_box_style == 'style_3' {
+    .o_action_manager{
+        .o_kanban_view{
+            .o_content{
+                .o_kanban_renderer{
+                    .o_kanban_record{
+                        .oe_module_vignette{
+                            border-radius: 0rem !important;
+                        }
+                        .oe_kanban_global_click{
+                            border-radius: 0rem !important;
+                            .o_kanban_content{
+                                .text-bg-primary{
+                                    border-radius: 0px 0rem 0rem 0px;
+                                }
+                            }
+                        }                        
+                    }
+                }
+            }
+        }
+    }
+}

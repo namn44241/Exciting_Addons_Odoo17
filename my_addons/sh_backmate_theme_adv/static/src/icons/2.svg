@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+<image display="none" overflow="visible" width="512" height="512" xlink:href="4768E7B2.jpg"  transform="matrix(0.9407 0 0 0.9407 15.6196 14.6196)">
+</image>
+<path fill="#969696" d="M458.131,51H407l-0.174,39.957c0,0-6.956,31.305-38.261,36.522c0,0-37.393-0.87-40.87-36.522L326.826,51H185
+	l0.087,37.348c0,0-4.348,35.653-39.13,38.261c0,0-36.522,0.87-40-34.783L105,51H52c0,0-36,14.74-36,42.565V460c0,0,5.13,32,44.5,36
+	H459c0,0,38-11.13,38-46.782V106C497,106,501.609,62.348,458.131,51z M460,441c0,0-2.739,16-21,18H76c0,0-18.479,2.392-26-19.348
+	V182h410V441z"/>
+<g id="Layer_2">
+	<rect x="97" y="230" fill="#969696" width="56" height="40"/>
+	<rect x="97" y="301" fill="#969696" width="56" height="40"/>
+	<rect x="97" y="371" fill="#969696" width="56" height="40"/>
+	<rect x="184" y="371" fill="#969696" width="56" height="40"/>
+	<rect x="271" y="371" fill="#969696" width="56" height="40"/>
+	<rect x="359" y="371" fill="#969696" width="56" height="40"/>
+	<rect x="184" y="301" fill="#969696" width="56" height="40"/>
+	<rect x="271" y="301" fill="#969696" width="56" height="40"/>
+	<rect x="359" y="301" fill="#969696" width="56" height="40"/>
+	<rect x="184" y="230" fill="#969696" width="56" height="40"/>
+	<rect x="271" y="230" fill="#969696" width="56" height="40"/>
+	<rect x="359" y="230" fill="#969696" width="56" height="40"/>
+	<path fill="#969696" d="M162,87V32c0,0,1.348-11.978-16.043-17.38c0,0-14.087-2.794-20.957,12.858V87c0,0,1.524,18.5,18.512,18.5
+		c0,0,14.454,0.934,18.141-16.584C161.782,88.3,161.898,87.662,162,87z"/>
+	<path fill="#969696" d="M387,87V32c0,0,1.348-11.978-16.043-17.38c0,0-14.088-2.794-20.957,12.858V87c0,0,1.524,18.5,18.512,18.5
+		c0,0,14.455,0.934,18.141-16.584C386.782,88.3,386.898,87.662,387,87z"/>
+</g>
+</svg>

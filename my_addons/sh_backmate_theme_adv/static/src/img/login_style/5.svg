@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 162 120">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: .88;
+      }
+
+      .cls-2 {
+        stroke-width: 2px;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3, .cls-5 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2, .cls-5 {
+        stroke: #939393;
+      }
+
+      .cls-6 {
+        fill: #f2f2f3;
+      }
+
+      .cls-3 {
+        stroke: #515251;
+        stroke-width: .25px;
+      }
+
+      .cls-7 {
+        fill: #e8e8e8;
+      }
+
+      .cls-5 {
+        stroke-width: 1.84px;
+      }
+
+      .cls-8 {
+        fill: #515351;
+      }
+    </style>
+  </defs>
+  <rect class="cls-4" width="162" height="120"/>
+  <rect class="cls-6" x="8.31" y="4.78" width="145.38" height="103.59"/>
+  <rect class="cls-7" x="50.31" y="24.39" width="61.38" height="66.47"/>
+  <line class="cls-5" x1="55.34" y1="74.18" x2="72.71" y2="74.18"/>
+  <line class="cls-5" x1="89.75" y1="74.18" x2="107.13" y2="74.18"/>
+  <line class="cls-2" x1="58.1" y1="10.77" x2="103.9" y2="10.77"/>
+  <rect class="cls-8" x="72.25" y="65.33" width="17.51" height="5.31" rx="1.12" ry="1.12"/>
+  <rect class="cls-8" x="66.1" y="79.43" width="29.81" height="6.14" rx="1.12" ry="1.12"/>
+  <circle class="cls-7" cx="81.23" cy="24.54" r="9.73"/>
+  <image id="Layer_5_Image" data-name="Layer 5 Image" class="cls-1" width="31" height="27" transform="translate(77.28 21.1) scale(.26)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAcCAYAAACdz7SqAAAACXBIWXMAACteAAArXgEBe8ueAAACEklEQVRIib2Wu2tUQRSHvzWigo1RkEQQH8RGRPwHBOVYaBlsREkXBNE/wdKtbQRBLFVsFkxlivwQxCatCCl8I4EUxkflA83KCXPDMN7X7C77K/buzDlnvjn3zpyZDiUys7vAVWBbmb1CG8A9SdeaHP+Dmtl54GkGLNUFSYt1DmWZ3BgC2Cq+Y2anovZeYKnsDWSoD5wDviQha5LWCmh/yMxydFNSN2ehjARK5uochXb5GNszBvoDvAPWgX3A0cz4LbUJ+gjcAnqSvhadZjYJXAyv7NAooQ+BeUk/U0OYwH0ze+BP4EpbaN03fQTMlQETuNvngn8rVWX6KWS4tZ3MbCfg1eoI8B5YlPQrgPtmNg+cBg4OmmlX0o8IeBxYAZ4At8NzJfQXGbt/t02mZVAv3L0IuANYCBnG8vZCsBfqhfhs6Kqkz1H7DDBTET8T7JsKcauDQNOaeaBhjNSexreC7k/abxvGSO1pfCvotJnFK/AFsFwRvxzsmwpx04NAXZeLP2HbzALPEx9vz8bbKo6rU9XR5tXmmKT1uNPMTgCHgQ+SXiU2r8evgck6oKRO3Xn6zIuBpN9NMw/bxq8oZ5t8HVpXBn2AJTObagBOhdtGI7BQU8H3svbGzO4Aj4GXkjbMzCd7ErgU7kS72wIZ4LryF/gG7AEmckCF/PXmHsIT4QAfSuO+rnz3n3FC/bNcHyMvEvAPqDGiTFP7atsAAAAASUVORK5CYII="/>
+  <rect class="cls-3" x="55.34" y="33.66" width="51.8" height="5.84" rx="1.27" ry="1.27"/>
+  <rect class="cls-3" x="55.34" y="44.23" width="51.8" height="5.84" rx="1.27" ry="1.27"/>
+  <rect class="cls-3" x="55.34" y="54.62" width="51.8" height="5.84" rx="1.27" ry="1.27"/>
+  <line class="cls-3" x1="91.19" y1="33.66" x2="91.19" y2="39.5"/>
+</svg>

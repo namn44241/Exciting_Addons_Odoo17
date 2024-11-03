@@ -1,0 +1,659 @@
+// .o-mail-Discuss {
+// 	.o-mail-DiscussSidebar {
+// 		.o-mail-DiscussSidebarCategory {
+// 			flex-flow: row !important;
+// 			margin: 0 10px !important;
+// 			justify-content: center;
+// 			overflow: auto;
+// 			.o_DiscussSidebarMailbox {
+// 				.o_DiscussSidebarMailbox_item {
+// 					margin-right: 4.5px !important;
+// 					&:first-child {
+// 						margin-left: 14px !important;
+// 					}
+// 				}
+// 				padding: 0.5rem 0 !important;
+// 				margin: 0px 2px;
+// 			}
+// 		}
+// 		.o-mail-DiscussSidebarCategory.o-mail-DiscussSidebarCategory-channel {
+// 			.o_DiscussSidebarCategory_content {
+// 				.o_DiscussSidebarCategory_item {
+// 					background-color: #f1f3fa !important;
+// 					box-shadow: 0 5px 10px rgba(0, 10, 10, 0.04) !important;
+// 					margin-bottom: 10px !important;
+// 					padding: 0.8rem 0;
+// 				}
+// 			}
+// 			.o_DiscussSidebarCategory_header {
+// 				margin: 5px 0px 5px 10px !important;
+// 			}
+// 		}
+// 		.o-mail-DiscussSidebarCategory.o-mail-DiscussSidebarCategory-livechat {
+// 			.o_DiscussSidebarCategory_content {
+// 				.o_DiscussSidebarCategory_item {
+// 					background-color: #f1f3fa !important;
+// 					box-shadow: 0 5px 10px rgba(0, 10, 10, 0.04) !important;
+// 					margin-bottom: 10px !important;
+// 					padding: 0.8rem 0;
+// 				}
+// 			}
+// 			.o_DiscussSidebarCategory_header {
+// 				margin: 5px 0px 5px 10px !important;
+// 			}
+// 		}
+// 	}
+// 	.o_MessageList {
+// 		.o_Message.o_MessageList_message {
+// 			.o_Message_core {
+// 				.o_Message_header {
+// 					.o_Message_originThreadLink {
+// 						color: $primaryColor;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+.o-mail-Discuss-content {
+	.btn{
+		&.d-flex{
+			.fa-stack{
+				align-items: center !important;
+				display: flex !important;
+			}
+		}
+	}
+	// .o_MessageList.o_ThreadView_messageList {
+	// 	.o_Message.o_MessageList_message {
+	// 		.o_Message_core {
+	// 			.o_Message_actionListContainer {
+	// 				display: flex;
+	// 				justify-content: flex-end;
+	// 			}
+	// 		}
+	// 	}
+	// }
+}
+.o-mail-Discuss-content {
+	.o_MessageList.o_ThreadView_messageList {
+		.o_Message.o_MessageList_message {
+			.o_Message_core {
+				.o_Message_actionListContainer {
+					display: flex;
+					justify-content: flex-end;
+				}
+			}
+		}
+	}
+	.o-mail-SearchMessagesPanel{
+		.o-mail-ActionPanel{
+			.input-group{
+				.o_searchview{
+					&:focus-within,
+					&:focus{
+						border-color: $primaryColor !important;
+					}
+					@if $button_style == 'style_1'{
+						border-radius: 0px !important;
+					}
+					@if $button_style == 'style_2'{
+						border-radius: 5px 0 0 5px !important;
+					}
+					@if $button_style == 'style_3'{
+						border-radius: 0px 0 0 15px !important;
+					}
+					@if $button_style == 'style_4'{
+						border-radius: 2rem 0 0 2rem !important;
+					}
+				}
+				.btn-outline-primary{
+					@if $button_style == 'style_1'{
+						border-radius: 0px !important;
+					}
+					@if $button_style == 'style_2'{
+						border-radius: 0 5px  5px  0 !important;
+					}
+					@if $button_style == 'style_3'{
+						border-radius: 0 15px 0 0 !important;
+					}
+					@if $button_style == 'style_4'{
+						border-radius: 0  2rem  2rem 0 !important;
+					}
+				}
+			}
+		}
+	}
+	
+	
+}
+.o-main-components-container{
+	.o-overlay-container{
+		.o-mail-ActionPanel{
+			.o-discuss-ChannelInvitation-has-size-constraints{
+				.input-group{
+					.form-control{
+						&:focus-within,
+						&:focus{
+							border-color: $primaryColor !important;
+						}
+						@if $button_style == 'style_1'{
+							border-radius: 0px !important;
+						}
+						@if $button_style == 'style_2'{
+							border-radius: 5px 0 0 5px !important;
+						}
+						@if $button_style == 'style_3'{
+							border-radius: 0px 0 0 15px !important;
+						}
+						@if $button_style == 'style_4'{
+							border-radius: 2rem 0 0 2rem !important;
+						}
+					}
+					.btn-primary{
+						@if $button_style == 'style_1'{
+							border-radius: 0px !important;
+						}
+						@if $button_style == 'style_2'{
+							border-radius: 0 5px  5px  0 !important;
+						}
+						@if $button_style == 'style_3'{
+							border-radius: 0 15px 0 0 !important;
+						}
+						@if $button_style == 'style_4'{
+							border-radius: 0  2rem  2rem 0 !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+// Discuss chatter //
+// .o-mail-Discuss {
+// 	.o-mail-Discuss-content {
+// 		.o_ThreadView {
+// 			.o_ThreadView_core {
+// 				.o_MessageList.o_ThreadView_messageList {
+// 					.sh_right_chat.o_MessageList_item.o_MessageList_message {
+// 						.o_Message_actionListContainer {
+// 							right: 30px;
+// 							right: 30px;
+// 						}
+// 					}
+// 					.o_Message.o_MessageList_item.o_MessageList_message {
+// 						.o_Message_actionListContainer {
+// 							z-index: 1;
+// 							z-index: 1;
+// 						}
+// 					}
+// 					.o_Message.o_Message_active {
+// 						background: transparent;
+// 						background: transparent;
+// 					}
+// 					.o_Message.sh_right_chat.o_MessageList_item.o_MessageList_message {
+// 						>.d-flex {
+// 							justify-content: flex-end;
+// 							justify-content: flex-end;
+// 						}
+// 						.o_Message_sidebar {
+// 							order: 2;
+// 							order: 2;
+// 						}
+// 						.o_Message_core {
+// 							width: 75%;
+// 							flex-grow: unset !important;
+// 							background: #f1f3fa;
+// 							padding: 8px;
+// 							position: relative;
+// 							border-radius: 4px;
+// 							margin: 2px 8px;
+// 							width: 75%;
+// 							flex-grow: unset !important;
+// 							background: #f1f3fa;
+// 							padding: 8px;
+// 							position: relative;
+// 							border-radius: 4px;
+// 							margin: 2px 8px;
+// 							.o_Message_bubbleWrap {
+// 								.o_Message_background {
+// 									border-color: transparent !important;
+// 									background-color: transparent !important;
+// 									color: transparent !important;
+// 								}
+// 							}
+// 						}
+// 						.o_Message_core.flex-grow-1 {
+// 							&:after {
+// 								content: ' ';
+// 								position: absolute;
+// 								width: 0;
+// 								height: 0;
+// 								right: -10px;
+// 								left: auto;
+// 								top: 0px;
+// 								bottom: auto;
+// 								border: 14px solid;
+// 								border-color: #f1f3fa transparent transparent transparent;
+// 								content: ' ';
+// 								position: absolute;
+// 								width: 0;
+// 								height: 0;
+// 								right: -10px;
+// 								left: auto;
+// 								top: 0px;
+// 								bottom: auto;
+// 								border: 14px solid;
+// 								border-color: #f1f3fa transparent transparent transparent;
+// 							}
+// 						}
+// 						.o_Message_core.sh_message_attchment {
+// 							.o_Message_header {
+// 								.o_Message_originThread {
+// 									color: $primaryColor !important;
+// 									.o_Message_originThreadLink {
+// 										color: $primaryColor !important;
+// 									}
+// 								}
+// 								.o_Message_authorName {
+// 									color: #000 !important;
+// 								}
+// 								.o_Message_date {
+// 									color: #000 !important;
+// 								}
+// 							}
+// 							background: transparent;
+// 							box-shadow: none !important;
+// 							width: auto;
+// 							.o_AttachmentList {
+// 								.o_AttachmentList_partialListImages {
+// 									justify-content: end !important;
+// 								}
+// 							}
+// 						}
+// 						.o_Message_core.sh_message_attchment.flex-grow-1 {
+// 							&:after {
+// 								border: none !important;
+// 							}
+// 						}
+// 					}
+// 					.o_Message.sh_left_chat.o_MessageList_item.o_MessageList_message {
+// 						.o_Message_core {
+// 							width: 75%;
+// 							flex-grow: unset !important;
+// 							background: #f1f3fa;
+// 							padding: 8px;
+// 							position: relative;
+// 							border-radius: 4px;
+// 							margin: 2px 8px;
+// 							width: 75%;
+// 							flex-grow: unset !important;
+// 							background: #f1f3fa;
+// 							padding: 8px;
+// 							position: relative;
+// 							border-radius: 4px;
+// 							margin: 2px 8px;
+// 							background: $primaryColor;
+// 							.o_Message_subject {
+// 								color: #fff !important;
+// 							}
+// 							.o_Message_header {
+// 								.o_Message_authorName {
+// 									color: #fff !important;
+// 								}
+// 								.o_Message_date {
+// 									color: #fff !important;
+// 								}
+// 								.o_Message_originThread {
+// 									color: #fff !important;
+// 									.o_Message_originThreadLink {
+// 										color: #fff !important;
+// 									}
+// 								}
+// 							}
+// 							.o_Message_content {
+// 								.o_Message_prettyBody {
+// 									color: #fff !important;
+// 									p {
+// 										color: #fff !important;
+// 									}
+// 								}
+// 							}
+// 							.o_Message_bubbleWrap {
+// 								.o_Message_background {
+// 									border-color: transparent !important;
+// 									background-color: transparent !important;
+// 									color: transparent !important;
+// 								}
+// 							}
+// 						}
+// 						.o_Message_core.flex-grow-1 {
+// 							&:after {
+// 								content: ' ';
+// 								position: absolute;
+// 								width: 0;
+// 								height: 0;
+// 								left: -10px;
+// 								right: auto;
+// 								top: 0px;
+// 								bottom: auto;
+// 								border: 14px solid;
+// 								border-color: #f1f3fa transparent transparent transparent;
+// 								content: ' ';
+// 								position: absolute;
+// 								width: 0;
+// 								height: 0;
+// 								left: -10px;
+// 								right: auto;
+// 								top: 0px;
+// 								bottom: auto;
+// 								border: 14px solid;
+// 								border-color: #f1f3fa transparent transparent transparent;
+// 								border-color: $primaryColor transparent transparent transparent;
+// 							}
+// 						}
+// 					}
+// 					.o_Message.sh_right_chat {
+// 						.o_Message_core {
+// 							.o_Message_header {
+// 								.o_Message_originThread {
+// 									.o_Message_originThreadLink {
+// 										color: $primaryColor;
+// 									}
+// 								}
+// 							}
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+// 		margin: 10px 13px 10px 0px;
+// 		box-shadow: 0 1px 10px rgba(0, 10, 10, 0.10) !important;
+// 		border-radius: 4px;
+// 		margin: 10px 13px 10px 0px;
+// 		box-shadow: 0 0px 10px rgba(147, 147, 147, 0.23), 0 3px 6px rgba(147, 147, 147, 0.23);
+// 		border-radius: 4px;
+// 	}
+// 	.o_DiscussSidebar.o_Discuss_sidebar[name="root"] {
+// 		border: 0px !important;
+// 		margin: 10px 13px;
+// 		box-shadow: 0 1px 10px rgba(0, 10, 10, 0.10);
+// 		border-right: 0px !important;
+// 		border-radius: 4px !important;
+// 		background-color: #fff !important;
+// 		border: 0px !important;
+// 		margin: 10px 13px;
+// 		box-shadow: 0 0px 10px rgba(147, 147, 147, 0.23), 0 3px 6px rgba(147, 147, 147, 0.23);
+// 		border-right: 0px !important;
+// 		border-radius: 4px !important;
+// 		background-color: #fff !important;
+// 	}
+// 	.o_Message.o-discussion.o_MessageList_item.o_MessageList_message {
+// 		.o_Message_core {
+// 			.o_MessageInReplyToView {
+// 				background: #ffffff;
+// 				padding-left: 30px;
+// 				padding-bottom: 4px;
+// 				background: transparent;
+// 				padding-left: 30px;
+// 				padding-bottom: 4px;
+// 				&::before {
+// 					top: 12px;
+// 					left: 10px;
+// 					top: 12px;
+// 					left: 10px;
+// 				}
+// 			}
+// 		}
+// 	}
+// 	.o_Message.sh_left_chat.o-discussion.o_MessageList_item.o_MessageList_message {
+// 		.o_Message_core {
+// 			.o_MessageInReplyToView {
+// 				.o_MessageInReplyToView_author {
+// 					color: #fff !important;
+// 				}
+// 				.o_MessageInReplyToView_body {
+// 					p {
+// 						color: #fff !important;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// 	.o_Discuss_sidebar.o_DiscussSidebar {
+// 		.o_DiscussSidebar_category.o_DiscussSidebar_categoryMailbox {
+// 			.o_DiscussSidebarMailbox {
+// 				&:hover {
+// 					border-radius: 4px !important;
+// 					background: #f1f3fa;
+// 				}
+// 				.o_DiscussSidebarMailbox_counter.o_DiscussSidebarMailbox_item.badge.badge-pill {
+// 					color: $primaryColor !important;
+// 				}
+// 			}
+// 			.o_DiscussSidebarMailbox.o-active {
+// 				border-radius: 4px !important;
+// 				background: #f1f3fa;
+// 			}
+// 		}
+// 		.o_DiscussSidebar_category.o_DiscussSidebar_categoryChannel {
+// 			.o_DiscussSidebarCategory_content {
+// 				.o_DiscussSidebarCategory_item {
+// 					border-radius: 4px !important;
+// 				}
+// 			}
+// 		}
+// 		.o_DiscussSidebar_category.o_DiscussSidebar_categoryChat {
+// 			.o_DiscussSidebarCategory_content {
+// 				.o_DiscussSidebarCategory_item {
+// 					border-radius: 4px !important;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+// .o_ThreadView.o_ChatWindow_thread {
+// 	.o_ThreadView_bottomPart {
+// 		.o_ThreadView_core {
+// 			.o_MessageList.o_ThreadView_messageList {
+// 				.o_Message.o_Message_active {
+// 					background: transparent;
+// 				}
+// 				.o_Message.sh_right_chat.o_MessageList_item.o_MessageList_message {
+// 					.o_Message_core {
+// 						width: 75%;
+// 						flex-grow: unset !important;
+// 						background: #f1f3fa;
+// 						padding: 8px;
+// 						position: relative;
+// 						border-radius: 4px;
+// 						margin: 2px 8px;
+// 					}
+// 					.o_Message_core.flex-grow-1 {
+// 						&:after {
+// 							content: ' ';
+// 							position: absolute;
+// 							width: 0;
+// 							height: 0;
+// 							right: -10px;
+// 							left: auto;
+// 							top: 0px;
+// 							bottom: auto;
+// 							border: 14px solid;
+// 							border-color: #f1f3fa transparent transparent transparent;
+// 						}
+// 					}
+// 					.o_Message_core.sh_message_attchment {
+// 						background: transparent;
+// 						box-shadow: none !important;
+// 						width: auto;
+// 						.o_Message_header {
+// 							.o_Message_authorName {
+// 								color: #000 !important;
+// 							}
+// 							.o_Message_date {
+// 								color: #000 !important;
+// 							}
+// 						}
+// 						.o_AttachmentList {
+// 							.o_AttachmentList_partialListImages {
+// 								justify-content: end !important;
+// 							}
+// 						}
+// 					}
+// 					.o_Message_core.sh_message_attchment.flex-grow-1 {
+// 						&:after {
+// 							border: none !important;
+// 						}
+// 					}
+// 				}
+// 				.o_Message.sh_left_chat.o_MessageList_item.o_MessageList_message {
+// 					.o_Message_core {
+// 						width: 75%;
+// 						flex-grow: unset !important;
+// 						background: #f1f3fa;
+// 						padding: 8px;
+// 						position: relative;
+// 						border-radius: 4px;
+// 						margin: 2px 8px;
+// 						background: $primaryColor;
+// 						.o_Message_subject {
+// 							color: #fff !important;
+// 						}
+// 						.o_Message_content {
+// 							.o_Message_prettyBody {
+// 								color: #fff !important;
+// 								p {
+// 									color: #fff !important;
+// 								}
+// 							}
+// 						}
+// 						.o_MessageInReplyToView_author {
+// 							color: #fff !important;
+// 						}
+// 						.o_MessageInReplyToView_body {
+// 							color: #fff !important;
+// 							p {
+// 								color: #fff !important;
+// 							}
+// 						}
+// 						.o_Message_header {
+// 							color: #fff !important;
+// 							.o_Message_date {
+// 								color: #fff !important;
+// 							}
+// 						}
+// 					}
+// 					.o_Message_core.flex-grow-1 {
+// 						&:after {
+// 							content: ' ';
+// 							position: absolute;
+// 							width: 0;
+// 							height: 0;
+// 							left: -10px;
+// 							right: auto;
+// 							top: 0px;
+// 							bottom: auto;
+// 							border: 14px solid;
+// 							border-color: #f1f3fa transparent transparent transparent;
+// 							border-color: $primaryColor transparent transparent transparent;
+// 						}
+// 					}
+// 				}
+// 				.o_Message.o_MessageList_item.o_MessageList_message {
+// 					.o_Message_sidebar {
+// 						.o_Message_authorAvatarContainer.o_Message_sidebarItem {
+// 							.o_Message_authorAvatar.rounded-circle {
+// 								border-radius: 4px !important;
+// 							}
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+// .o_Discuss_content {
+// 	.o_ThreadView {
+// 		.o_ThreadView_core {
+// 			.o_MessageList.o_ThreadView_messageList {
+// 				.o_Message.o_MessageList_item {
+// 					.o_Message_sidebar {
+// 						.o_Message_authorAvatarContainer {
+// 							.o_Message_authorAvatar.rounded-circle {
+// 								border-radius: 4px !important;
+// 							}
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+// 		.o_ThreadViewTopbar_title {
+// 			input {
+// 				border: 1px solid #e4e8f7;
+// 				padding: 5px;
+// 				border-radius: 4px;
+// 			}
+// 		}
+// 	}
+// }
+// .o_DiscussSidebar_category {
+// 	.o_DiscussSidebarCategory_content {
+// 		.o_DiscussSidebarCategory_newItem {
+// 			.o_DiscussSidebarCategory_itemNewInput {
+// 				border: 1px solid #e4e8f7;
+// 				padding: 5px;
+// 				border-radius: 4px;
+// 			}
+// 		}
+// 	}
+// }
+// .o_ThreadView {
+// 	.o_ThreadViewTopbar_actions {
+// 		.o_ChannelInvitationForm {
+// 			input {
+// 				border: 1px solid #e4e8f7;
+// 				padding: 5px;
+// 				border-radius: 4px;
+// 			}
+// 		}
+// 	}
+// 	.o_ThreadView_core {
+// 		.o_MessageList.o_ThreadView_messageList {
+// 			.o_Message.sh_left_chat.o_MessageList_item.o_MessageList_message {
+// 				.o_Message_core {
+// 					.o_Message_bubbleWrap {
+// 						.o_Message_background {
+// 							border-color: transparent !important;
+// 							background-color: transparent !important;
+// 							color: transparent !important;
+// 						}
+// 					}
+// 				}
+// 			}
+// 			.o_Message.sh_right_chat.o_MessageList_item.o_MessageList_message {
+// 				.o_Message_core {
+// 					.o_Message_bubbleWrap {
+// 						.o_Message_background {
+// 							border-color: transparent !important;
+// 							background-color: transparent !important;
+// 							color: transparent !important;
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+// .o_Message {
+// 	.o_Message_actionListContainer {
+// 		.o_MessageActionList {
+// 			border-radius: 4px !important;
+// 			.o_MessageActionList_action {
+// 				&:hover {
+// 					border-radius: 4px !important;
+// 				}
+// 			}
+// 		}
+// 	}
+// }

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Menu Items -->
+    <menuitem id="menu_library_root"
+              name="Quản lí thư viện"
+              sequence="10"/>
+
+    <menuitem id="menu_library_dashboard"
+              name="Dashboard"
+              parent="menu_library_root"
+              action="action_book_dashboard"
+              sequence="1"/>
+
+    <menuitem id="menu_library_book"
+              name="Books"
+              parent="menu_library_root"
+              action="action_library_book"
+              sequence="2"/>
+
+    <menuitem
+            id="menu_bo_sung"
+            name="Additional"
+            parent="menu_library_root"
+            sequence="3"/>
+
+        <menuitem id="menu_book_subtopic"
+                  name="Subtopics"
+                  parent="menu_bo_sung"
+                  action="action_book_subtopic"
+                  sequence="1"/>
+
+        <menuitem id="menu_library_ebook"
+                  name="E-Books"
+                  parent="menu_bo_sung"
+                  action="action_library_ebook"
+                  sequence="2"/>
+
+        <menuitem id="menu_library_audiobook"
+                  name="Audio Books"
+                  parent="menu_bo_sung"
+                  action="action_library_audiobook"
+                  sequence="3"/>
+</odoo>

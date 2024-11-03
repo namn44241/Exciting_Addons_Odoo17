@@ -1,0 +1,16 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+sh_back_theme_config_settings_all,sh.back.theme.config.settings.all,model_sh_back_theme_config_settings,,1,1,1,1
+access_sh_wqm_quick_model_all,access.sh.wqm.quick.model.all,model_sh_wqm_quick_menu,,1,1,1,1
+access_global_search,access_global_search,model_global_search,base.group_user,1,1,1,1
+access_global_search_fields,access_global_search_fields,model_global_search_fields,base.group_user,1,1,1,1
+access_o2m_global_search_fields,access_o2m_global_search_fields,model_o2m_global_search_fields,base.group_user,1,1,1,1
+access_sh_announcement,access_sh_announcement,model_sh_announcement,sh_backmate_theme_adv.group_web_notification,1,1,1,1
+access_sh_announcement_user,access_sh_announcement_user,model_sh_announcement,,1,0,0,0
+access_view_read_user,access_view_read_user,base.model_ir_ui_view,,1,0,0,0
+access_sh_push_notification,access_sh_push_notification,model_sh_push_notification,base.group_user,1,1,1,1
+access_sh_send_notification,access_sh_send_notification,model_sh_send_notification,base.group_user,1,1,1,1
+access_sh_notification_logger,access_sh_notification_logger,model_sh_notification_logger,base.group_user,1,1,1,1
+sh_backmate_theme_adv.access_sh_todo,access_sh_todo,sh_backmate_theme_adv.model_sh_todo,base.group_user,1,1,1,1
+access_download_data_file,access_download_data_file,model_download_data_file,base.group_user,1,1,1,1
+access_sh_recent_records,access_sh_recent_records,model_sh_recent_records,base.group_user,1,1,1,1
+access_sh_quick_create_user,sh_quick_create_name,model_sh_quick_create,,1,1,1,1

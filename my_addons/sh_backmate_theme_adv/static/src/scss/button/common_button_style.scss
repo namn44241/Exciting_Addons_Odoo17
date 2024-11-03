@@ -1,0 +1,746 @@
+.btn-primary{
+    background-color: $primaryColor !important;border-color: $primaryColor !important;padding: 7px 15px!important;font-weight: 600;margin-right: 5px!important;box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    &:disabled{
+        background-color: $primaryColor;border-color: $primaryColor;padding: 7px 15px!important;font-weight: 600;margin-right: 5px!important;box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+       
+    }
+}
+.btn-secondary:not(.o_arrow_button){
+    background-color:  $secondaryColor ;border-color:  $secondaryColor!important ;padding: 7px 15px!important;font-weight: 600;color: $primaryColor;box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);margin-right: 5px!important;text-transform: capitalize;  
+    &:hover{
+        background-color: $primaryColor;color: #fff !important;border-color: $primaryColor!important;
+    }
+}
+.btn-outline-secondary:not(.oe_stat_button):not(.o_button_more){
+    background-color:  $secondaryColor ;border-color:  $secondaryColor!important ;padding: 7px 15px!important;font-weight: 600;color: $primaryColor;box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);margin-right: 5px!important;text-transform: capitalize;  
+}
+.btn-secondary:not(.o_arrow_button).active{
+    background-color: $primaryColor;color: #fff !important;border-color: $primaryColor!important;
+}
+.o-mail-DiscussSidebarChannel{
+    &:hover{
+        .o-mail-DiscussSidebarChannel-commands{
+            .fa{
+                color: #fff!important;
+            }
+        }
+    }
+}
+
+
+
+//backmate_theme_layout
+.backmate_theme_layout{
+    .btn-secondary{
+        background-color:  $secondaryColor ;border-color:  $secondaryColor!important ;padding: 7px 15px!important;font-weight: 600;color: $primaryColor;box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);margin-right: 5px!important;text-transform: capitalize;  
+        &:hover{
+            background-color: $primaryColor;color: #fff !important;border-color: $primaryColor!important;
+        }
+    }
+    .btn-secondary.active{
+        background-color: $primaryColor;color: #fff !important;border-color: $primaryColor!important;
+    }
+}
+//backmate_theme_layout
+
+//secondary-button
+.o_control_panel_main{
+    
+    .o_control_panel_breadcrumbs{
+        .o_control_panel_main_buttons{
+            .btn-secondary{
+                padding: 7px 15px!important;background-color: $secondaryColor ;border-color:  $secondaryColor!important ;font-weight: 600;color: $primaryColor;box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+                &:hover{
+                    background-color: $primaryColor;color: #fff !important;border-color: $primaryColor!important;
+                }
+            }
+            .btn-secondary.active{
+                background-color: $primaryColor;color: #fff !important;border-color: $primaryColor!important;
+            }
+            .btn-primary{
+                background-color: $primaryColor;border-color: $primaryColor;padding: 5px 10px!important;font-weight: 600;margin-right: 5px!important;box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+                &:hover{
+                    background-color: #fff !important;color: $primaryColor !important;border-color: #fff!important;
+                }
+            }
+            .btn-outline-primary{
+                background: #fff;border: 1.5px solid $primaryColor !important;box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;padding: 7px 15px !important;transition: all .5s;color: #111c43;
+                &:hover{
+                    background-color: $primaryColor;color: #fff;border-color: $primaryColor!important;
+                }
+            }
+        }
+
+        .o_cp_buttons {
+            .o_form_buttons_edit{
+                .btn-secondary{
+                    padding: 7px 15px!important;background-color:  #fff ;border-color:  #fff!important ;font-weight: 600;color: $primaryColor;box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+                    &:hover{
+                        background-color: $primaryColor;border-color:$primaryColor!important;color: #fff !important;
+                    }
+                }
+                .btn-secondary.active{
+                    background-color: $primaryColor;color: #fff !important;border-color: $primaryColor!important;
+                }
+            }
+        }
+    }
+    .o_control_panel_navigation{
+        .o_cp_switch_buttons{
+            .btn-secondary{
+                background-color:  $secondaryColor ;border-color:  $secondaryColor !important ;padding:5px 10px !important; font-weight: 600;color: $primaryColor;box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);margin-right: 5px!important;  
+                &:hover{
+                    background-color: $primaryColor;border-color:$primaryColor!important;color: #fff !important;
+                }
+            }
+            .btn-secondary.active{
+                background-color: $primaryColor;color: #fff !important;border-color: $primaryColor!important;
+            }
+        }
+        .o_cp_pager{
+            .o_pager{
+                .btn-group{
+                    .btn-secondary{
+                        background-color:  $secondaryColor ;border-color:  $secondaryColor!important ;padding:5px 10px !important;font-weight: 600;color: $primaryColor;box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);margin-right: 5px!important;  
+                        &:hover{
+                            background-color: $primaryColor;border-color:$primaryColor!important;color: #fff !important;
+                        }
+                    }
+                    .btn-secondary.active{
+                        background-color: $primaryColor;color: #fff !important;border-color: $primaryColor!important;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+//secondary-button
+
+//form_view
+.o_content{
+    .o_form_renderer{
+        .o_form_sheet_bg{
+            .o_form_statusbar{
+                .o_statusbar_buttons{
+                    .btn-primary{
+                        background-color: $primaryColor;border-color: $primaryColor;padding: 7px 15px!important;font-weight: 600;margin-right: 5px!important;box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);text-transform: capitalize;
+                        &:hover{
+                            background-color: #fff !important;color: $primaryColor !important;border-color: #fff!important;
+                        }
+                    }
+                    .btn-secondary:not(.o_arrow_button){
+                        background-color:  $secondaryColor ;border-color:  #fff!important ;padding: 7px 15px!important;font-weight: 600;color: $primaryColor;box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);margin-right: 5px!important;text-transform: capitalize;  
+                        &:hover{
+                            background-color: $primaryColor;color: #fff !important;border-color: $primaryColor!important;
+                        }
+                    }
+                    .btn-secondary:not(.o_arrow_button).active{
+                        background-color: $primaryColor;color: #fff !important;border-color: $primaryColor!important;
+                    }
+                }
+            }
+            .o_notebook_content{
+                .o_kanban_view{
+                    .o_x2m_control_panel{
+                        .btn-secondary{
+                            background-color:  #fff ;border-color:  #fff!important ;padding: 7px 15px!important;font-weight: 600;color: $primaryColor;box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);margin-right: 5px!important;text-transform: capitalize;  
+                            &:hover{
+                                background-color: $primaryColor;color: #fff !important;border-color: $primaryColor!important;
+                            }
+                        }
+                        .btn-secondary.active{
+                            background-color: $primaryColor;color: #fff !important;border-color: $primaryColor!important;
+                        }
+                    }
+                }
+
+            }
+
+        }
+        .o-mail-Form-chatter{
+            .o-mail-Chatter{
+                .o-mail-Chatter-top{
+                    .o-mail-Chatter-topbar{
+                        .btn-primary{
+                            background-color: $primaryColor;border-color: $primaryColor;padding: 7px 15px!important;font-weight: 600;margin-right: 5px!important;box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+                            &:hover{
+                                background-color: #fff !important;color: $primaryColor !important;border-color: #fff!important;
+                            }
+                        }
+                        .btn-secondary{
+                            background-color:  $secondaryColor ;border-color:  $secondaryColor!important ;padding: 7px 15px!important;font-weight: 600;color: $primaryColor;box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);margin-right: 5px!important;  
+                            &:hover{
+                                background-color: $primaryColor;color: #fff !important;border-color: $primaryColor!important;
+                            }
+                        }
+                        .btn-secondary.active{
+                            background-color: $primaryColor;color: #fff !important;border-color: $primaryColor!important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//form_view
+
+//input
+.o_action_manager{
+    .o_view_controller{
+        .o_control_panel{
+            .o_control_panel_main{
+                .o_control_panel_actions{
+                    .o_cp_searchview{
+                        flex-wrap: nowrap; background: #fff;box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+                        .o_searchview{
+                            border:0px;padding: 5px 15px!important;
+                        }
+                        .o_searchview_dropdown_toggler {
+                            box-shadow: none    !important;
+                        }
+                        .o-dropdown{
+                            .o_search_bar_menu{
+                                box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);background-color: #fff;padding: 1.2rem;border: 0px;
+                                font-weight: 500;color: #6f7e92;
+                            }
+                            
+                        }
+                        .o_searchview_input_container {
+                            .o_searchview_facet{
+                                .text-bg-action{
+                                    background-color:$primaryColor !important;
+                                }
+                            }
+                            .o_searchview_facet_label{
+                                padding: 5px!important;
+                                margin: 0   !important;
+                                span{
+                                    padding-top: 0;text-align: center;display: flex;justify-content: center;align-items: center;
+                                }
+                            }
+                            .o_searchview_input:focus{
+                                background-image:none;
+                            }
+                        }
+                    }
+                    .o-form-buttonbox{
+                        background: $secondaryColor;box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+                        .o_dropdown_more{
+                            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);padding: 1.2rem;border: 0px;font-weight: 500;color: #6f7e92;
+                        }
+                        .btn.oe_stat_button{
+                            padding: 10px;
+                            height: auto !important;
+                            min-height: auto !important;
+                            min-width: auto !important;
+                            &:hover{
+                                background-color: $primaryColor;border-color:$primaryColor;color: #fff;
+                                
+                                > .o_button_icon{
+                                    color: #fff;
+                                }
+                                > .o_stat_info,> .o_stat_text, > .o_stat_info .o_stat_value{
+                                    color: #fff!important;
+                                }
+                                > .o_field_statinfo{
+                                    .o_stat_value{
+                                        color: #fff !important;
+                                    }
+                                }
+                                
+                            }
+                            .o_button_more {
+                                background-color: transparent !important;
+                                width: 100%;
+                                &:focus,
+                                &:hover{
+                                    color: #fff!important;
+                                }
+                            }
+                        }
+                    }
+                    .o-dropdown{
+                        .btn-outline-secondary{
+                            background:#fff;color:$primaryColor;border: 0px;
+                           
+                        }
+                    }
+                    .list-group-item.active{
+                        padding: 7px 15px !important;font-weight: 600;margin-right: 5px !important;box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+                    }
+                }
+            }
+        }
+    }
+}
+//input
+
+
+//calendar_view
+.o_action_manager{
+    .o_calendar_view{
+        .o_content{
+            .o_calendar_container{
+                .o_calendar_header{
+                    .btn-secondary{
+                        background-color: $secondaryColor;border-color: $secondaryColor;padding: 7px 15px;font-weight: 600;margin-right: 5px !important;box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);color: $primaryColor;
+                        &:hover{
+                            background-color: $primaryColor;border-color:$primaryColor;color: #fff !important;
+                        }
+                    }
+                    .btn-light{
+                        background-color: #fff;border-color: #fff;font-weight: 600;margin-right: 5px !important;box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);color: $primaryColor; padding:10px 15px !important;
+                        &:hover{
+                            background-color: $primaryColor;border-color:$primaryColor;color: #fff;
+                        }
+                    }
+                    .btn-secondary.active{
+                        background-color: $primaryColor;color: #fff !important;border-color: $primaryColor!important;
+                    }
+                    
+                }
+            }
+        }
+        .o_onboarding_container{
+            .o_onboarding_main{
+                .o_onboarding_wrap{
+                    .o_onboarding_steps{
+                        .o_onboarding_step{
+                            .o_onboarding_step_action{
+                                color: #ffffff;background-color:$primaryColor;border-color: $primaryColor;padding: 7px 15px!important;font-weight: 600;margin-right: 5px !important;box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+                                &:hover{
+                                    background-color: #fff;color: $primaryColor;border-color: #fff!important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//calendar_view
+
+
+//settings
+.o_action_manager{
+    .o-settings-form-view{
+        .o_form_view_container{
+            .o_control_panel{
+                .o_control_panel_main{
+                    .o_control_panel_breadcrumbs{
+                        .o_cp_buttons{
+                            .o_form_buttons_edit{
+                                .btn-primary{
+                                    background-color: $primaryColor;border-color: $primaryColor;padding: 7px 15px!important;font-weight: 600;margin-right: 5px!important;box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+                                    &:hover{
+                                        background-color: #fff !important;color: $primaryColor !important;border-color: #fff!important;
+                                    }
+                                }
+                            }
+                        }
+                        .o_breadcrumb{
+                            .o_last_breadcrumb_item{
+                                span{
+                                    color: #111c43;font-weight: 500;
+                                }
+                            }
+                        }
+                    }
+                    .o_control_panel_actions{
+                        .o-form-buttonbox{
+                            .btn{
+                                &:hover{
+                                    background-color: $primaryColor;border-color:$primaryColor;color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .o_content{
+                .o_form_renderer{
+                    .settings{
+                        .app_settings_block{
+                            .o_setting_right_pane{
+                                .btn-secondary{
+                                    background-color: $secondaryColor;border-color: $secondaryColor;padding: 7px 15px!important;font-weight: 600;margin-right: 5px !important;box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);color: $primaryColor;
+                                    &:hover{
+                                        background-color: $primaryColor;border-color:$primaryColor;color: #fff !important;
+                                    }
+                                }
+                                .btn-secondary.active{
+                                    background-color: $primaryColor;color: #fff !important;border-color: $primaryColor!important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//settings
+
+
+//modal dialog
+.modal-content{
+    .modal-footer{
+        .btn-primary{
+            background-color: $primaryColor;border-color: $primaryColor;padding: 7px 15px!important;font-weight: 600;margin-right: 5px!important;box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);color: #fff;
+            &:hover{
+                background-color: #fff !important;color: $primaryColor !important;border-color: #fff!important;
+            }
+        }
+        .btn-secondary{
+            background-color:  $secondaryColor ;border-color:  #fff!important ;padding: 7px 15px!important;font-weight: 600;color: $primaryColor;box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);margin-right: 5px!important;  
+            &:hover{
+                background-color: $primaryColor;color: #fff !important;border-color: $primaryColor!important;
+            }
+        }
+        .btn-secondary.active{
+            background-color: $primaryColor;color: #fff !important;border-color: $primaryColor!important;
+        }
+    }
+}
+//modal dialog
+
+
+//apps
+.o_kanban_renderer{
+    .o_kanban_record{
+        .oe_kanban_global_click{
+            .o_kanban_detail_ungrouped{
+                .w_visitor_kanban_actions_ungrouped{
+                    .btn-secondary{
+                        background-color:  $secondaryColor ;border-color:  $secondaryColor!important ;padding: 7px 15px!important;font-weight: 600;color: $primaryColor;box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);margin-right: 5px!important;  
+                        &:hover{
+                            background-color: $primaryColor;color: #fff;border-color: $primaryColor!important;
+                        }    
+                    }
+                    .btn-secondary.active{
+                        background-color: $primaryColor;color: #fff;border-color: $primaryColor!important;
+                    }
+                }
+            }
+            .oe_kanban_details{
+                .btn-secondary{
+                    background-color:  $secondaryColor ;border-color:  $secondaryColor!important ;padding: 7px 15px!important;font-weight: 600;color: $primaryColor;box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);margin-right: 5px!important;  
+                    &:hover{
+                        background-color: $primaryColor;color: #fff;border-color: $primaryColor!important;
+                    } 
+                }
+            }
+        }
+        .oe_module_vignette{
+            .oe_module_desc{
+                .oe_module_action{
+                    .btn-secondary{
+                        background-color:  $secondaryColor ;border-color:  $secondaryColor!important ;padding: 7px 15px!important;font-weight: 600;color: $primaryColor;box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);margin-right: 5px!important;  
+                        &:hover{
+                            background-color: $primaryColor;color: #fff;border-color: $primaryColor!important;
+                        } 
+                    }
+                    .btn-secondary.active{
+                        background-color: $primaryColor;color: #fff;border-color: $primaryColor!important;
+                    }
+                    .btn-info{
+                        padding: 7px 15px!important;font-weight: 600;box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);margin-right: 5px!important;  
+                    }
+                }
+            }
+        }
+       
+    }
+    .o_kanban_group{
+        .o_kanban_quick_create{
+            .btn-secondary{
+                background-color:  $secondaryColor ;border-color:  $secondaryColor!important ;padding: 7px 15px!important;font-weight: 600;color: $primaryColor;box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);margin-right: 5px!important;  
+                &:hover{
+                    background-color: $primaryColor;color: #fff;border-color: $primaryColor!important;
+                } 
+            }
+        }
+    }
+    .o_column_quick_create{
+        .o_quick_create_folded{
+            .btn-light{
+                background-color: #ffffff;border-color: #ffffff;padding: 7px 15px;font-weight: 600;margin-right: 5px !important;box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+}
+
+//apps
+
+
+
+//graph_view
+.o_action_manager{
+    .o_graph_view{
+        .o_content{
+            .o_graph_renderer{
+                .d-flex{
+                    align-items: center;
+                }
+                .btn-group{
+                    .btn-secondary{
+                        background-color:  $secondaryColor ;border-color:  $secondaryColor!important ;padding:13px!important;font-weight: 600;color: $primaryColor;box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);margin-right: 5px!important;  
+                        &:hover{
+                            background-color: $primaryColor;color: #fff;border-color: $primaryColor!important;
+                        }
+                    }
+                    .btn-secondary.active{
+                        background-color: $primaryColor;color: #fff;border-color: $primaryColor!important;
+                    }
+                    .o-dropdown{
+                        .o-dropdown--menu{
+                            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);background-color: #fff;border: 0px;font-weight: 500;color: #6f7e92;
+                            .dropdown-item{
+                                font-weight: 500;color: #6f7e92;border: 1px solid transparent;margin: 5px 0px;font-size: 14px;
+                                &:hover{
+                                  background: transparent;color: #111c43;
+                                }
+                            }
+                            .focus{
+                                background: transparent;color: #111c43;
+                            }
+                        } 
+                    }
+                }
+            }
+        }
+    }
+    .o_pivot_buttons{
+        align-items: center;
+        .btn-secondary{
+            background-color:  $secondaryColor ;border-color:  $secondaryColor!important ;padding:15px;font-weight: 600;color: $primaryColor;box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);margin-right: 5px!important;  
+            &:hover{
+                background-color: $primaryColor;color: #fff;border-color: $primaryColor!important;
+            }
+        }
+        .btn-secondary.active{
+            background-color: $primaryColor;color: #fff;border-color: $primaryColor!important;
+        }
+        
+    }
+}
+//graph_view
+
+//list_view
+.o_list_view{
+    .o_control_panel{
+        .o_control_panel_main{
+            .o_control_panel_actions{
+                .btn-secondary{
+                    background-color:  $secondaryColor ;border-color:  #fff!important ;padding:15px;font-weight: 600;color: $primaryColor;box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);margin-right: 5px!important;  
+                    &:hover{
+                        background-color: $primaryColor;color: #fff;border-color: $primaryColor!important;
+                    }
+                }
+                .btn-secondary.active{
+                    background-color: $primaryColor;color: #fff;border-color: $primaryColor!important;
+                }
+            }
+            
+        }
+    }
+}
+
+
+
+.o_control_panel_navigation{
+    .btn-light{
+        background-color:  #fff ;border-color:  #fff!important ;font-weight: 600;color: $primaryColor;box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);margin-right: 5px!important;  
+        &:hover{
+            background-color: $primaryColor;color: #fff;border-color: $primaryColor!important;
+        }
+    
+    }
+    .btn-light.active{
+        background-color: $primaryColor;color: #fff;border-color: $primaryColor!important;
+    }
+}
+
+.sh_zoom_view_layout {
+   
+    .sh-zoom-panel{
+        .btn-secondary{
+            background-color:  $secondaryColor ;border-color:  $secondaryColor!important ;padding:10px!important;font-weight: 600;color: $primaryColor;box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);margin-right: 5px!important;  
+            &:hover{
+                background-color: $primaryColor;color: #fff;border-color: $primaryColor!important;
+            }
+        }
+        .btn-secondary.active{
+            background-color: $primaryColor;color: #fff;border-color: $primaryColor!important;
+        }
+    }
+    
+
+}
+.sh_search{
+    .sh_search_container{
+        .sh_search_input{
+           background: #fff;box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);border: 0px;
+        }
+    }
+}
+.o-dropdown--menu:not(.o_dropdown_more){
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);background-color: #fff;border: 0px;font-weight: 500;color: #6f7e92;
+    .dropdown-item{
+        font-weight: 500;color: #6f7e92;border: 1px solid transparent;margin: 5px 0px;font-size: 14px;
+        &:hover{
+            background: transparent;color: $primaryColor;
+            a{
+                background-color:transparent;
+            }
+        }
+    }
+    .focus{
+        background: transparent;color: $primaryColor;
+        
+    }
+} 
+.sh_search_results{
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);background-color: #fff;border: 0px;text-align:left;width: 23rem;height: 80vh;overflow: auto;
+    &:empty{
+        height: auto;
+    }
+    .dropdown-item{
+        padding: 5px 20px;
+        span{
+            font-weight: 500;color: #6f7e92;margin: 5px 0px;font-size: 14px;text-wrap: wrap;
+        }
+        &:hover{
+            background: transparent;
+            a{
+                background-color:transparent;
+            }
+            span{
+                color: $primaryColor;
+            }
+        }
+        a{
+
+        }
+    }
+    .focus{
+        background-color: transparent;color: $primaryColor;
+        
+    }
+}
+
+.o_kanban_dashboard{
+    .o_kanban_renderer{
+        .o_kanban_record{
+            .dropdown-menu{
+                .container{
+                    div[class*="col-"] {
+                        > div:not(.o_kanban_card_manage_title){
+                            > a{
+                                margin-bottom: 5px;
+                                &:hover{
+                                    border: 1px solid $primaryColor;background: transparent;color: #111c43;
+                                }
+                            }
+                            
+                        }
+                    }
+                    .row.o_kanban_card_manage_settings{
+                        > div:last-child{
+                            > a{
+                                &:hover{
+                                    background: transparent;color: #111c43;
+                                }
+                            }
+                        }
+                    } 
+                }
+
+            }
+        }
+    } 
+}
+.o_kanban_record{
+    .o_dropdown_kanban{
+        .o-dropdown--menu{
+            a{
+                &:hover{
+                    background: transparent;color: $primaryColor;
+                }
+            }
+        } 
+    }
+}
+.o_accordion_values{
+    .o-checkbox{
+        &:hover{
+            border-radius: 20px;
+        }
+    }
+}
+
+
+.o_field_statusbar_duration {
+	>.o_statusbar_status {
+		>.o_arrow_button {
+			
+		}
+	}
+}
+
+// o_statusbar_status scss // 
+.o_statusbar_status{
+    .o_arrow_button {
+        padding: 0.3125rem 0.625rem !important;
+        padding-left: 1.5em !important;
+        padding-right: 16px !important;
+        &.o_arrow_button_current{
+            background-color: $primaryColor !important; 
+            border-color: $primaryColor !important; 
+            color: #fff !important;
+            &::before {
+                border-left-color: $primaryColor !important;
+            }
+            &::after {
+                border-left-color: $primaryColor !important;
+            }
+        }
+        &:not(.d-none).o_arrow_button_current {
+            &:disabled {
+                + {
+                    .btn {
+                        &:before {
+                            border-left-color: $primaryColor !important;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+    .btn-secondary {
+		&:not(.o_external_button) {
+			&:not(:disabled) {
+				&:not(.disabled) {
+					&:active {
+						border-color: lighten( $primaryColor,  70%)  !important;
+						background-color: lighten( $primaryColor,  70%)  !important;
+						&:not(.o_first):after {
+							border-left-color: lighten( $primaryColor,  70%)  !important;
+						}
+                        &:not(.o_first):before{
+                            border-left-color: lighten( $primaryColor,  70%)  !important;
+                        }
+                        &:not(.o_first) + .btn:before {
+                            border-left-color: lighten( $primaryColor,  70%)  !important;
+                        }
+					}
+				}
+				&:not(.disabled).active {
+					border-color: $primaryColor;
+				}
+			}
+		}
+	}   
+}

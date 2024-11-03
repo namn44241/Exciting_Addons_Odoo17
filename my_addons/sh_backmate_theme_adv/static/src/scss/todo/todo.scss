@@ -1,0 +1,334 @@
+.todo_layout.sh_theme_model {
+	display: block;
+	margin-right: 0px;
+}
+.todo_layout {
+	.theme_header {
+		.close_todo_setting {
+			cursor: pointer;
+		}
+	}
+	.add_todo_section {
+		padding: 10px 20px;
+		.input-group {
+			margin-bottom: 0 !important;
+		}
+	}
+	.ui-sortable {
+		.card {
+			margin: 10px 20px;
+			padding: 0px !important;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.20);
+			position: relative;
+			.card-header {
+				display: flex;
+				padding: 2px !important;
+				justify-content: space-between;
+				align-items: center;
+				background: $primaryColor !important;
+				position: absolute;
+				top: 10px;
+				right: 0;
+				left: 0;
+				border-bottom: none !important;
+				opacity: 0;
+				transition: all .5s;
+				width: 100%;
+				z-index: 1;
+				height: 30px;
+				&:hover {
+					opacity: 1;
+					top: 0;
+					visibility: visible;
+				}
+				.sh-card-header-button {
+					span.fa {
+						font-size: 14px;
+						padding: 3px 10px;
+						color: #ffffff;
+						cursor: pointer;
+					}
+					display: flex;
+				}
+				.sh-card-header {
+					h5 {
+						.btn {
+							padding-left: 0 !important;
+						}
+					}
+					.sh_edit_todo_lebel {
+						border-radius: 2px !important;
+						padding: 3px 5px !important;
+					}
+				}
+			}
+			.sh_blank_div {
+				height: 12px;
+			}
+			.card-body {
+				padding: 10px !important;
+				margin-bottom: 0px;
+				text-align: left;
+				.sh_todo_label {
+					&.sh_done_todo {
+						text-decoration: line-through;
+					}
+				}
+			}
+		}		
+	}
+	.card {
+		.sh-card-header-button {
+			.sh_to_do_edit_btn {
+				position: relative;
+				.sh_mark_edit_tooltip {
+					opacity: 0;
+					transition: all .5s;
+					position: absolute;
+					left: -10px;
+					white-space: nowrap;
+					padding: 2px 8px;
+					font-size: 11px;
+					top: 30px;
+					background: #29292a;
+					color: #ffffff;
+					letter-spacing: .4px;
+				}
+				&:hover {
+					.sh_mark_edit_tooltip {
+						opacity: 1;
+						top: 24px;
+					}
+				}
+			}
+			.sh_to_do_remove_btn {
+				position: relative;
+				.sh_mark_remove_tooltip {
+					opacity: 0;
+					transition: all .5s;
+					position: absolute;
+					left: -10px;
+					white-space: nowrap;
+					padding: 2px 8px;
+					font-size: 11px;
+					top: 30px;
+					background: #29292a;
+					color: #ffffff;
+					letter-spacing: .4px;
+				}
+				&:hover {
+					.sh_mark_remove_tooltip {
+						opacity: 1;
+						top: 24px;
+					}
+				}
+			}
+			.sh_to_do_save_btn {
+				position: relative;
+				.sh_mark_save_tooltip {
+					opacity: 0;
+					transition: all .5s;
+					position: absolute;
+					left: -10px;
+					white-space: nowrap;
+					padding: 2px 8px;
+					font-size: 11px;
+					top: 30px;
+					background: #29292a;
+					color: #ffffff;
+					letter-spacing: .4px;
+				}
+				&:hover {
+					.sh_mark_save_tooltip {
+						opacity: 1;
+						top: 24px;
+					}
+				}
+			}
+		}
+		.sh-card-header {
+			.custom-control.custom-checkbox {
+				position: relative;
+				&:hover {
+					.sh_mark_completed_tooltip {
+						opacity: 1;
+						top: 24px;
+					}
+				}
+			}
+			.sh_mark_completed_tooltip {
+				opacity: 0;
+				transition: all .5s;
+				position: absolute;
+				left: -10px;
+				white-space: nowrap;
+				padding: 2px 8px;
+				font-size: 11px;
+				top: 30px;
+				background: #29292a;
+				color: #ffffff;
+				letter-spacing: .4px;
+			}
+		}
+	}
+}
+.o_web_client {
+	.todo_layout {
+		.card {
+			.card-header {
+				.sh-card-header {
+					.custom-control.custom-checkbox {
+						.custom-control-input.sh_todo_checklist {
+							&:not(:checked) {
+								+ {
+									.custom-control-label {
+										&::before {
+											border: 2px solid #ffffff !important;
+										}
+									}
+								}
+							}
+						}
+						>[type='checkbox'] {
+							&:not(:checked) {
+								+ {
+									label {
+										&:not(.lever) {
+											&:before {
+												height: 16px !important;
+												width: 16px !important;
+											}
+										}
+									}
+								}
+							}
+						}
+						[type='checkbox'] {
+							&:checked {
+								+ {
+									label {
+										&:not(.lever) {
+											&:before {
+												width: 9px;
+												height: 15px;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.ui-sortable {
+			.card {
+				.card-body {
+					.sh_todo_description {
+						margin-top: 5px;
+					}
+				}
+			}
+		}
+	}
+}
+.o_renderer {
+	.o-figure-container {
+		.o-figure-viewport-inverse {
+			.o-figure-wrapper {
+				z-index: 2;
+			}
+		}
+	}
+}
+.todo_layout {
+	#accordion {
+		.card {
+			.card-header {
+				+ {
+					div {
+						.card-body {
+							transition: all .5s;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 767.98px){
+    .todo_layout{min-width: 300px; max-width: 300px;
+    }
+}
+@media only screen and (max-width: 992px){
+    .todo_layout {
+        .ui-sortable {
+            .card {
+                .card-header {
+                    position: unset;
+                    opacity: 1;
+                    top: 0;
+                }
+            }
+        }
+    }
+    .o_web_client {
+        .todo_layout {
+            .ui-sortable {
+                .card {
+                    .card-body {
+                        .sh_todo_description {
+                            margin-top: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+@media only screen and (min-width: 993px){
+    .todo_layout {
+        #accordion {
+            .card {
+                .card-header {
+                    &:hover {
+                        + {
+                            div {
+                                .card-body {
+                                    padding-top: 35px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+// v16 // 
+body {
+	.todo_layout {
+		.card {
+			.card-header {
+				.sh-card-header {
+					.custom-control.custom-checkbox {
+						.custom-control-input.sh_todo_checklist {
+							position: absolute;
+							left: -9999px;
+							width: 15px !important;
+							height: 15px !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+

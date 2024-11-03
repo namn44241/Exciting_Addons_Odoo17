@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="web.WebClient" t-inherit="web.WebClient" t-inherit-mode="extension" owl="1">
+		<xpath expr="//ActionContainer" position="after">
+            <ZoomWidget/>
+        </xpath>
+    </t>
+
+    <t t-name="ZoomWidget">
+        <div class="sh_zoom_view_layout">
+             <t t-if="show_zoom">
+                 <button class=" btn sh_zoom" t-on-click="zoomDropdown">
+                     <span class="fa fa-search-plus"></span>
+                 </button>
+                 <div class="sh-zoom-panel collapse" id="zoomPanel">
+                     <div class="d-flex align-items-center">
+                         <div class="sh_full">100%</div>
+                         <div class="d-flex align-items-center mx-2">
+                             <button class="btn btn-small sh_dec" t-on-click="setDecZoom">-</button>
+                             <button class="btn btn-small sh_inc" t-on-click="setIncZoom">+</button>
+                         </div>
+                         <button class="fa fa fa-repeat btn btn-secondary sh_reset" t-on-click="setResetZoom"></button>
+                     </div>
+                 </div>
+             </t>
+       </div>
+     </t>
+</templates>

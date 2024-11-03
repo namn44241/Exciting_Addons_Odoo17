@@ -1,0 +1,165 @@
+/*--separtor--*/
+.o_form_view {
+	.o_horizontal_separator {
+		position: relative;
+		font-size: 15px;
+		box-shadow: none !important;
+	}
+}
+
+/*--sep-1--*/
+@if $separator_style == 'style_1'{
+    .o_form_view {
+        .o_horizontal_separator {
+            border-bottom: 2px dashed $separator_color;
+            width: 80%;
+        }
+    }
+    
+}
+/*--sep-1--*/
+/*--sep-2--*/
+@if $separator_style == 'style_2'{
+    .o_form_view {
+        .o_horizontal_separator {
+            position: relative;
+            padding-left: 10px;
+            &:after {
+                position: absolute;
+                content: "";
+                left: 0;
+                top: 0;
+                bottom: 0;
+                border-left: 3px solid $separator_color;
+            }
+        }
+    }
+    
+}
+/*--sep-2--*/ 
+/*--sep-3--*/
+@if $separator_style == 'style_3'{
+    .o_form_view {
+        .o_horizontal_separator {
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: -3px;
+                left: -3px;
+                right: -3px;
+                height: 3px;
+                width: 100%;
+                border-bottom: double;
+                border-color: $separator_color;
+            }
+        }
+    }
+    
+}
+/*--sep-3--*/
+/*--sep-4--*/
+@if $separator_style == 'style_4'{
+    .o_form_view {
+        .o_horizontal_separator {
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: -3px;
+                left: -3px;
+                right: -3px;
+                height: 3px;
+                width: 100%;
+                border-bottom: 2px solid $separator_color;
+            }
+        }
+    }
+    
+}
+/*--sep-4--*/
+/*--sep-5--*/
+@if $separator_style == 'style_5'{
+    .o_form_view {
+        .o_horizontal_separator {
+            position: relative;
+            display: grid;
+            width: 100%;
+            &:after {
+                -webkit-flex-grow: 1;
+                flex-grow: 1;
+                height: 5px;
+                background-image: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0) 6px, $separator_color 7px, rgba(0, 0, 0, 0) 6px), -webkit-linear-gradient(-45deg, rgba(0, 0, 0, 0) 6px, $separator_color 7px, rgba(0, 0, 0, 0) 6px);
+                background-image: linear-gradient(45deg, rgba(0, 0, 0, 0) 6px, $separator_color 7px, rgba(0, 0, 0, 0) 6px), linear-gradient(-45deg, rgba(0, 0, 0, 0) 6px, $separator_color 7px, rgba(0, 0, 0, 0) 6px);
+                background-size: 9px 10px;
+                background-position: top left;
+                background-repeat: repeat-x;
+                content: "";
+            }
+        }
+    }
+    
+}
+/*--sep-5--*/
+/*--sep-6--*/
+@if $separator_style == 'style_6'{
+    .o_form_view {
+        .o_horizontal_separator {
+            position: relative;
+            width: 90%;
+            &:after {
+                content: "";
+                position: absolute;
+                width: 65%;
+                right: 0;
+                top: 14px;
+                border-bottom: 2px solid $separator_color;
+            }
+        }
+    }
+    
+}
+/*--sep-6--*/
+/*--sep-7--*/
+@if $separator_style == 'style_7'{
+    .o_horizontal_separator {
+        &:before {
+            background: $separator_color;
+            bottom: 0px;
+            content: "";
+            height: 2px;
+            left: 0;
+            position: absolute;
+            width: 50px;
+            z-index: 1;
+        }
+        &:after {
+            background: #d9d9d9;
+            top: auto !important;
+            bottom: 0;
+            content: "";
+            height: 1px !important;
+            left: 0px !important;
+            position: absolute !important;
+            width: 98% !important;
+            border-bottom: 0 !important;
+        }
+    }
+    .o_form_view {
+        .o_horizontal_separator {
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            padding-left: 0 !important;
+        }
+    }
+    
+}
+/*--sep-7--*/
+/*--separtor--*/
+.o_form_view {
+	.o_horizontal_separator {
+		&:empty {
+			&:after {
+				display: none;
+			}
+		}
+	}
+}

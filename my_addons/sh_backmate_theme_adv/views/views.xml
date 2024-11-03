@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+     <record id="sh_push_noti_config_form" model="ir.ui.view">
+        <field name="name">sh.push.noti.config.form</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base_setup.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='companies']" position="after">
+                <div id="web_push_notification">
+                    <h2>Firebase Push Notifications</h2>
+                    <div class="row mt16 o_settings_container">
+                        <div id="firebase_setting" class="col-xs-12 col-md-12 o_setting_box">
+                            <div class="o_setting_left_pane">
+                                <field name="enable_web_push_notification" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="enable_web_push_notification"/>
+                            </div>
+                        </div>
+                        <div id="firebase_other_setting" class="col-xs-12 col-md-12 o_setting_box" invisible="enable_web_push_notification == False">
+                            <div class="o_setting_left_pane">
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="api_key" class="col-2 col-lg-2 o_light_label" />
+                                <field name="api_key" required="enable_web_push_notification == True"/>
+                            </div>
+                            <div class="o_setting_left_pane">
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="vapid" class="col-2 col-lg-2 o_light_label"/>
+                                <field name="vapid" required="enable_web_push_notification == True"/>
+                            </div>
+                            <div class="o_setting_left_pane">
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="config_details" class="col-2 col-lg-2 o_light_label"/>
+                                <field name="config_details" required="enable_web_push_notification == True"/>
+                            </div>
+                             <div class="o_setting_left_pane">
+                            </div>
+                            <div class="o_setting_right_pane" style="margin-top: 10px;">
+                               <a href="/sh_backmate_theme_adv/static/src/WebPushNotificationFirebaseSetup.pdf" target="_blank" style="margin-left: 5px;"><i class="fa fa-fw o_button_icon fa-arrow-right" ></i>How to setup firebase  click to download PDF file</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+    <record id="view_users_form_simple_inherit_modif" model="ir.ui.view">
+        <field name="name">res.users.preferences.form</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form_simple_modif" />
+        <field name="arch" type="xml">
+            <xpath expr="//page[last()]" position="after">
+                <page string="Backmate Theme Configuration" name="backmate_theme_configuration">
+                    <group>
+                        <group>
+                            <!--todo later-->
+                            <field name="sh_enable_night_mode" readonly="0"/>
+                            <field name="sh_enable_language_selection" readonly="0"/>
+                            <field name="sh_enable_gloabl_search_mode" readonly="0"/>
+                            <field name="sh_enable_quick_menu_mode" readonly="0"/>
+                            <field name="sh_disable_auto_edit_model" readonly="0"/>
+                            <field name="sh_enable_expand_collapse" readonly="0"/>
+                            <field name="sh_enable_recent_record_view" readonly="0"/>
+                        </group>
+                        <group>
+                            <field name="sh_enable_multi_tab"  readonly="0"/>
+                            <field name="sh_enable_calculator_mode" readonly="0"/>
+                            <field name="sh_enable_todo_mode" readonly="0"/>
+                            <!--todo later-->
+                            <field name="show_attachment_in_list_view" readonly="0"/>
+                            <field name="sh_enable_open_record_in_new_tab" readonly="0"/>
+                            <field name="quick_create_view" readonly="0"/>
+                            <field name="sh_enable_zoom"  readonly="0"/>
+                            <div role="alert" class="alert alert-danger" invisible="sh_enable_zoom == False">
+                                <strong> Sticky view </strong> feature can not work smoothly when zoom in/out views.
+                            </div>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+
+        </field>
+    </record>
+</odoo>

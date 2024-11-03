@@ -1,0 +1,1516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <t t-name="ThemeConfiguration">
+        <div class="backmate_theme_layout" id="backmate_layout">
+            <div class="theme_header">
+                <h3>Theme Customizations</h3>
+                <i class="fa fa-close close_setting" t-on-click="_click_close_setting"></i>
+            </div>
+            <div id="pre_theme_color_id">
+                <div class="sh_theme_design" t-on-click="_click_sh_theme_design" data-toggle="collapse"
+                     data-target="#preThemeColors" aria-expanded="true" aria-controls="filterFav">
+                    <span class="title_config">Theme Template</span>
+                </div>
+                <div class="collapse show" id="preThemeColors">
+                    <div class="sh_pre_color_plates">
+                        <!--  Color Plates -->
+                        <div class="sh_main_div">
+                            <input type="hidden" class="current_active_pre_color" value="pre_color_1"/>
+                            <input type="hidden" class="current_active_pre_color_pallete"/>
+                            <li class="sh_div_plt">
+                                <div class="pre_theme_color_box" t-on-click="_click_pre_theme_color_box"
+                                     id="pre_color_1">
+                                    <input type="radio" name="preThemeColor" checked="checked"/>
+                                    <i class="fa fa-check-circle"></i>
+                                    <div class="sh_pre_color_box_1"></div>
+                                </div>
+                            </li>
+                            
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+         
+            <div id="theme_style_id">
+                <div class="sh_theme_design" t-on-click="_click_sh_theme_design" type="button" data-toggle="collapse"
+                     data-target="#sh_color_plt" aria-expanded="true" aria-controls="filterFav">
+                    <span class="title_config">Menu Style</span>
+
+                </div>
+                <div class="collapse show" id="sh_color_plt">
+                    <div class="sh_style_plates">
+                        <!--  theme style plates -->
+                        <div></div>
+                        <div class="sh_main_div">
+                            <input type="hidden" class="current_active_style" value="style_2"/>
+                            <input type="hidden" class="current_active_style_pallete"/>
+                            <li class="sh_div_plt">
+                                  <!--todo later-->
+                                 <!--t-on-click="_click_theme_style_box"-->
+                                <div class="theme_style_box" id="style_1">
+                                    <input type="radio" name="themeStyle"/>
+                                    <span class="circle fa fa-check-circle"></span>
+                                    <div class="sh_style_box_1"></div>
+                                </div>
+                            </li>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="color_list_id">
+                <div class="sh_theme_design collapsed" t-on-click="_click_sh_theme_design" type="button"
+                     data-toggle="collapse" data-target="#primaryColors" aria-expanded="true" aria-controls="filterFav">
+                    <span class="title_config">Primary-Secondary Colors</span>
+                </div>
+                <div class="collapse" id="primaryColors">
+                    <table width="100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label>Primary Color</label>
+                                </td>
+                                <td>
+                                    <input id="primary_color_id" type="color" value=""></input>
+                                </td>
+
+                                <td>
+                                    <label>Secondary Color</label>
+                                </td>
+                                <td>
+                                    <input id="secondary_color_id" type="color" value=""></input>
+                                </td>
+                            </tr>
+                            <!-- <tr class="gradient_tr">
+                                <td>
+                                    <label>Gradient Color</label>
+                                </td>
+                                <td>
+                                    <input id="gradient_color" type="color" value="" style="width: 50px;"></input>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="color_list_id">
+                <div class="sh_theme_design collapsed" t-on-click="_click_sh_theme_design" type="button"
+                     data-toggle="collapse" data-target="#headerColors" aria-expanded="true" aria-controls="filterFav">
+                    <span class="title_config">Header Style</span>
+
+                </div>
+                <div class="collapse" id="headerColors">
+                    <table width="100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label>Background Type</label>
+                                </td>
+                                <td>
+                                    <div class="d-flex o_horizontal" role="radiogroup">
+                                        <div class="form-check o_radio_item me-3">                                           
+                                            <input type="radio" class="form-check-input o_radio_input" id="header_color" name="header_background_type"
+                                            t-on-click="_click_header_background_type" value="header_color"
+                                            checked="checked"/>
+                                            <label class="form-check-label o_form_label" for="header_color">Color </label>
+                                        </div>
+                                        <div class="form-check o_radio_item">                                           
+                                            <input type="radio" class="form-check-input o_radio_input" id="header_img" name="header_background_type"
+                                            t-on-click="_click_header_background_type" value="header_img"/>
+                                            <label class="form-check-label o_form_label" for="header_img">Image </label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Background Color/Image</label>
+                                </td>
+                                <td>
+                                    <input id="header_background_color" type="color" value=""></input>
+                                    <form method="POST" enctype="multipart/form-data" id="header_background_img">
+                                        <input type="file" name="header_background_img"/>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Font Color</label>
+                                </td>
+                                <td>
+                                    <input id="header_font_color" type="color" value=""></input>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Navbar Style</label>
+                                </td>
+                                <td>
+                                    <div class="d-flex o_horizontal" role="radiogroup">
+                                        <div class="form-check o_radio_item me-3">                                           
+                                            <input type="radio" class="form-check-input o_radio_input" id="navbar_style_collapsed" name="navbar_style"
+                                           t-on-click="_click_header_background_type" value="collapsed"
+                                           checked="checked"/>
+                                            <label class="form-check-label o_form_label" for="navbar_style_collapsed">Collapsed </label>
+                                        </div>
+                                        <div class="form-check o_radio_item">                                           
+                                             <input type="radio" class="form-check-input o_radio_input" id="navbar_style_expanded" name="navbar_style"
+                                           t-on-click="_click_header_background_type" value="expanded"/>
+                                            <label class="form-check-label o_form_label" for="navbar_style_expanded">Expanded </label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="color_list_id">
+                <div class="sh_theme_design collapsed" t-on-click="_click_sh_theme_design" type="button"
+                     data-toggle="collapse" data-target="#headerColors" aria-expanded="true" aria-controls="filterFav">
+                    <span class="title_config">Body Style</span>
+
+                </div>
+                <div class="collapse" id="headerColors">
+                    <table width="100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label>Background Type</label>
+                                </td>
+                                <td>
+                                    <div class="d-flex o_horizontal" role="radiogroup">
+                                        <div class="form-check o_radio_item me-3">                                           
+                                           <input type="radio" id="bg_color" class="form-check-input o_radio_input me-2" name="body_background_type"
+                                           t-on-click="_click_body_background_type" value="bg_color" checked="checked"/>
+                                            <label class="form-check-label o_form_label" for="bg_color">Color </label>
+                                        </div>
+                                        <div class="form-check o_radio_item">                                           
+                                            <input type="radio" id="bg_img" class="form-check-input o_radio_input me-2" name="body_background_type"
+                                           t-on-click="_click_body_background_type" value="bg_img"/>
+                                            <label class="form-check-label o_form_label" for="bg_img">Image </label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Background Color/Image</label>
+                                </td>
+                                <td>
+                                    <input id="body_background_color" type="color" value=""></input>
+                                    <form method="POST" enctype="multipart/form-data" id="body_background_img">
+                                        <input type="file" name="body_background_img"/>
+                                    </form>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Font Family</label>
+                                </td>
+                                <td>
+                                    <select class="o_input" id="body_font_family" t-on-change="_on_change_body_font_family">
+                                        <option value="Roboto">Roboto</option>
+                                        <option value="Raleway">Raleway</option>
+                                        <option value="Poppins">Poppins</option>
+                                        <option value="Oxygen">Oxygen</option>
+                                        <option value="OpenSans">OpenSans</option>
+                                        <option value="KoHo">KoHo</option>
+                                        <option value="Ubuntu">Ubuntu</option>
+                                        <option value="custom_google_font">Custom Google Font</option>
+                                    </select>
+                                </td>
+                            </tr>
+                             <tr>
+                                <td>
+                                    <label id="body_google_font_family_label">Google Font Family</label>
+                                </td>
+                                <td>
+                                    <input id="body_google_font_family" type="text" value=""></input>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+         
+
+            <div id="button_style_id">
+                <div class="sh_theme_design" t-on-click="_click_sh_theme_design" data-toggle="collapse"
+                     data-target="#themeColors" aria-expanded="true" aria-controls="filterFav">
+                    <span class="title_config">Button Style</span>
+                </div>
+                <div class="collapse" id="themeColors">
+                    <div class="sh_color_plates">
+                        <!--  Color Plates -->
+                        <div></div>
+                        <div class="sh_main_div">
+                            <input type="hidden" class="current_active_color" value="color_1"/>
+                            <input type="hidden" class="current_active_color_pallete"/>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" t-on-click="_click_button_style_box" id="style_1">
+                                    <input type="radio" name="button_style" checked="checked"/>
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_button_style_box_1">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/button_style/1.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" t-on-click="_click_button_style_box" id="style_2">
+                                    <input type="radio" name="button_style" />
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_button_style_box_2">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/button_style/2.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" t-on-click="_click_button_style_box" id="style_3">
+                                    <input type="radio" name="button_style" />
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_button_style_box_3">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/button_style/3.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" t-on-click="_click_button_style_box" id="style_4">
+                                    <input type="radio" name="button_style" />
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_button_style_box_4">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/button_style/4.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="separator_style_id">
+                <div class="sh_theme_design collapsed" t-on-click="_click_sh_theme_design" type="button" data-toggle="collapse"
+                     data-target="#sh_color_plt" aria-expanded="true" aria-controls="filterFav">
+                    <span class="title_config">Separator Style</span>
+                </div>
+                <div class="collapse" id="sh_color_plt">
+                    <div class="sh_style_plates">
+                        <!--  theme style plates -->
+                        <div></div>
+                        <div class="sh_main_div">
+                            <input type="hidden" class="current_active_style" value="style_2"/>
+                            <input type="hidden" class="current_active_style_pallete"/>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_1" t-on-click="_click_separator_style_box">
+                                    <input type="radio" name="separator_style"/>
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_separator_box_1">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/separator/1.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_2" t-on-click="_click_separator_style_box">
+                                    <input type="radio" name="separator_style"/>
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_separator_box_2">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/separator/2.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_3" t-on-click="_click_separator_style_box">
+                                    <input type="radio" name="separator_style"/>
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_separator_box_3">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/separator/3.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_4" t-on-click="_click_separator_style_box">
+                                    <input type="radio" name="separator_style"/>
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_separator_box_4">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/separator/4.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_5" t-on-click="_click_separator_style_box">
+                                    <input type="radio" name="separator_style"/>
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_separator_box_5">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/separator/5.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_6" t-on-click="_click_separator_style_box">
+                                    <input type="radio" name="separator_style"/>
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_separator_box_6">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/separator/6.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_7" t-on-click="_click_separator_style_box">
+                                    <input type="radio" name="separator_style"/>
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_separator_box_7">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/separator/7.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                    <table width="100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label>Separator Color</label>
+                                </td>
+                                <td>
+                                    <input id="separator_color" type="color" value=""></input>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="kanban_style_id">
+                <div class="sh_theme_design" t-on-click="_click_sh_theme_design" data-toggle="collapse"
+                     data-target="#themeColors" aria-expanded="true" aria-controls="filterFav">
+                    <span class="title_config">Kanban Box Style</span>
+                </div>
+                <div class="collapse" id="themeColors">
+                    <div class="sh_color_plates">
+                        <!--  Color Plates -->
+                        <div></div>
+                        <div class="sh_main_div">
+                            <input type="hidden" class="current_active_color" value="color_1"/>
+                            <input type="hidden" class="current_active_color_pallete"/>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" t-on-click="_click_kanban_style_box" id="style_4">
+                                    <input type="radio" name="kanban_style" checked="checked"/>
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_kanban_box_1">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/kanban_view/1.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" t-on-click="_click_kanban_style_box" id="style_2">
+                                    <input type="radio" name="kanban_style" />
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_kanban_box_2">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/kanban_view/2.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" t-on-click="_click_kanban_style_box" id="style_3">
+                                    <input type="radio" name="kanban_style" />
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_kanban_box_3">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/kanban_view/3.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" t-on-click="_click_kanban_style_box" id="style_1">
+                                    <input type="radio" name="kanban_style" />
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_kanban_box_4">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/kanban_view/4.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="color_list_id">
+                <div class="sh_theme_design collapsed" t-on-click="_click_sh_theme_design" type="button"
+                     data-toggle="collapse" data-target="#sidebarStyle" aria-expanded="true" aria-controls="filterFav">
+                    <span class="title_config">Sidebar</span>
+
+                </div>
+                <div class="collapse" id="sidebarStyle">
+                    <table width="100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label>Sidebar Background Style</label>
+                                </td>
+                                <td colspan="3">
+                                    <div class="d-flex o_horizontal" role="radiogroup">
+                                        <div class="form-check o_radio_item me-3">                                           
+                                           <input type="radio" class="form-check-input o_radio_input me-2" id="sidebar_color" name="sidebar_background_style"
+                                           t-on-click="_click_sidebar_background_style" value="color"
+                                           checked="checked"/>
+                                            <label class="form-check-label o_form_label" for="sidebar_color">Color </label>
+                                        </div>
+                                        <div class="form-check o_radio_item">                                           
+                                             <input type="radio" class="form-check-input o_radio_input me-2" id="sidebar_image" name="sidebar_background_style"
+                                           t-on-click="_click_sidebar_background_style" value="image"/>
+                                            <label class="form-check-label o_form_label" for="sidebar_image">Image </label>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Background Color / Image</label>
+                                </td>
+                                <td>
+
+                                    <input id="sidebar_background_color" type="color" value=""></input>
+                                    <form method="POST" enctype="multipart/form-data" id="sidebar_background_img">
+                                        <input type="file" name="sidebar_background_img"/>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Font Color</label>
+                                </td>
+                                <td>
+                                    <input id="sidebar_font_color" type="color" value=""></input>
+                                </td>
+                            </tr>
+                            <tr>
+
+
+                                <td>
+                                    <label>Sidebar View Style</label>
+                                </td>
+                                <td colspan="3">
+                                    <div class="d-flex o_horizontal" role="radiogroup">
+                                        <div class="form-check o_radio_item me-3">                                           
+                                           <input type="radio" class="form-check-input o_radio_input me-2" id="sidebar_collapsed" name="sidebar_collapse_style"
+                                        value="collapsed" checked="checked"/> 
+                                            <label class="form-check-label o_form_label" for="sidebar_collapsed">Collapsed </label>
+                                        </div>
+                                        <div class="form-check o_radio_item">                                           
+                                             <input type="radio" class="form-check-input o_radio_input me-2" id="sidebar_expanded" name="sidebar_collapse_style"
+                                           value="expanded"/>
+                                            <label class="form-check-label o_form_label" for="sidebar_expanded">Expanded </label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="listview_table_id">
+                <div class="sh_theme_design collapsed" t-on-click="_click_sh_theme_design" type="button"
+                     data-toggle="collapse" data-target="#listViewTable" aria-expanded="true" aria-controls="filterFav">
+                    <span class="title_config">List View Table</span>
+
+                </div>
+                <div class="collapse" id="listViewTable">
+                    <table width="100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label>Is Predefined List View?</label>
+                                </td>
+                                <td>
+                                    <div class="o-checkbox form-check">
+                                    <input class="form-check-input" id="predefined_list_view_boolean" t-on-click="_click_predefined_list_view_boolean" type="checkbox"
+                                           value=""></input>
+                                        <label class="form-check-label" for="predefined_list_view_boolean"/>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="predefined_list_view_style">
+                                <div class="sh_color_plates">
+                            <!--  Color Plates -->
+                            <div></div>
+                            <div class="sh_main_div">
+                                <input type="hidden" class="current_active_color" value="color_1"/>
+                                <input type="hidden" class="current_active_color_pallete"/>
+                                <li class="sh_div_plt">
+                                    <div class="theme_style_box" t-on-click="_click_listview_style_box" id="style_1">
+                                        <input type="radio" name="listview_style" value="style_1"/>
+                                        <span class="circle fa fa-check"></span>
+                                        <div class="sh_button_style_box_1">
+                                            <img src="/sh_backmate_theme_adv/static/src/img/predefine_list_view/1.svg"></img>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="sh_div_plt">
+                                    <div class="theme_style_box" t-on-click="_click_listview_style_box" id="style_2">
+                                        <input type="radio" name="listview_style" value="style_2"/>
+                                        <span class="circle fa fa-check"></span>
+                                        <div class="sh_button_style_box_2">
+                                            <img src="/sh_backmate_theme_adv/static/src/img/predefine_list_view/2.svg"></img>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="sh_div_plt">
+                                    <div class="theme_style_box" t-on-click="_click_listview_style_box" id="style_3">
+                                        <input type="radio" name="listview_style" value="style_3"/>
+                                        <span class="circle fa fa-check"></span>
+                                        <div class="sh_button_style_box_3">
+                                            <img src="/sh_backmate_theme_adv/static/src/img/predefine_list_view/3.svg"></img>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="sh_div_plt">
+                                    <div class="theme_style_box" t-on-click="_click_listview_style_box" id="style_4">
+                                        <input type="radio" name="listview_style" value="style_4"/>
+                                        <span class="circle fa fa-check"></span>
+                                        <div class="sh_button_style_box_4">
+                                            <img src="/sh_backmate_theme_adv/static/src/img/predefine_list_view/4.svg"></img>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="sh_div_plt">
+                                    <div class="theme_style_box" t-on-click="_click_listview_style_box" id="style_5">
+                                        <input type="radio" name="listview_style" value="style_5"/>
+                                        <span class="circle fa fa-check"></span>
+                                        <div class="sh_button_style_box_4">
+                                            <img src="/sh_backmate_theme_adv/static/src/img/predefine_list_view/5.svg"></img>
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+                        </div>
+                            </tr>
+                            <tr class="list_view_border_even_row_color">
+                                <td>
+                                    <label>List View Border</label>
+                                </td>
+                                <td>
+                                    <select  class="o_input" id="list_view_border">
+                                        <option value=""></option>
+                                        <option value="bordered">Bordered</option>
+                                        <option value="without_border">Without Border</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <label>Even Row Color</label>
+                                </td>
+                                <td>
+                                    <input id="list_view_even_row_color" type="color" value=""></input>
+                                </td>
+                            </tr>
+                            <tr class="row_hover_odd_row_color">
+                                <td>
+                                    <label>Rows Hover?</label>
+                                </td>
+                                <td>
+                                    <div class="o-checkbox form-check">
+                                    <input class="form-check-input" id="list_view_is_hover_row" t-on-click="_click_list_view_is_hover_row"
+                                           type="checkbox" value=""></input>
+                                        <label class="form-check-label" for="list_view_is_hover_row"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <label>Odd Row Color</label>
+                                </td>
+                                <td>
+                                    <input id="list_view_odd_row_color" type="color" value=""></input>
+                                </td>
+                            </tr>
+                            <tr class="is_row_color_hover">
+                                <td>
+                                    <label>Hover Background Color</label>
+                                </td>
+                                <td>
+                                    <input id="list_view_hover_bg_color" type="color" value=""></input>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="login_style_id">
+                <div class="sh_theme_design collapsed" t-on-click="_click_sh_theme_design" type="button" data-toggle="collapse"
+                     data-target="#sh_color_plt" aria-expanded="true" aria-controls="filterFav">
+                    <span class="title_config">Login Style</span>
+                </div>
+                <div class="collapse" id="sh_color_plt">
+                    <div class="sh_style_plates">
+                        <!--  theme style plates -->
+                        <div></div>
+                        <div class="sh_main_div">
+                            <input type="hidden" class="current_active_style" value="style_2"/>
+                            <input type="hidden" class="current_active_style_pallete"/>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_0" t-on-click="_on_change_login_page_style">
+                                    <input type="radio" name="login_style" value="style_0"/>
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_login_box_1">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/login_style/1.svg" alt="" class=""/>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_1" t-on-click="_on_change_login_page_style">
+                                    <input type="radio" name="login_style" value="style_1"/>
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_login_box_2">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/login_style/4.svg" alt="" class=""/>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_2" t-on-click="_on_change_login_page_style">
+                                    <input type="radio" name="login_style" value="style_2"/>
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_login_box_3">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/login_style/3.svg" alt="" />
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_3" t-on-click="_on_change_login_page_style">
+                                    <input type="radio" name="login_style" value="style_3"/>
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_login_box_4">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/login_style/2.svg" alt="" class=""/>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_4" t-on-click="_on_change_login_page_style">
+                                    <input type="radio" name="login_style" value="style_4"/>
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_login_box_5">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/login_style/5.svg" alt="" class=""/>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+
+                    <table width="100%">
+                        <tbody>
+                            <tr class="login_page_style_with_comp_logo_tr">
+                                <td>
+                                    <label class="login_page_style_comp_logo"
+                                           style="white-space: nowrap;margin-right: 8px;">Company Logo ?
+                                    </label>
+                                </td>
+                                <td style="padding-top: 8px;">
+                                    <div class="o-checkbox form-check">
+                                    <input class="form-check-input" id="login_page_style_comp_logo" type="checkbox" value=""></input>
+                                        <label class="form-check-label" for="login_page_style_comp_logo"/>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="login_bg_type">Background Type</label>
+                                </td>
+                                <td>
+                                    <div class="login_bg_type">
+                                        <div class="d-flex o_horizontal " role="radiogroup">
+                                            <div class="form-check o_radio_item me-3">                                           
+                                            <input type="radio" id="login_bg_color" class="form-check-input o_radio_input me-2" name="login_page_background_type"
+                                                t-on-click="_click_login_page_background_type" value="bg_color"
+                                                checked="checked"/>
+                                                <label class="form-check-label o_form_label" for="login_bg_color">Color </label>
+                                            </div>
+                                            <div class="form-check o_radio_item">                                           
+                                                <input type="radio" id="login_bg_img" class="form-check-input o_radio_input me-2" name="login_page_background_type"
+                                                t-on-click="_click_login_page_background_type" value="bg_img"/>
+                                                <label class="form-check-label o_form_label" for="login_bg_img">Image </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <label class="login_bg_img_title">Background Color/Image</label>
+                                </td>
+                                <td>
+                                    <input class="login_bg_color" id="login_page_background_color" type="color"
+                                           value=""></input>
+                                    <form class="login_bg_img" method="POST" enctype="multipart/form-data"
+                                          id="login_page_background_img">
+                                        <input type="file" name="login_page_background_img"/>
+                                    </form>
+
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="login_box_color">Box Color</label>
+                                </td>
+                                <td>
+                                    <input class="login_box_color" id="login_page_box_color" type="color"
+                                           value=""></input>
+                                </td>
+                                <td>
+                                    <label class="login_banner_img">Banner Image</label>
+                                </td>
+                                <td class="login_banner_img">
+                                    <form method="POST" enctype="multipart/form-data" id="login_page_banner_img">
+                                        <input type="file" name="login_page_banner_img"/>
+                                    </form>
+                                </td>
+
+                            </tr>
+                            <tr>
+
+                                <td>
+                                    <label class="company_icon_image">Company Icon Image</label>
+                                </td>
+                                <td class="company_icon_image">
+                                    <form method="POST" enctype="multipart/form-data" id="login_page_icon_img">
+                                        <input type="file" name="login_page_icon_img"/>
+                                    </form>
+                                </td>
+                                <td>
+                                    <label class="company_name_image">Company Name Logo</label>
+                                </td>
+                                <td class="company_name_image">
+                                    <form method="POST" enctype="multipart/form-data" id="login_page_icon_img_long">
+                                        <input type="file" name="login_page_icon_img_long"/>
+                                    </form>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="color_list_id">
+                <div class="sh_theme_design collapsed" t-on-click="_click_sh_theme_design" type="button"
+                     data-toggle="collapse" data-target="#loginPopup" aria-expanded="true" aria-controls="filterFav">
+                    <span class="title_config">Progressbar</span>
+                </div>
+                <div class="collapse" id="loginPopup">
+                    <table width="100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label>Progress Style</label>
+                                </td>
+                                <td>
+                                    <select  class="o_input" id="progress_style" t-on-click="_click_progress_style">
+                                        <option value="style_1">Style 1</option>
+                                        <option value="none">None</option>
+                                    </select>
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+
+                                </td>
+                            </tr>
+                            <tr id="progress_color_height">
+                                <td>
+                                    <label>Progress Color</label>
+                                </td>
+                                <td>
+                                    <input class="" id="progress_color" type="color" value=""></input>
+                                </td>
+                                <td>
+                                    <label>Progress Height</label>
+                                </td>
+                                <td>
+                                    <input class="" id="progress_height" type="text" value=""></input>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="color_list_id">
+                <div class="sh_theme_design collapsed" t-on-click="_click_sh_theme_design" type="button"
+                     data-toggle="collapse" data-target="#stickyPopup" aria-expanded="true" aria-controls="filterFav">
+                    <span class="title_config">Sticky</span>
+
+                </div>
+                <div class="collapse" id="stickyPopup">
+                    <table width="100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label>Form Status Bar</label>
+                                </td>
+                                <td>
+                                    <div class="o-checkbox form-check">
+                                    <input class="form-check-input" id="is_sticky_form" type="checkbox" value=""></input>
+                                        <label class="form-check-label" for="is_sticky_form"/>
+                                    </div>
+                                </td>
+                                <!--<td><label>Chatter</label></td>
+                                <td>
+                                    <input id="is_sticky_chatter" type="checkbox" value=""></input>
+                                </td>-->
+                                <td>
+                                    <label>List Inside Form</label>
+                                </td>
+                                <td>
+                                    <div class="o-checkbox form-check">
+                                    <input class="form-check-input" id="is_sticky_list_inside_form" type="checkbox" value=""></input>
+                                        <label class="form-check-label" for="is_sticky_list_inside_form"/>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>List View Footer</label>
+                                </td>
+                                <td>
+                                    <div class="o-checkbox form-check">
+                                    <input class="form-check-input" id="is_sticky_list" type="checkbox" value=""></input>
+                                        <label class="form-check-label" for="is_sticky_list"/>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Pivot View</label>
+                                </td>
+                                <td>
+                                    <div class="o-checkbox form-check">
+                                    <input class="form-check-input" id="is_sticky_pivot" type="checkbox" value=""></input>
+                                        <label class="form-check-label" for="navbar_style"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <label></label>
+                                </td>
+                                <td>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="tab_style_id">
+                <div class="sh_theme_design collapsed" t-on-click="_click_sh_theme_design" type="button" data-toggle="collapse"
+                     data-target="#sh_color_plt" aria-expanded="true" aria-controls="filterFav">
+                    <span class="title_config">Tab Style</span>
+                </div>
+                <div class="collapse" id="sh_color_plt">
+                    <div class="sh_style_plates">
+                        <!--  theme style plates -->
+                        <div></div>
+                        <div class="sh_main_div">
+                            <input type="hidden" class="current_active_style" value="style_2"/>
+                            <input type="hidden" class="current_active_style_pallete"/>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_1" t-on-click="_click_tab_style_box">
+                                    <input type="radio" name="tab_style"/>
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_tab_box_1">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/tab_style/1.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_2" t-on-click="_click_tab_style_box">
+                                    <input type="radio" name="tab_style"/>
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_tab_box_2">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/tab_style/2.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_3" t-on-click="_click_tab_style_box">
+                                    <input type="radio" name="tab_style"/>
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_tab_box_3">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/tab_style/3.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_4" t-on-click="_click_tab_style_box">
+                                    <input type="radio" name="tab_style"/>
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_tab_box_4">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/tab_style/4.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_5" t-on-click="_click_tab_style_box">
+                                    <input type="radio" name="tab_style"/>
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_tab_box_5">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/tab_style/5.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_6" t-on-click="_click_tab_style_box">
+                                    <input type="radio" name="tab_style"/>
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_tab_box_6">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/tab_style/6.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_7" t-on-click="_click_tab_style_box">
+                                    <input type="radio" name="tab_style"/>
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_tab_box_7">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/tab_style/7.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="form_element_style_id">
+                <div class="sh_theme_design collapsed" t-on-click="_click_sh_theme_design" type="button" data-toggle="collapse"
+                     data-target="#sh_color_plt" aria-expanded="true" aria-controls="filterFav">
+                    <span class="title_config">Form Element Style</span>
+                </div>
+                <div class="collapse" id="sh_color_plt">
+                    <div class="sh_style_plates">
+                        <!--  theme style plates -->
+                        <div></div>
+                        <div class="sh_main_div">
+                            <input type="hidden" class="current_active_style" value="style_2"/>
+                            <input type="hidden" class="current_active_style_pallete"/>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_1" t-on-click="_click_form_element_style_box">
+                                    <input type="radio" name="form_element_style"/>
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_form_element_box_1">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/form_element_style/1.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_2" t-on-click="_click_form_element_style_box">
+                                    <input type="radio" name="form_element_style" />
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_form_element_box_2">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/form_element_style/2.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_3" t-on-click="_click_form_element_style_box">
+                                    <input type="radio" name="form_element_style" />
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_form_element_box_3">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/form_element_style/3.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_4" t-on-click="_click_form_element_style_box">
+                                    <input type="radio" name="form_element_style" />
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_form_element_box_4">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/form_element_style/4.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_5" t-on-click="_click_form_element_style_box">
+                                    <input type="radio" name="form_element_style" />
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_form_element_box_5">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/form_element_style/5.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_6" t-on-click="_click_form_element_style_box">
+                                    <input type="radio" name="form_element_style" />
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_form_element_box_6">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/form_element_style/6.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_7" t-on-click="_click_form_element_style_box">
+                                    <input type="radio" name="form_element_style" />
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_form_element_box_7">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/form_element_style/7.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_7" t-on-click="_click_form_element_style_box">
+                                    <input type="radio" name="form_element_style" />
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_form_element_box_8">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/form_element_style/7.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="breadcrumbs_style_id">
+                <div class="sh_theme_design collapsed" t-on-click="_click_sh_theme_design" type="button" data-toggle="collapse"
+                     data-target="#sh_color_plt" aria-expanded="true" aria-controls="filterFav">
+                    <span class="title_config">Breadcrumb Style</span>
+                </div>
+                <div class="collapse" id="sh_color_plt">
+                    <div class="sh_style_plates">
+                        <!--  theme style plates -->
+                        <div></div>
+                        <div class="sh_main_div">
+                            <input type="hidden" class="current_active_style" value="style_2"/>
+                            <input type="hidden" class="current_active_style_pallete"/>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_1" t-on-click="_click_breadcrumbs_style_box">
+                                    <input type="radio" name="breadcrumbs_style"/>
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_breadcrumbs_box_1">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/breadcrumbs_style/1.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_2" t-on-click="_click_breadcrumbs_style_box">
+                                    <input type="radio" name="breadcrumbs_style" />
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_breadcrumbs_box_2">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/breadcrumbs_style/2.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_3" t-on-click="_click_breadcrumbs_style_box">
+                                    <input type="radio" name="breadcrumbs_style" />
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_breadcrumbs_box_3">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/breadcrumbs_style/3.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_4" t-on-click="_click_breadcrumbs_style_box">
+                                    <input type="radio" name="breadcrumbs_style" />
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_breadcrumbs_box_4">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/breadcrumbs_style/4.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_5" t-on-click="_click_breadcrumbs_style_box">
+                                    <input type="radio" name="breadcrumbs_style" />
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_breadcrumbs_box_5">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/breadcrumbs_style/5.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_6" t-on-click="_click_breadcrumbs_style_box">
+                                    <input type="radio" name="breadcrumbs_style" />
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_breadcrumbs_box_6">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/breadcrumbs_style/6.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_7" t-on-click="_click_breadcrumbs_style_box">
+                                    <input type="radio" name="breadcrumbs_style" />
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_breadcrumbs_box_7">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/breadcrumbs_style/7.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="color_list_id">
+                <div class="sh_theme_design collapsed" t-on-click="_click_sh_theme_design" type="button"
+                     data-toggle="collapse" data-target="#searchStyle" aria-expanded="true" aria-controls="filterFav">
+                    <span class="title_config">Search Style</span>
+
+                </div>
+                <div class="collapse" id="searchStyle">
+                    <table width="100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label>Search Style</label>
+                                </td>
+                                <td>
+                                    <div class="d-flex o_horizontal" role="radiogroup">
+                                        <div class="form-check o_radio_item me-3">                                           
+                                           <input type="radio" class="form-check-input o_radio_input me-2" id="search_collapsed" name="search_style" value="collapsed"
+                                           checked="checked"/>
+                                            <label class="form-check-label o_form_label" for="search_collapsed">Collapsed </label>
+                                        </div>
+                                        <div class="form-check o_radio_item">                                           
+                                            <input type="radio" class="form-check-input o_radio_input me-2" id="search_expanded" name="search_style" value="expanded"/>
+                                            <label class="form-check-label o_form_label" for="search_expanded">Expanded </label>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td>
+
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+         
+            <div id="radio_button_style_id">
+                <div class="sh_theme_design collapsed" t-on-click="_click_sh_theme_design" type="button" data-toggle="collapse"
+                     data-target="#sh_color_plt" aria-expanded="true" aria-controls="filterFav">
+                    <span class="title_config">Radio Button Style</span>
+                </div>
+                <div class="collapse" id="sh_color_plt">
+                    <div class="sh_style_plates">
+                        <!--  theme style plates -->
+                        <div></div>
+                        <div class="sh_main_div">
+                            <input type="hidden" class="current_active_style" value="style_2"/>
+                            <input type="hidden" class="current_active_style_pallete"/>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_4" t-on-click="_click_radio_button_style_box">
+                                    <input type="radio" name="radio_button_style"/>
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_radio_button_box_1">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/radio_button_style/4.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_1" t-on-click="_click_radio_button_style_box">
+                                    <input type="radio" name="radio_button_style" />
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_radio_button_box_2">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/radio_button_style/1.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_2" t-on-click="_click_radio_button_style_box">
+                                    <input type="radio" name="radio_button_style" />
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_radio_button_box_3">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/radio_button_style/2.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_3" t-on-click="_click_radio_button_style_box">
+                                    <input type="radio" name="radio_button_style" />
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_radio_button_box_4">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/radio_button_style/3.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="check_box_style_id">
+                <div class="sh_theme_design collapsed" t-on-click="_click_sh_theme_design" type="button" data-toggle="collapse"
+                     data-target="#sh_color_plt" aria-expanded="true" aria-controls="filterFav">
+                    <span class="title_config">Checkbox Style</span>
+                </div>
+                <div class="collapse" id="sh_color_plt">
+                    <div class="sh_style_plates">
+                        <!--  theme style plates -->
+                        <div></div>
+                        <div class="sh_main_div">
+                            <input type="hidden" class="current_active_style" value="style_2"/>
+                            <input type="hidden" class="current_active_style_pallete"/>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_1" t-on-click="_click_checkbox_style_box">
+                                    <input type="radio" name="checkbox_style"/>
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_checkbox_box_1">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/check_box_style/1.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_2" t-on-click="_click_checkbox_style_box">
+                                    <input type="radio" name="checkbox_style" />
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_checkbox_box_2">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/check_box_style/2.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_3" t-on-click="_click_checkbox_style_box">
+                                    <input type="radio" name="checkbox_style" />
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_checkbox_box_3">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/check_box_style/3.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_4" t-on-click="_click_checkbox_style_box">
+                                    <input type="radio" name="checkbox_style" />
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_checkbox_box_4">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/check_box_style/4.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="scrollbar_style_id">
+                <div class="sh_theme_design collapsed" t-on-click="_click_sh_theme_design" type="button" data-toggle="collapse"
+                     data-target="#sh_color_plt" aria-expanded="true" aria-controls="filterFav">
+                    <span class="title_config">Scrollbar Style</span>
+                </div>
+                <div class="collapse" id="sh_color_plt">
+                    <div class="sh_style_plates">
+                        <!--  theme style plates -->
+                        <div></div>
+                        <div class="sh_main_div">
+                            <input type="hidden" class="current_active_style" value="style_2"/>
+                            <input type="hidden" class="current_active_style_pallete"/>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_1" t-on-click="_click_scrollbar_style_box">
+                                    <input type="radio" name="scrollbar_style"/>
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_scrollbar_box_1">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/scrollbar_style/1.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_2" t-on-click="_click_scrollbar_style_box">
+                                    <input type="radio" name="scrollbar_style" />
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_scrollbar_box_2">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/scrollbar_style/2.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_3" t-on-click="_click_scrollbar_style_box">
+                                    <input type="radio" name="scrollbar_style" />
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_scrollbar_box_3">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/scrollbar_style/3.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_4" t-on-click="_click_scrollbar_style_box">
+                                    <input type="radio" name="scrollbar_style" />
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_scrollbar_box_4">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/scrollbar_style/4.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="style_5" t-on-click="_click_scrollbar_style_box">
+                                    <input type="radio" name="scrollbar_style" />
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_scrollbar_box_5">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/scrollbar_style/5.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="icon_style_id">
+                <!-- Font awesome icon style -->
+                <div class="sh_theme_design collapsed" t-on-click="_click_sh_theme_design" type="button"
+                     data-toggle="collapse" data-target="#font_awesome_icon_style_div" aria-expanded="true"
+                     aria-controls="filterFav">
+                    <span class="title_config">App Icon</span>
+
+                </div>
+                <div class="collapse" id="font_awesome_icon_style_div">
+                    <div class="sh_style_plates">
+                        <!--  theme style plates -->
+                        <div></div>
+                        <div class="sh_main_div">
+                            <input type="hidden" class="current_active_style" value="style_2"/>
+                            <input type="hidden" class="current_active_style_pallete"/>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="standard" t-on-click="_on_change_icon_style">
+                                    <input type="radio" name="app_icon_style" value="standard"/>
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_app_icon_box_1">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/app_icon_style/default.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="line_icon" t-on-click="_on_change_icon_style">
+                                    <input type="radio" name="app_icon_style" value="line_icon"/>
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_app_icon_box_2">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/app_icon_style/thin.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="three_d" t-on-click="_on_change_icon_style">
+                                    <input type="radio" name="app_icon_style" value="three_d"/>
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_app_icon_box_3">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/app_icon_style/3d.png"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="dual_tone" t-on-click="_on_change_icon_style">
+                                    <input type="radio" name="app_icon_style" value="dual_tone"/>
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_app_icon_box_4">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/app_icon_style/dualtone.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="glass_icon" t-on-click="_on_change_icon_style">
+                                    <input type="radio" name="app_icon_style" value="glass_icon"/>
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_app_icon_box_5">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/app_icon_style/glass.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" id="light_icon" t-on-click="_on_change_icon_style">
+                                    <input type="radio" name="app_icon_style" value="light_icon"/>
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_app_icon_box_6">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/app_icon_style/light.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                    <table width="100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label class="sh_config_dt_label">Dual Tone Icon Color 1</label>
+                                </td>
+                                <td>
+                                    <input id="dual_tone_icon_color_1" type="color" value=""></input>
+                                </td>
+                                <td>
+                                    <label class="sh_config_dt_label">Dual Tone Icon Color 2</label>
+                                </td>
+                                <td>
+                                    <input id="dual_tone_icon_color_2" type="color" value=""></input>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="font_icon_style_id">
+                <div class="sh_theme_design" t-on-click="_click_sh_theme_design" data-toggle="collapse"
+                     data-target="#themeColors" aria-expanded="true" aria-controls="filterFav">
+                    <span class="title_config">Backend Font Icon Style</span>
+                </div>
+                <div class="collapse" id="themeColors">
+                    <div class="sh_color_plates">
+                        <!--  Color Plates -->
+                        <div></div>
+                        <div class="sh_main_div">
+                            <input type="hidden" class="current_active_color" value="color_1"/>
+                            <input type="hidden" class="current_active_color_pallete"/>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" title="Standard" t-on-click="_click_font_icon_style_box" id="style_1">
+                                    <input type="radio" name="font_icon_style" checked="checked"/>
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_font_icon_box_1">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/font_icon_style/standard.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" title="Regular" t-on-click="_click_font_icon_style_box" id="style_2">
+                                    <input type="radio" name="font_icon_style" />
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_font_icon_box_2">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/font_icon_style/regular.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" title="Light" t-on-click="_click_font_icon_style_box" id="style_3">
+                                    <input type="radio" name="font_icon_style" />
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_font_icon_box_3">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/font_icon_style/light.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sh_div_plt">
+                                <div class="theme_style_box" title="Thin" t-on-click="_click_font_icon_style_box" id="style_4">
+                                    <input type="radio" name="font_icon_style" />
+                                    <span class="circle fa fa-check"></span>
+                                    <div class="sh_font_icon_box_4">
+                                        <img src="/sh_backmate_theme_adv/static/src/img/font_icon_style/thin.svg"></img>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-3">
+                <button type="button" t-on-click="_click_save_color" class="btn btn-primary save_color mr-3 ">Save
+                </button>
+                <button type="button" t-on-click="_click_discard_color" class="btn btn-secondary discard_color mr-3">Discard</button>
+            </div>
+        </div>
+    </t>
+</template>

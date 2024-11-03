@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+	<data>	
+		<record id="sh_backend_theme_res_comapny_inh" model="ir.ui.view">
+			<field name="name">sh.backend.theme.res.company.inh</field>
+			<field name="model">res.company</field>
+			<field name="inherit_id" ref="base.view_company_form"/>			
+			<field name="arch" type="xml">	
+				<xpath expr="//page[1]" position="after">
+  					<page string="Company Name Logo">
+  						<field name="company_name_logo" widget="image" class="oe_avatar"/>
+  					</page>
+				</xpath>
+			</field>
+		</record>
+	
+		
+	</data>		
+</odoo>
+				

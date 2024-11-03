@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_library_book_search_inherit" model="ir.ui.view">
+        <field name="name">library.book.search.inherit</field>
+        <field name="model">library.book</field>
+        <field name="inherit_id" ref="library_management.view_library_book_search"/>
+        <field name="arch" type="xml">
+            <search>
+                <field name="isbn"/>
+                <filter name="available" string="Còn trong kho" domain="[('state','=','available')]"/>
+                <filter name="borrowed" string="Đã được mượn" domain="[('state','=','borrowed')]"/>
+            </search>
+        </field>
+    </record>
+</odoo>

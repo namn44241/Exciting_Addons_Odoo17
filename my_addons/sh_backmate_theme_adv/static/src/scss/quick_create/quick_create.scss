@@ -1,0 +1,130 @@
+.sh_droupdown{
+    .dropdown-toggle{
+        span{
+            &.sh_create_icon{
+                padding: 10px 12px;
+                border-radius: 10px;
+                transition: .5s all;
+            }
+        }
+    }
+    .o-dropdown--menu{
+        min-width: 280px;
+        max-width: 280px;
+        font-size: 0.8125rem;
+        border: 2px solid #e5e9f2 !important;
+        border-color: #e5e9f2 !important;
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1) !important;
+        border-top: 3px solid $primaryColor !important;
+        border-bottom: 3px solid $primaryColor !important;
+        border-radius: 0.25rem;
+        margin-top: 5px ;
+        padding: 0 !important;
+        @include media-breakpoint-down(md){
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            left: 0 !important;
+        }
+        .sh_dropdown_inner{
+            .sh_create_title{
+                margin: 0;
+                font-weight: 700;
+                line-height: 1.1;
+                color: $primaryColor;
+                font-size: 17px !important;
+            }
+            .sh_create_btn_group{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                a{
+                    color: $primaryColor;
+                    span{
+                        font-size: 18px !important;
+                    }
+                }
+            }
+        }
+        .sh_create_record{
+            margin: 0.75rem !important;
+            .col-12{
+                margin-bottom: 0.75rem !important;
+                .form-group{
+                    .form-label{
+                        font-size: 15px !important;
+                        font-weight: 500;
+                        color: $primaryColor;
+                        margin-bottom: .5rem;
+                    }
+                }
+                .btn.btn-danger{
+                    padding: 7px 15px !important;
+                    font-weight: 600;
+                    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+                
+                    @if $button_style == 'style_1'{
+                        border-radius: 0px !important;
+                    }
+                    @if $button_style == 'style_2'{
+                        border-radius: 5px !important;
+                    }
+                    @if $button_style == 'style_3'{
+                        border-radius: 5px 15px  !important;
+                    }
+                    @if $button_style == 'style_4'{
+                        border-radius: 2rem !important;
+                    }
+                }
+            }
+        }
+        .sh_create_record_main{
+            margin-top: 0.75rem !important;
+            margin-bottom: 0.75rem !important;
+            .sh_create_record_ul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                .sh_quick_create_item{
+                    line-height: 1.25rem;
+                    padding: .35rem 1rem !important;
+                    font-size: 16px !important;
+                    display: flex;
+                    align-items: center;
+                    color: #4E4E4E;
+                    position: relative;
+                    a{
+                        color: #4E4E4E;
+                        width: 100%;
+                    }
+                    &:hover{
+                        background: #f5f6fa;
+                        color: $primaryColor !important;
+                        a{
+                            color: $primaryColor;
+                        }
+                        .fa-pencil{
+                            visibility: visible;
+                        }
+                    }
+                    .sh_record_icon{
+                        font-size: 16px;
+                        font-weight: 900;
+                        margin-right: 0.75rem !important;
+                    }
+                    .fa-pencil{
+                        font-size: 16px;
+                        margin-left: auto;
+                        visibility: hidden;
+                        @include media-breakpoint-down(lg){
+                            visibility: visible !important;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+    

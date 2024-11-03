@@ -1,0 +1,49 @@
+.o_action_manager{
+    .o-settings-form-view{
+        .o_form_view_container{
+            .o_content{
+                .o_form_renderer{
+                    .o_setting_container{
+                        .settings_tab{
+                            background: #fff;
+                            .tab{
+                                font-weight: 500;color: #111c43;margin-bottom: 10px;
+                            }
+                        }
+                        .settings{
+                            background-color:  $body_background_color;
+                            .app_settings_block{
+                                background-color:  $body_background_color;
+                                    h2{
+                                        background-color:  $body_background_color;color: $primaryColor;font-weight: 600;
+                                    }
+                                    .o_settings_container{
+                                        border-radius: 11px;box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);padding: 1.1rem;margin: 0.8rem;background: #fff;
+                                        .o_setting_box{
+                                            .o_form_label{
+                                                color: #111c43 !important;
+                                            }
+                                            .text-muted{
+                                                color: #6f7e92!important;font-weight: 500;
+                                            }
+                                        }
+                                    }   
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .o_calendar_view{
+        .o_content{
+            background:#fff;border-radius: 11px;box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);margin: 0.8rem;
+            
+        }
+        .o_onboarding_container{
+            .o_onboarding_main{
+                background:#fff;border-radius: 11px;box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);padding: 1.1rem;margin: 0.8rem;
+            }
+        }
+    }
+}

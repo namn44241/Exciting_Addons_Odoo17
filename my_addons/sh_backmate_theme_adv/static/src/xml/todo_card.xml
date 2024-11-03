@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <template id="todo_card">
+        <t t-name="sh_backmate_theme_adv.todo_card">
+            <div>
+                <div class="card-header card" id="headingOne">
+                    <div class="sh-card-header">
+                        <div class="o-checkbox custom-control custom-checkbox">
+                            <t t-if="is_done">
+                                <input checked="checked" t-on-change="_click_sh_todo_checklist" type="checkbox"
+                                       t-att-id="rec" class="form-check-input custom-control-input sh_todo_checklist"/>
+                            </t>
+                            <t t-else="">
+                                <input type="checkbox" t-on-change="_click_sh_todo_checklist" t-att-id="rec"
+                                       class="form-check-input custom-control-input sh_todo_checklist"/>
+                            </t>
+
+                            <label t-att-for="rec" class="form-check-label custom-control-label"></label>
+                            <span class="sh_mark_completed_tooltip">Mark Completed</span>
+                        </div>
+                    </div>
+                    <div class="sh-card-header-button">
+                        <div class="sh_to_do_edit_btn">
+                            <span class="fa fa-pencil sh_header_pencil" t-on-click="_click_sh_header_pencil"
+                                  t-att-id="rec"/>
+                            <span class="sh_mark_edit_tooltip">Edit</span>
+                        </div>
+                        <div class="sh_to_do_save_btn">
+                            <span class="fa fa-save sh_header_save" t-on-click="_focusout_sh_todo_description"
+                                  t-att-id="rec" style="display:none;"/>
+                            <span class="sh_mark_save_tooltip">Save</span>
+                        </div>
+                        <div class="sh_to_do_remove_btn">
+                            <span class="fa fa-times sh_header_times" t-on-click="_remove_todo" t-att-id="rec"/>
+                            <span class="sh_mark_remove_tooltip">Remove</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card-body">
+                            <span t-att-class="is_done ? 'sh_todo_label sh_done_todo' : 'sh_todo_label'">
+                                <t t-esc="name"/>
+                            </span>
+                            <textarea class="sh_todo_description" t-att-id="rec"
+                                      style="white-space:normal;display:none;">
+                                <t t-esc="name"/>
+                            </textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>

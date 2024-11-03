@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<templates id="sh_add_custom_action" xml:space="preserve">
+    <t t-name="web.ActionMenus_sh" t-inherit="web.ActionMenus" t-inherit-mode="extension">
+        <xpath expr="//Dropdown[2]/t[2]" position="after">
+            <t t-if="show_open_record_new_tab_button_action">
+                <DropdownItem class="'sh_custom_action'" onSelected="() => this.onOpenRecord()">
+                    Open Records In New Tab
+                </DropdownItem>
+            </t>
+        </xpath>
+    </t>
+</templates>

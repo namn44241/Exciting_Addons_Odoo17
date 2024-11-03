@@ -1,0 +1,122 @@
+@if $breadcrumb_style == 'style_1'{
+	.breadcrumb {
+		.breadcrumb-item+.breadcrumb-item {
+			&::before {
+				content: "\f101";
+				font: normal normal normal 14px/1 FontAwesome;
+				font-size: 18px;
+				padding: 0px 8px 0px 5px;
+			}
+		}
+	}
+}
+@if $breadcrumb_style == 'style_2'{
+
+	.breadcrumb {
+		.breadcrumb-item+.breadcrumb-item {
+			&::before {
+				content: "/";
+				font-size: 15px;
+				padding: 0px 8px 0px 5px;
+			}
+		}
+	}
+}
+@if $breadcrumb_style == 'style_3'{
+	.breadcrumb {
+		.breadcrumb-item+.breadcrumb-item {
+			&::before {
+				content: "\f111";
+				font-size: 6px;
+				padding: 0px 10px 0px 7px;
+				top: 0px;
+				left: 0;
+				position: relative;
+				font-family: 'fontAwesome';
+			}
+		}
+	}
+	}
+@if $breadcrumb_style == 'style_4'{
+	.breadcrumb {
+		.breadcrumb-item+.breadcrumb-item {
+			&::before {
+				content: "\f068";
+				font-size: 8px;
+				padding: 0px 10px 0px 7px;
+				top: 0px;
+				left: 0;
+				position: relative;
+				font-family: 'fontAwesome';
+			}
+		}
+	}
+}
+@if $breadcrumb_style == 'style_5'{
+	.breadcrumb {
+		.breadcrumb-item+.breadcrumb-item {
+			&::before {
+				content: "|";
+				font-size: 18px;
+				padding: 0px 8px 0px 5px;
+			}
+		}
+	}
+}
+@if $breadcrumb_style == 'style_6'{
+	.breadcrumb {
+		.breadcrumb-item+.breadcrumb-item {
+			&::before {
+				content: "\f105";
+				font-size: 18px;
+				padding: 0px 10px 0px 7px;
+				font-family: 'fontAwesome';
+			}
+		}
+	}
+}
+@if $breadcrumb_style == 'style_7'{
+	.breadcrumb {
+		.breadcrumb-item+.breadcrumb-item {
+			&::before {
+				content: "\f0da";
+				font-size: 18px;
+				padding: 0px 10px 0px 7px;
+				font-family:'fontAwesome';
+			}
+		}
+	}
+}
+@media only screen and (max-width: 576px){	
+	.breadcrumb {
+		.breadcrumb-item {
+			+ {
+				.breadcrumb-item {
+					&::before {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 992px) {    
+	.o_control_panel {
+		.breadcrumb {
+			>li {
+				display: flex;
+				align-items: center;
+			}
+		}
+	}
+}
+@media (max-width: 992px) {
+	.o_control_panel {
+		.breadcrumb {
+			>li {
+				display: flex;
+				align-items: center;
+			}
+		}
+	}
+}

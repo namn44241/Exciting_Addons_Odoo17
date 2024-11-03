@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="sh_web_layout" inherit_id="web.layout" name="Web layout">
+        <xpath expr="//head/meta[last()]" position="inside">
+        	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+        </xpath>
+    </template>
+
+    
+    
+   
+	
+</odoo>
+    

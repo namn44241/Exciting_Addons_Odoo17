@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="ThemeConfigurationTemplate">
+		<t t-if="is_group_theme_configuration_user">
+		<div class="theme_settings">
+			<a class="theme_configuration float-right" t-on-click="_click_theme_configuration" role="button" >
+				<span class="icon-theme_setting fa fa-cog"/>
+			</a> 
+		</div>
+		</t>
+	</t>
+</templates>

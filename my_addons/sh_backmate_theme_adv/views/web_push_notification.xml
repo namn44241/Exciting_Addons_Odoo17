@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id='sh_web_push_notification_tree' model='ir.ui.view'>
+        <field name="name">sh.web.push.notification.tree</field>
+        <field name="model">sh.push.notification</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="datetime"/>
+                <field name="user_id"/>
+                <field name="user_type"/>
+                <field name="register_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="sh_web_push_filter" model="ir.ui.view">
+        <field name="name">sh.web.push.filter</field>
+        <field name="model">sh.push.notification</field>
+        <field name="arch" type="xml">
+            <search string="Registered User">
+                <group expand="0" name="group_by" string="Group By">
+                    <filter string="User Type" name="user_type" domain="[]" context="{'group_by' : 'user_type'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="sh_web_push_notification_action" model="ir.actions.act_window">
+        <field name="name">Web Push notification</field>
+        <field name="res_model">sh.push.notification</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Registration
+            </p>
+        </field>
+    </record>
+
+    <menuitem name="Registered User" id="sh_push_notification_registered" action="sh_web_push_notification_action" parent="sh_push_notification_root" groups="sh_backmate_theme_adv.sh_push_notification_user" sequence="2" />
+</odoo>

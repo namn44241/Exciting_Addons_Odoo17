@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates xml:space="preserve">
+    <t t-name="ShDocumentViewer.Content">
+        <t t-set="model" t-value="widget.modelName"/>
+        <t t-set="activeAttachment" t-value="widget.activeAttachment"/>
+
+        <div class="o_viewer_content h-100 d-flex flex-column align-items-center">
+            <div class="attch-viewer-header d-flex align-items-center w-100 bg-black-75 position-absolute top-0 z-index-1">
+                <div class="image_filename_div ms-2 flex-fill d-flex align-items-center mx-2 overflow-auto">
+                    <span class="o_image_caption fw-bold text-white">
+                        <i class="fa fa-picture-o mr8" t-if="activeAttachment.fileType == 'image'" role="img" aria-label="Image" title="Image"/>
+                        <i class="fa fa-file-text mr8" t-if="activeAttachment.fileType == 'application/pdf'" role="img" aria-label="PDF file" title="PDF file"/>
+                        <i class="fa fa-video-camera mr8" t-if="activeAttachment.fileType == 'video'" role="img" aria-label="Video" title="Video"/>
+                        <span class="o_viewer_document_name" t-esc="activeAttachment.name"/>
+                    </span>
+                </div>
+                <div class="download_clsoe_div d-flex">
+                    <a class="o_download_btn o_document_viewer_topbar_button text-white btn" t-on-click="widget._onDownload.bind(widget)" href="#" title="Download">
+                        <i class="fa fa-fw fa-download" role="img" aria-label="Download"/>
+                        <span class="d-none d-md-inline ml-2">Download</span>
+                    </a>
+                    <a role="button" href="#" class="o_close_btn o_document_viewer_topbar_button text-white btn" t-on-click="widget._onClose.bind(widget)" title="Close">
+                        <i class="fa fa-fw fa-close" role="img" aria-label="Close"/>
+                    </a>
+                </div>
+            </div>
+            <t t-set="o_viewer_img_wrapper_class" t-value="activeAttachment.fileType === 'application/pdf' or (activeAttachment.fileType || '').indexOf('text') !== -1 ? 'position-absolute' : 'none'"/>
+            <div t-attf-class="o_viewer_img_wrapper h-100 mb-4 top-0 bottom-0 start-0 end-0 align-items-center justify-content-center d-flex #{o_viewer_img_wrapper_class}">
+                <t t-set="viewer_class" t-value="activeAttachment.fileType === 'image' ? 'text-center' : 'none'"/>
+                <div t-attf-class="o_viewer_zoomer h-100 w-75 #{viewer_class} align-items-center justify-content-center d-flex">
+                    <t t-if="activeAttachment.fileType === 'image'">
+                        <t t-set="unique" t-value="activeAttachment.checksum ? activeAttachment.checksum.slice(-8) : ''"/>
+                        <img class="o_viewer_img img-fluid" t-on-click="widget._onImageClicked.bind(widget)" t-on-wheel="widget._onScroll.bind(widget)" t-attf-src="/web/image/#{activeAttachment.id}?unique=#{unique}&amp;model=#{model}" alt="Viewer"/>
+                    </t>
+                    <iframe t-if="activeAttachment.fileType == 'application/pdf'" class="w-100 h-100 o_viewer_pdf"  t-attf-src="/web/static/lib/pdfjs/web/viewer.html?file=/web/content/#{activeAttachment.id}?model%3D#{model}%26filename%3D#{window.encodeURIComponent(activeAttachment.name)}" />
+                    <iframe t-if="(activeAttachment.fileType || '').indexOf('text') !== -1" class="w-100 h-100 o_viewer_text bg-white shadow" t-attf-src="/web/content/#{activeAttachment.id}?model=#{model}" />
+                    <iframe t-if="activeAttachment.fileType == 'youtu'" class="w-100 h-100 o_viewer_text"  allow="autoplay; encrypted-media" width="560" height="315" t-attf-src="https://www.youtube.com/embed/#{activeAttachment.youtube}"/>
+                    <video t-if="activeAttachment.fileType == 'video'" t-on-click="widget._onVideoClicked.bind(widget)" class="w-100 h-100 o_viewer_video" controls="controls">
+                        <source t-attf-src="/web/image/#{activeAttachment.id}?model=#{model}" t-att-data-type="activeAttachment.mimetype"/>
+                    </video>
+                </div>
+            </div>
+            <div t-if="activeAttachment.fileType == 'image'" class="o_viewer_toolbar btn-toolbar" role="toolbar">
+                <div class="btn-group" role="group">
+                    <a role="button" href="#" class="o_viewer_toolbar_btn btn o_zoom_in" t-on-click="widget._onZoomIn.bind(widget)" data-toggle="tooltip" title="Zoom In">
+                        <i class="fa fa-fw fa-plus" role="img" aria-label="Zoom In"/>
+                    </a>
+                    <a role="button" href="#" class="o_viewer_toolbar_btn btn o_zoom_reset disabled" t-on-click="widget._onZoomReset.bind(widget)" data-toggle="tooltip" title="Reset Zoom">
+                        <i class="fa fa-fw fa-search" role="img" aria-label="Reset Zoom"/>
+                    </a>
+                    <a role="button" href="#" class="o_viewer_toolbar_btn btn o_zoom_out disabled" t-on-click="widget._onZoomOut.bind(widget)" data-toggle="tooltip" title="Zoom Out">
+                        <i class="fa fa-fw fa-minus" role="img" aria-label="Zoom Out"/>
+                    </a>
+                </div>
+                <div class="btn-group" role="group">
+                    <a role="button" href="#" class="o_viewer_toolbar_btn btn o_rotate" t-on-click="widget._onRotate.bind(widget)" data-toggle="tooltip" title="Rotate">
+                        <i class="fa fa-fw fa-repeat" role="img" aria-label="Rotate"/>
+                    </a>
+                </div>
+                <div class="btn-group" role="group">
+                    <a role="button" href="#" class="o_viewer_toolbar_btn btn o_print_btn" t-on-click="widget._onPrint.bind(widget)" data-toggle="tooltip" title="Print">
+                        <i class="fa fa-fw fa-print" role="img" aria-label="Print"/>
+                    </a>
+                    <a role="button" href="#" class="o_viewer_toolbar_btn btn o_download_btn" t-on-click="widget._onDownload.bind(widget)" data-toggle="tooltip" title="Download">
+                        <i class="fa fa-fw fa-download" role="img" aria-label="Download"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="ShDocumentViewer">
+        <div class="ShFile-Modal position-absolute top-0 w-100 h-100 bg-black-50 text-400 bottom-0"
+             id="ShAttachmentModal" tabindex="0" t-ref="autofocus" t-on-keydown="widget._onKeydown.bind(widget)">
+            <div class="d-flex dialog flex-column h-100 m-auto w-100">
+                <div class="attch-modal-content h-100" >
+                    <t class="o_document_viewer_content_call" t-call="ShDocumentViewer.Content" />
+                    <t t-if="props.attachments.length !== 1">
+                        <a class="arrow arrow-left move_previous position-absolute top-0 bottom-0 start-0 align-items-center justify-content-center d-flex my-auto ms-3 rounded-circle" t-on-click="widget._onPrevious.bind(widget)" href="#">
+                            <span class="fa fa-angle-left text-white" role="img" aria-label="Previous" title="Previous"/>
+                        </a>
+                        <a class="arrow arrow-right move_next position-absolute top-0 bottom-0 end-0 align-items-center justify-content-center d-flex my-auto me-3 rounded-circle" t-on-click="widget._onNext.bind(widget)" href="#">
+                            <span class="fa fa-angle-right text-white" role="img" aria-label="Next" title="Next"/>
+                        </a>
+                    </t>
+                </div>
+            </div>
+        </div>
+    </t>
+</templates>

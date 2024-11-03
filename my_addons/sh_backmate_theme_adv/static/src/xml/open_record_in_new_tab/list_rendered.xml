@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<templates id="sh_add_button" xml:space="preserve">
+    <t t-name="web.ListRenderer.RecordRow_sh" t-inherit="web.ListRenderer.RecordRow" t-inherit-mode="extension">
+        <xpath expr="//td[hasclass('o_list_record_selector')]" position="after">
+            <t t-if="is_list_view and show_open_record_new_tab_button_listrenderer">
+                <td>
+                    <button type="button" class="btn btn-primary p-1 open_record_new_tab" t-on-click="() => this.OpenRecord(record.resId)">
+                        Click
+                    </button>
+                </td>
+            </t>
+        </xpath>
+    </t>
+</templates>

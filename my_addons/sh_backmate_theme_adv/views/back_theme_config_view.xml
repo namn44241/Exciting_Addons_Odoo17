@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+
+
+		<!-- FORM -->
+		<record id="sh_back_theme_config_settings_form" model="ir.ui.view">
+			<field name="name">sh.back.theme.config.settings.form</field>
+			<field name="model">sh.back.theme.config.settings</field>
+			<field name="arch" type="xml">
+				<form>
+		
+				
+					<sheet>
+						<group>
+												
+							<group>
+							<field name="pre_theme_style"/>
+										<field name="theme_color"/>
+								
+								<label for="theme_style"/>
+									<div>							
+								<field name="theme_style" widget="selection" class="oe_inline" style="width: 70% !important;"/>
+								
+			                        </div>
+							</group>
+										<button style="display:none;" name="action_change_theme_style" type="object" string="Change Theme Style"/>	
+							
+						</group>
+						<group name="">
+							<group string="Primary Colors" name="group_primary_colors"
+								priority="1">
+								<field name="primary_color" widget="color" />
+								<!-- <field name="gradient_color" widget="color" /> -->
+							</group>
+
+							<group string="Secondary Colors"
+								name="group_secondary_colors" priority="2">
+								<field name="secondary_color" widget="color" />
+								<field name="secondary_hover" widget="color" />
+								<field name="secondary_active" widget="color" />
+							</group>
+
+							<group string="Header Colors" name="group_header_colors"
+								priority="3">
+								<field name="header_background_color" widget="color" />
+								<field name="header_font_color" widget="color" />
+							</group>
+							
+
+							<group string="Body" name="group_body"
+								priority="4">
+								<field name="body_background_type" widget="radio"/>
+								
+								<field name="body_background_color" widget="color" invisible="body_background_type != 'bg_color'" required="body_background_type == 'bg_color'"/>
+					
+                      		    <field name="body_background_image" widget="image" invisible="body_background_type != 'bg_img'" required="body_background_type == 'bg_img'" class="oe_avatar" options="{'preview_image': 'body_background_image', 'size': [90, 90]}"/>
+															
+								<field name="body_font_family" widget="selection"/>	
+								
+								<field name="body_google_font_family" required="body_font_family == 'custom_google_font'" invisible="body_font_family != 'custom_google_font'"/>
+								
+								<field name="is_used_google_font" invisible="1"/>
+							
+								
+								
+																			
+							</group>
+
+							<group string="Button" name="group_button"
+								priority="7">							
+						
+								<label for="button_style"/>
+									<div>
+								<field name="button_style" widget="selection" class="oe_inline" style="width: 70% !important;"/>
+							
+			                        </div>	
+							</group>
+							
+							
+							<group string="Separator" name="group_separator"
+								priority="8">							
+						
+								<label for="separator_style" />
+								<div>
+								 
+								<field name="separator_style" class="oe_inline" style="width: 70% !important;" widget="selection" />
+							
+			                    </div>
+			                   	
+			                   	<field name="separator_color" widget="color" />						
+											
+							</group>
+							<group string="Kanban Box Style" name="group_kanban_box_style"
+								priority="8">							
+						
+								<label for="kanban_box_style" />
+								<div>
+								 
+								<field name="kanban_box_style" class="oe_inline" style="width: 70% !important;" widget="selection" />
+							
+			                    </div>
+			                   	
+											
+							</group>
+							
+							<group string="Sidebar" name="group_sidebar_colors"
+								priority="9">
+								
+								<field name="sidebar_background_style" />
+								<field name="sidebar_background_image"/>
+								
+								<!-- <field name="discuss_chatter_style_image"/> -->
+								<field name="sidebar_background_color" widget="color" />	
+
+								<field name="sidebar_font_color" widget="color" />
+
+								
+								<field name="sidebar_is_show_nav_bar" />
+								<field name="sidebar_collapse_style" widget="radio" />
+																
+			                    								
+								
+							</group>							
+							
+							
+								
+							
+							
+							<group string="List View Table" name="group_list_view"
+								priority="9">
+								<field name="predefined_list_view_boolean"/>
+								<field name="predefined_list_view_style" widget="selection"/>
+								<field name="list_view_border"/>	
+								<field name="list_view_is_hover_row"/>
+								<field name="list_view_hover_bg_color" widget="color" required="list_view_is_hover_row == True" invisible="list_view_is_hover_row == False"/>
+								<field name="list_view_even_row_color" widget="color"/>
+								<field name="list_view_odd_row_color" widget="color"/>	
+							</group>							
+							
+							
+							
+							<!-- NEW -->
+							<group string="Login Page" name="group_login_page"
+								priority="10">
+								
+								<label for="login_page_style" />
+								<div>
+								 
+								<field name="login_page_style" class="oe_inline" style="width: 70% !important;" widget="Selection" />
+								<field name="login_page_style_comp_logo" invisible="login_page_style not in ['style_0','style_2','style_3','style_4']" />
+			                    </div>								
+								
+								
+								<field name="login_page_background_type" widget="radio"  invisible="login_page_style in ['style_2','style_0']"/>
+								<field name="login_page_background_color" widget="color" invisible="login_page_background_type != 'bg_color' or login_page_style in ['style_2','style_0']" required="login_page_background_type == 'bg_color' and login_page_style == 'style_2'"/>
+                      		    <field name="login_page_background_image" widget="image" invisible="login_page_background_type != 'bg_img' or login_page_style in ['style_2','style_0']" required="login_page_background_type == 'bg_img' and login_page_style == 'style_2'" class="oe_avatar" options="{'preview_image': 'login_page_background_image', 'size': [90, 90]}"/>
+								
+								<field name="login_page_box_color" widget="color" invisible="login_page_style not in ['style_2','style_1']"/>
+									
+								<field name="login_page_banner_image" widget="image" invisible="login_page_style != 'style_2'" required="login_page_style == 'style_2'" class="oe_avatar" options="{'preview_image': 'login_page_banner_image', 'size': [90, 90]}"/>	
+					 			
+					
+							</group>
+														
+							<group string="Loading GIF" name="group_loading_gif"
+								priority="11">
+								<field name="loading_gif" filename="loading_gif_file_name"/>		
+								<field name="loading_gif_file_name" invisible="1"/>
+									                    																
+							</group>
+							
+							
+							
+							<!-- Sticky -->
+							<group string="Sticky" name="group_sticky" priority="12">
+								<field name="is_sticky_form"/>	
+								<field name="is_sticky_chatter"/>
+								<field name="is_sticky_list"/>
+								<field name="is_sticky_list_inside_form"/>		
+								<field name="is_sticky_pivot" />														
+							</group>
+							<group string="App Icon Style" name="group_app_icon"
+								priority="14">							
+						
+			                  	<field name="icon_style" widget="selection" />				
+								<field name="dual_tone_icon_color_1" widget="color" invisible="icon_style != 'dual_tone'" />
+								<field name="dual_tone_icon_color_2" widget="color" invisible="icon_style != 'dual_tone'" />			
+							</group>	
+
+							<!-- font awesome icon style -->
+							<group string="Backend Font Awesome Icon Style" name="group_font_awesome_icon" priority="15">
+								<field name="backend_all_icon_style" widget="selection" />
+							</group>
+														
+				
+						</group>
+					</sheet>
+				
+				</form>
+			</field>
+		</record>
+
+				
+
+		<!-- ACTION -->
+		<record id='sh_back_theme_config_settings_action' model='ir.actions.act_window'>
+			<field name="name">Theme Settings</field>
+			<field name="res_model">sh.back.theme.config.settings</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+
+	</data>
+</odoo>   

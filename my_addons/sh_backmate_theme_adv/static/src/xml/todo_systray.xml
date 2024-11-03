@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="ToDoTemplate">
+        <t t-if="sh_enable_todo_mode">
+            <div class="todo">
+                <span class="float-right fa fa-tasks" id="todo_icon" t-on-click="_click_todo" style="font-size: 16px;"/>
+            </div>
+        </t>
+    </t>
+</templates>

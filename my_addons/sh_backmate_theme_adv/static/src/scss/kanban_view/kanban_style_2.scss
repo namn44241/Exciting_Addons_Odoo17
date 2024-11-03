@@ -1,0 +1,82 @@
+@if $kanban_box_style == 'style_2' {
+    .o_action_manager{
+        .o_kanban_view{
+            .o_content{
+                .o_kanban_renderer{
+                    .oe_kanban_color_0{
+                        border-radius: 1.5rem !important; 
+                    }
+                    .o_kanban_record{
+                        .oe_module_vignette{
+                            border-radius: 1.5rem !important;
+                        }
+                        .oe_kanban_global_click{
+                            border-radius: 1.5rem !important;
+                            .o_kanban_content{
+                                .text-bg-primary{
+                                    border-radius: 1.5rem 0rem 0rem 1.5rem;
+                                }
+                            }
+                        }                        
+                    }
+                }
+            }
+        }
+    }
+    .o_kanban_image_fill_left{
+        border-radius: 100%;
+        img{
+            border-radius: 100%;
+        }
+        .o_kanban_image_inner_pic{
+            border-radius: 15px;
+        }
+    }
+    .o_kanban_renderer {
+        .oe_kanban_card {
+            .oe_kanban_colorpicker {
+                >li {
+                    border-radius: 20px;
+                    >a {
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
+        .o_kanban_record {
+            .oe_kanban_colorpicker {
+                >li {
+                    border-radius: 20px;
+                    >a {
+                        margin: 0px;
+                        &::after{
+                            height: 20px;border-radius: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .o_form_view
+    {
+        .o_notebook{
+            .o_kanban_ungrouped{
+                .o_kanban_record{
+                    .oe_kanban_global_click{
+                        border-radius: 1.5rem !important;
+                    }
+                }
+            }
+        }
+    }
+    .o_form_view {
+        .oe_avatar {
+            .img{
+                border-radius: 3rem;
+            }
+        }
+    }
+    .oe_module_vignette{
+        border-radius: 1.5rem !important;
+    }
+}

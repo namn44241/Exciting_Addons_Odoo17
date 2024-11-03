@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="sh_send_notification_form" model='ir.ui.view'>
+        <field name="name">sh.send.notification.form</field>
+        <field name="model">sh.send.notification</field>
+        <field name="arch" type="xml">
+            <form string="Send Notification">
+                <header>
+                    <button class="btn btn-primary" name="validate" type="object" string="Validate" invisible="state == 'validated' or state == 'schedule' or state == 'cancel' or state == 'error' or state == 'done'"/>
+                    <button class="btn btn-primary" name="send_message" type="object" string="Send Notification" invisible="state == 'draft' or state == 'schedule' or state == 'cancel' or state == 'error' or state == 'done'"/>
+                    <button class="btn btn-primary" name="schedule_notification" type="object" string="Schedule Notification" invisible="state == 'draft' or state == 'schedule' or state == 'cancel' or state == 'error' or state == 'done'"/>
+                    <button class="btn btn-primary" name="cancel" type="object" string="Cancel" invisible="state == 'cancel' or state == 'error' or state == 'done'"/>
+                    <button class="btn btn-primary" name="reset" type="object" string= "Rest To Draft" invisible="state == 'error' or state == 'draft' or state == 'done'"/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="title"/>
+                            <field name="message"/>
+                            <field name="redirect_url"/>
+                            <field name="message_to"/>
+                        </group>
+                        <group>
+                        </group>
+                        <field name="specific_ids" invisible="message_to == 'all' or message_to == 'public' or message_to == 'portal' or message_to == 'internal'"/>
+                        <h2 class="text-primary mb-2">Log History</h2>
+                        <field name="log_historys" readonly="1">
+                            <tree decoration-success="status=='success'" decoration-danger="status=='error'">
+                                <field name="datetime"/>
+                                <field name="error"/>
+                                <field name="status"/>
+                            </tree>
+                        </field>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id='sh_send_notification_tree' model='ir.ui.view'>
+        <field name="name">sh.send.notification.tree</field>
+        <field name="model">sh.send.notification</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="title"/>
+                <field name="message"/>
+                <field name="redirect_url"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="sh_send_notification_action" model="ir.actions.act_window">
+        <field name="name">Send Notifications</field>
+        <field name="res_model">sh.send.notification</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Send Notification
+            </p>
+        </field>
+    </record>
+    <menuitem name="Web Push Notification" id="sh_push_notification_root"
+    web_icon="sh_backmate_theme_adv,static/src/webpushnotification.png"
+     groups="sh_backmate_theme_adv.sh_push_notification_user"/>
+
+    <menuitem name="Send Notification" action="sh_send_notification_action" id="sh_send_notification_item" parent="sh_push_notification_root" sequence="1"/>
+</odoo>

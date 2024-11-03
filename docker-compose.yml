@@ -1,0 +1,56 @@
+version: '3.5'
+
+services:
+  postgres_17:
+    container_name: postgres_17
+    image: postgres:14-alpine
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-postgres}
+      POSTGRES_USER: ${db_user:-odoo}
+      POSTGRES_PASSWORD: ${db_password:-odoo}
+      PGDATA: /data/postgres
+    volumes:
+       - ../data/postgres:/data/postgres
+    ports:
+      - "${db_port}:5432"
+    networks:
+      - postgres_17
+    restart: unless-stopped
+
+  minio:
+    container_name: minio_17
+    restart: "always"
+    image: minio/minio
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+    volumes:
+      - ../data/minio:/data
+    ports:
+      - 9000:9000
+      - 9001:9001
+    networks:
+      - postgres_17
+    command: server /data --console-address ":9001"
+
+  pgadmin:
+    container_name: pgadmin_container
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pgadmin4@pgadmin.org}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin}
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+
+    ports:
+      - "${PGADMIN_PORT:-5050}:80"
+    networks:
+      - postgres_17
+    restart: unless-stopped
+
+
+networks:
+  postgres_17:
+    driver: bridge
+
+volumes:
+    postgres_17:

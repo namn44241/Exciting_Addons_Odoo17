@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates xml:space="preserve">
+    <t t-inherit="web.ListRenderer.RecordRow" t-inherit-mode="extension" owl="1">
+        <xpath expr="//tr[hasclass('o_data_row')]" position="attributes">
+            <attribute name="t-att-resId">record.resId</attribute>
+        </xpath>
+        <xpath expr="//tr[hasclass('o_data_row')]" position="after">
+            <t t-if="sh_attachments and sh_show_attachment_in_list_view">
+                <t t-if="sh_attachments[0][record.resId]">
+                    <div class="sh_main_attachment_div">
+                        <div class="sh_inner_attachment_div d-flex align-items-center justify-content-center w-100 position-absolute flex-wrap" t-att-id="record.id">
+                            <t t-set="counter" t-value="0"/>
+                            <t t-set="extra_length" t-value="sh_attachments[0][record.resId].length - 5"/>
+
+                            <t t-foreach="sh_attachments[0][record.resId]" t-as="attachment" t-key="attachment.attachment_id">
+                                <t t-if="counter &lt; 5">
+                                    <div class="sh_attachment_item border d-flex align-items-center mx-2" t-att-data-id="attachment.attachment_id" t-att-data-name="attachment.attachment_name" t-att-data-mimetype="attachment.attachment_mimetype" t-att-data-record_id="record.resId" t-on-click="(ev) => this._shloadattachmentviewer(ev)">
+                                        <span class="sh_attachment_icon o_image me-2" t-att-data-mimetype="attachment.attachment_mimetype"/>
+                                        <div class="sh_attachment_name text-nowrap">
+                                            <span><t t-esc="attachment.attachment_name"/></span>
+                                        </div>
+                                    </div>
+                                    <t t-set="counter" t-value="counter + 1"/>
+                                </t>
+                            </t>
+                            <t t-if="extra_length >= 1">
+                                <t t-set="sh_var" t-value="0"/>
+                                <t t-foreach="sh_attachments[0][record.resId].slice(-extra_length)" t-as="attachment" t-key="attachment.attachment_id">
+                                    <t t-if="attachment.attachment_mimetype.match('(image|application/pdf|text|video)') and sh_var==0">
+                                        <t t-set="attachment" t-value="attachment"/>
+                                        <t t-set="sh_var" t-value="1"/>
+                                        <div class="sh_attachment_item border d-flex align-items-center mx-2 sh_attachment_item_counter " t-att-data-id="attachment.attachment_id" t-att-data-name="attachment.attachment_name" t-att-data-mimetype="attachment.attachment_mimetype" t-att-data-record_id="record.resId" t-on-click="(ev) => this._shloadattachmentviewer(ev)">
+                                        <div class="sh_attachment_name text-nowrap">
+                                            <span>+<t t-esc="extra_length"/></span>
+                                        </div>
+                                    </div>
+                                    <t/>
+                                </t>
+                            </t>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </xpath>
+    </t>
+</templates>

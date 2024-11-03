@@ -1,0 +1,24 @@
+//rtl style
+
+.o_web_client{
+    &.o_rtl{
+        .o_navbar{
+            .sh_search{
+               left: 275px !important;right: auto!important;
+            }
+        }
+    }
+}
+@if $sidebar_collapse_style == 'collapsed' {
+    @if $search_style == 'expanded'{
+        .o_web_client{
+            &.o_rtl{
+                .o_navbar{
+                    .sh_search{
+                        left: 80px !important;
+                    }
+                }
+            }
+        }
+    }
+}

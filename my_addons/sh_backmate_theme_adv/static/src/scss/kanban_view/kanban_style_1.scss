@@ -1,0 +1,37 @@
+@if $kanban_box_style == 'style_1' {
+    .o_action_manager{
+        .o_kanban_view{
+            .o_content{
+                .o_kanban_renderer{
+                    .o_kanban_record{
+                        .oe_module_vignette{
+                            border-radius: 10px !important;
+                        }
+                        .oe_kanban_global_click{
+                            border-radius: 10px !important;
+                            .o_kanban_content{
+                                .text-bg-primary{
+                                    border-radius: 5px 0rem 0rem 5px;
+                                }
+                            }
+                        } 
+                        .oe_kanban_global_click{
+                            .o_kanban_image_fill_left{
+                                img{
+                                    border-radius: 10px !important;
+                                }
+                                .o_kanban_image_inner_pic{
+                                    border-radius: 5px !important;
+                                }
+                            }
+                        }                          
+                    }
+                }
+                .oe_kanban_color_0{
+                    border-radius: 10px !important;
+                }
+            }
+        }
+    }
+}
+

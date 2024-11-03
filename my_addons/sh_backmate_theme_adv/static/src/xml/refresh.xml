@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="web.KanbanView.Buttons" t-inherit="web.KanbanView.Buttons" t-inherit-mode="extension">
+        <xpath expr="//div" position="inside">
+            <button name="sh_refresh" class="btn btn-primary sh_refresh d-none" t-on-click="_onClickRefreshView">
+				<i class="fa fa-refresh"></i>
+			</button>
+        </xpath>
+    </t>
+
+    <t t-name="web.CalendarController.controlButtons" t-inherit="web.CalendarController.controlButtons" t-inherit-mode="extension">
+        <xpath expr="." position="inside">
+            <button name="sh_refresh" class="btn btn-primary sh_refresh d-none" t-on-click="_onClickRefreshView">
+				<i class="fa fa-refresh"></i>
+			</button>
+        </xpath>
+    </t>
+
+
+    <t t-name="web.ListView.Buttons" t-inherit="web.ListView.Buttons" t-inherit-mode="extension">
+        <xpath expr="//div" position="inside">
+            <button name="sh_refresh" class="btn btn-primary sh_refresh d-none" t-on-click="_onClickRefreshView">
+				<i class="fa fa-refresh"></i>
+			</button>
+            <t t-if="show_expand_collapse">
+                <button
+                    class="btn btn-secondary fa fa-expand"
+                    title="Expand groups"
+                    type="button"
+                    t-on-click="shExpandGroups"
+                />
+                <button
+                    class="btn btn-secondary fa fa-compress"
+                    title="Collapse groups"
+                    type="button"
+                    t-on-click="shCollapseGroups"
+                />
+            </t>
+        </xpath>
+    </t>
+
+
+
+</templates>

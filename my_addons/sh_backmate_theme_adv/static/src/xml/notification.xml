@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template id="todo_card">
+    <t t-name="sh_backmate_theme_adv.notification">
+        <div>
+            <t t-if="simple_text">
+                <t t-if="simple_text">
+                    <t t-if="is_animation">
+                        <div id='object' style='position:relative;'>
+                        <marquee direction="direction" t-att-style="style">
+                    <div id='object1'>
+                        <t t-esc="content"/>
+                    </div>
+                </marquee>
+                <div class="sh_animated_notification"
+                     style='position: absolute;right: 5px;font-size: 15px;top: 0px;cursor: pointer;' t-on-click="close_notification">
+                <span class='fa fa-times sh_close_notification' />
+                <div>
+                </div>
+                </div>
+                </div>
+                    </t>
+                     <t t-else="">
+                         <div id='object1' t-att-style="style">
+                             <t t-esc="content"/>
+                             <div class="sh_simple_text_notification" style='position: absolute;right: 5px;font-size: 15px;top: 0px;cursor: pointer;' t-on-click="close_notification">
+                                 <span class='fa fa-times sh_close_notification'/>
+                             </div>
+                         </div>
+                     </t>
+                </t>
+            </t>
+            <t t-else="">
+                <t t-if="is_animation">
+                    <div id="object"  style='position:relative;'>
+                        <marquee direction="direction">
+                            <div id='object1'>
+                                <t t-esc="content"/>
+                            </div>
+                        </marquee>
+                        <div class="sh_animated_notification" style='position: absolute;right: 5px;font-size: 15px;top: 0px;cursor: pointer;' t-on-click="close_notification">
+                            <span class='fa fa-times sh_close_notification' />
+                        </div>
+                    </div>
+                </t>
+                <t t-else="">
+                    <div id='object1' style='position:relative;'>
+                        <t t-esc="content"/>
+                        <div class="sh_simple_text_notification" style='position: absolute;right: 5px;font-size: 15px;top: 0px;cursor: pointer;' t-on-click="close_notification">
+                            <span class='fa fa-times sh_close_notification' />
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </div>
+    </t>
+</template>

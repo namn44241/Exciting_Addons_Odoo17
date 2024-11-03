@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<!-- TODO: no update 1 when done -->
+    <data noupdate="1">
+        
+        
+        
+        <!--
+        
+        	 one attachment for scss variable settings 
+        	Write this file each time when we change theme settings.
+        	include this file in assets file by url.
+        	
+         -->
+        <record id="sh_back_theme_config_settings_attachment_scss_file" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">Back Theme Settings scss File</field>
+        	<field name="datas" type="base64" file="sh_backmate_theme_adv/data/back_theme_config_main_scss.scss"></field>            
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">binary</field>
+            <field name="mimetype">text/scss</field>
+            
+            <field name="url">/sh_backmate_theme_adv/static/src/scss/back_theme_config_main_scss.scss</field>
+        </record>  
+        
+        
+        <record id="sh_back_theme_config_adv_attachment_predefined_theme_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">Predefined Theme 1</field>
+        	<field name="datas" type="base64" file="sh_backmate_theme_adv/static/src/img/login/login_bg.png"></field>            
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">binary</field>
+            <field name="mimetype">text/png</field>
+            
+            <field name="url">/sh_backmate_theme_adv/static/src/img/login/login_bg.png</field>
+        </record>    
+                
+        
+        <!-- Create back theme setting record at install time -->
+        <record id="sh_back_theme_config_rec" model="sh.back.theme.config.settings">
+            <field name="name">Theme Settings</field> 
+
+            <field name="primary_color">#111c43</field>
+            <field name="kanban_box_style">style_1</field>
+            <field name="secondary_color">#FFFFFF</field>
+            <field name="secondary_hover">#EEEEEE</field>
+            <field name="secondary_active">#EEEEEE</field>
+            <field name="header_background_color">#ebedf6</field>
+            <field name="body_background_color">#ebedf6</field>
+            <field name="header_font_color">#111c43</field>
+            <field name="sidebar_background_color">#111c43</field>
+            <field name="sidebar_background_style">color</field>
+            <field name="sidebar_font_color">#e2e8f0</field>
+            <field name="sidebar_collapse_style">collapsed</field>
+            	
+            <field name="separator_color">#111c43</field>
+            <field name="icon_style">light_icon</field>
+            <field name="dual_tone_icon_color_1">#A3A5B7</field>
+            <field name="dual_tone_icon_color_2">#2C3782</field>
+            <field name="separator_style">style_7</field>
+            <field name="button_style">style_4</field>
+            <field name="checkbox_style">style_2</field>
+            <field name="radio_btn_style">style_1</field>
+            <field name="scrollbar_style">style_1</field>
+     
+            <field name="body_background_image" type="base64" file="sh_backmate_theme_adv/static/src/img/background/body_bg.jpg"/> 
+            <field name="sidebar_background_image" type="base64" file="sh_backmate_theme_adv/static/src/img/background/businessmen-Copy.jpg"/> 
+            <field name="predefined_list_view_boolean">False</field>
+            <field name="predefined_list_view_style">style_2</field>
+            <field name="list_view_is_hover_row">True</field>
+            <field name="login_page_style_comp_logo">False</field>
+            <field name="list_view_hover_bg_color">#111c43</field>
+            <field name="list_view_even_row_color">#FFFFFF</field>
+            <field name="is_sticky_form">True</field>
+            <field name="is_sticky_list">True</field>
+            <field name="is_sticky_list_inside_form">True</field>
+            <field name="is_sticky_pivot">False</field>
+            <field name="list_view_odd_row_color">#FFFFFF</field>
+            <field name="body_font_family">Poppins</field>
+            <field name="is_used_google_font">True</field>
+            <field name="body_google_font_family">inter</field>
+            <field name="login_page_style">style_2</field> 
+            <field name="login_page_background_type">bg_color</field>     
+  			<field name="progress_style">style_1</field> 
+            <field name="progress_height">4px</field>
+            <field name="progress_color">#111c43</field>    
+  			<field name="login_page_background_image" type="base64" file="sh_backmate_theme_adv/static/src/img/login/login_bg.png"/> 
+  			<field name="login_page_banner_image" type="base64" file="sh_backmate_theme_adv/static/src/img/login/login_predefined.jpg"/> 
+  			<field name="login_page_icon_img" type="base64" file="sh_backmate_theme_adv/static/src/img/login/login_page_icon_img.png"/> 
+  			<field name="login_page_icon_img_long" type="base64" file="sh_backmate_theme_adv/static/src/img/login/login_page_icon_img_long.png"/> 
+  			<field name="login_page_background_color">#ffffff</field>
+			<field name="login_page_box_color">#ffffff</field>
+            <field name="theme_style">style_1</field> 
+            <field name="theme_color">color_1</field>
+            <field name="horizontal_tab_style">style_4</field> 
+            <field name="search_style">expanded</field> 
+            <field name="backend_all_icon_style">style_2</field>
+        </record>        
+        
+        
+      
+
+             
+        
+	</data>
+		
+	
+</odoo>

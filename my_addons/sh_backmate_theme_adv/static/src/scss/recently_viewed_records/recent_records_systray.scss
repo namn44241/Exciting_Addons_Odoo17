@@ -1,0 +1,51 @@
+
+/*--o_systray_item--*/
+
+
+/*--o_systray_item--*/
+.sh_recently_viewed_o_systray_item{margin-top: 0px;margin-bottom: 0px;display: flex;align-items: center;padding: 0px 10px;cursor: pointer;
+    i{font-size: 17px;color: $primaryColor;vertical-align: -6%;}
+    .o_recent_records_dropdown{
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);background: #fff;overflow-y: auto;z-index: 1000;width: 350px;position: fixed;top: 56.5px;transform: translate(-50px, 0px);right: 50px;
+        @include media-breakpoint-down(md) {
+            width: 100%;
+            transform: translate(0px, 0px);right: 0px;
+        }
+        @if $button_style == 'style_1'{
+            border-radius: 0px;
+        }
+        @if $button_style == 'style_2'{
+            border-radius: 5px !important;
+        }
+        @if $button_style == 'style_3'{
+            border-radius: 5px 15px  !important;
+        }
+        @if $button_style == 'style_4'{
+            border-radius: 1rem!important;
+        }
+        .tabs {display: flex;justify-content: space-around;border-bottom: 1px solid #ccc;position: sticky;top: 0px;background: #fff;
+            button {background: none;border: none;padding: 8px 5px;cursor: pointer;flex-grow: 1;text-align: center;
+                &.active {color: #fff;background-color: #dee2e6;border-color: #dee2e6;font-weight: 600;}
+            }
+        }
+        .sh_record_input_box{padding: 4px !important;position: sticky;top: 38px;background: #fff;z-index: 999;}
+        .o_recent_record_main{
+            max-height: 300px;overflow-y: auto;text-align: start;
+            .o_recent_record {padding: 8px 10px;display: flex;justify-content: space-between;align-items: center;cursor: pointer;color: #344357;font-weight: 500;
+                .sh_record_name{width: 285px;word-wrap: break-word;}
+                button {background-color: transparent;border: none;cursor: pointer;border-radius: 3px;display: flex;position: relative;
+                    .fa.fa-close,
+                    .fa.fa-bookmark-o{color:$primaryColor;font-size: 17px;}
+                    .fa.fa-bookmark{display: none;font-size: 17px;color:$primaryColor;}
+                    &:hover{
+                        .fa.fa-bookmark{display: block;position: absolute;}
+                    }
+
+                }
+                &:hover{background-color: #ebeef2;color: $primaryColor;}  
+            }
+        }
+        
+        .sh_clear_records{margin: 7px 10px;}
+    }
+}

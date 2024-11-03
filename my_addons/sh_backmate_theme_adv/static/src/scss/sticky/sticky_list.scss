@@ -1,0 +1,67 @@
+/* ===================== List Sticky Start ===================== */
+@if $is_sticky_list ==True {
+    .o_content {
+        >.o_list_view {
+            .table-responsive {
+                .o_list_table {
+                    thead {
+                        z-index: 1;
+                    }
+                }
+            }
+        }
+    }
+    .o_list_view {
+        .table-responsive {
+            .o_list_table {
+                thead {
+                    z-index: 1;
+                    tr {
+                        &:nth-child(1) {
+                            th {
+                                z-index: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    // Sticky Header & Footer in List View
+    .o_content {
+        .table-responsive {
+            overflow-x: initial;
+            .o_list_table {
+                thead {
+                    position: sticky;
+                    top: 0;
+                    z-index: 1;
+                }
+            }
+        }
+    }          
+    // Sticky Header & Footer in List View
+    .o_content {
+        .table-responsive {
+            .o_list_table {
+                tfoot {
+                    position: sticky;
+                    bottom: 0;
+                    background-color: #fff;
+                    tr {
+                        &:nth-child(1) {
+                            td {
+                                position: sticky;
+                                bottom: 0;
+                                background-color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+/* ==================	List Sticky End ====================== */

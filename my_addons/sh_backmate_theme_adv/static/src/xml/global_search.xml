@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates id="template" xml:space="preserve">
+	
+	 <t t-name="sh_backmate_theme_adv.GlobalSearch">
+		 <t t-if="sh_enable_gloabl_search_mode">
+        	<li class="sh_search">
+           <div class="sh_search_container form-row align-items-center">
+                <div class="sh_search_input">
+                    <div class="input-group">
+                        <input type="text" placeholder="Search ..." class="usermenu_search_input form-control" style="display:none;" t-on-keydown="() => this._onSearchResultsNavigate()"/>
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                              	<span class="icon-search fa fa-search" id="topbar_search_icon" t-on-click="_onclick_search_top_bar"></span>
+                            	<span class="icon-search fa fa-search" id="topbar_full_search_icon"></span>
+                            </div>
+                        </div>
+                        <input type="text" placeholder="Search ..." class="usermenu_search_input2 form-control" t-on-keydown="() => this._onSearchResultsNavigate()"/>
+                    </div>
+                </div>
+
+                <div class="sh_search_results col-md-10 ml-auto mr-auto"/>
+            </div>
+       </li>
+		 </t>
+    </t>
+
+    <t t-name="sh_backmate_theme_adv.MenuSearchResults">
+    	<t t-set="count" t-value="0"/>
+
+        <t t-foreach="results" t-as="result" t-key="result">
+	       <t t-set="is_menu" t-value="widget._checkIsMenu(result)"/>
+	        <t t-set="menu" t-value="widget._linkInfo(result)"/>
+	       <t t-if="is_menu">
+	      		<a t-attf-class="dropdown-item col-12 ml-auto mr-auto"
+			        target="_blank"
+			        t-attf-href="#menu_id=#{menu.id}&amp;action_id=#{menu.action}"
+			        ><span t-esc="menu.name"/></a>
+	       </t>
+	        <t t-else="">
+	        
+	        
+		        <t t-if="count==0">
+		        	<t t-set="menu_model" t-value="menu.model_name"/>
+		        	<t t-set="count" t-value="1"/>
+		        	<p class="search_company_detail">
+		        	<t t-set="company_name" t-value="widget._getcompanyInfo(result)"/>
+		        	<t t-if="widget.show_company">
+		        		<t t-esc="company_name"/> :
+		        	</t>
+		        	 <t t-esc="menu_model"/></p>
+		        </t>
+
+		        <t t-if="menu.model_name == menu_model">
+		        	<t t-set="field_name" t-value="widget._getFieldInfo(result)"/>
+
+		        	<t t-if="widget.show_company &amp; company_name!=widget._getcompanyInfo(result)">
+		        	<t t-set="company_name" t-value="widget._getcompanyInfo(result)"/>
+		        		<p class="search_company_detail"><t t-esc="company_name"/> : <t t-esc="menu_model"/></p>
+		        	</t>
+
+			        <a t-attf-class="dropdown-item col-12 ml-auto mr-auto"
+			        t-raw="field_name" target="_blank"
+			        t-attf-href="/mail/view?model=#{menu.model}&amp;res_id=#{menu.id}"
+			        />
+		        </t>
+		        <t t-else="">
+		        	<t t-set="menu_model" t-value="menu.model_name"/>
+		        	<p class="search_company_detail">
+		        	<t t-set="company_name" t-value="widget._getcompanyInfo(result)"/>
+		        	<t t-if="widget.show_company">
+		        		<t t-esc="company_name"/> :
+		        	</t>
+		        	 <t t-esc="menu_model"/></p>
+		        	<t t-set="field_name" t-value="widget._getFieldInfo(result)"/>
+		        	 <a t-attf-class="dropdown-item col-12 ml-auto mr-auto"
+			        t-raw="field_name" target="_blank"
+			        t-attf-href="/mail/view?model=#{menu.model}&amp;res_id=#{menu.id}"
+			        />
+		       </t>  
+	        </t>
+        </t>
+    </t>
+
+</templates>

@@ -1,0 +1,23 @@
+/* Make clicks pass-through */
+@if $progress_style == 'style_1'{
+  #nprogress {
+    pointer-events: none;
+    .bar {
+      background: $progress_color;position: fixed;z-index: 1031;left: 0;top: 0;width: 100%;height: $progress_height;
+    }
+    .peg {
+      display: block;position: absolute;right: 0px;width: 100px;height: 100%;box-shadow: 0 0 10px $progress_color, 0 0 5px $progress_color;opacity: 1.0;-webkit-transform: rotate(3deg) translate(0px, -4px);-ms-transform: rotate(3deg) translate(0px, -4px);transform: rotate(3deg) translate(0px, -4px);
+    }
+  }
+  .nprogress-custom-parent {
+    overflow: hidden;position: relative;
+    #nprogress {
+      .bar {
+        position: absolute;
+      }
+    }
+  }
+  
+}
+
+

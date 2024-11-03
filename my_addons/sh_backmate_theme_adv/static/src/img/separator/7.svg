@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40.13">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: MyriadPro-Semibold, 'Myriad Pro';
+        font-size: 20.42px;
+        font-weight: 600;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #e0dede;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        fill: none;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        fill: #919191;
+      }
+    </style>
+  </defs>
+  <rect class="cls-5" width="160" height="40.13"/>
+  <text class="cls-1" transform="translate(5.15 22.55)"><tspan class="cls-7" x="0" y="0">S</tspan><tspan x="10.72" y="0">epa</tspan><tspan class="cls-4" x="43.58" y="0">r</tspan><tspan class="cls-6" x="50.67" y="0">at</tspan><tspan class="cls-3" x="67.97" y="0">or</tspan></text>
+  <rect class="cls-2" x="79.8" y="-44.23" width="1.24" height="148.87" transform="translate(50.22 110.62) rotate(-90)"/>
+  <rect class="cls-8" x="23.1" y="12.46" width="1.24" height="35.47" transform="translate(-6.48 53.92) rotate(-90)"/>
+</svg>

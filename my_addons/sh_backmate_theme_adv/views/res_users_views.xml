@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="view_totp_form">
+        <field name="name">user form: add totp status</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='preferences']" position="after">
+                <page string="Recently Viewed Records" name="recently_viewed_records" groups="base.group_erp_manager">
+                    <field name="recent_record_ids" widget="one2many">
+                        <tree string="Recently Viewed Records" edit="false" no_open="1">
+                            <field name="name"/>
+                            <field name="sh_record_id"/>
+                            <field name="sh_model"/>
+                            <field name="write_date"/>
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

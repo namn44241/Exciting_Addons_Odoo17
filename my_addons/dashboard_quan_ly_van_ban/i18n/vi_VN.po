@@ -1,0 +1,404 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* dashboard_quan_ly_van_ban
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-01 18:43+0000\n"
+"PO-Revision-Date: 2024-11-01 18:43+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Approved"
+msgstr "đã duyệt"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Assigned work"
+msgstr "Công việc đã giao"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Comment"
+msgstr "Bút phê"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "CXL"
+msgstr ""
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Check document format"
+msgstr "Kiểm tra thể thức văn bản"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Incomplete (INP)"
+msgstr "Chưa hoàn thành(CHT)"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Completed"
+msgstr "đã hoàn thành"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Valid (VAL)"
+msgstr "Còn hạn(CHT)"
+
+#. module: dashboard_quan_ly_van_ban
+#: model:ir.actions.client,name:dashboard_quan_ly_van_ban.qlvb_dashboard_action
+#: model:ir.ui.menu,name:dashboard_quan_ly_van_ban.qlvb_menu_open_Dashboard
+msgid "Dashboard"
+msgstr ""
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/xml/dashboard_templates.xml:0
+#, python-format
+msgid "Document date"
+msgstr "Ngày lập văn bản"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Documents pending approval"
+msgstr "Văn bản cần duyệt"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Documents pending processing"
+msgstr "Văn bản cần xử lý"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Due soon (3 days)"
+msgstr "sắp tới hạn(3 ngày)"
+
+#. module: dashboard_quan_ly_van_ban
+#: model:ir.model,name:dashboard_quan_ly_van_ban.model_ir_http
+msgid "HTTP Routing"
+msgstr "Định tuyến HTTP"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Incoming documents"
+msgstr "Văn bản đến"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Incoming documents by status"
+msgstr "Văn bản đến theo trạng thái"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Incoming documents categorized by status"
+msgstr "Văn bản đến chia theo trạng thái"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/xml/dashboard_templates.xml:0
+#, python-format
+msgid "Incoming number"
+msgstr "Số đến"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Incomplete"
+msgstr "chưa hoàn thành"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Incomplete work"
+msgstr "Công việc chưa hoàn thành"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Issued"
+msgstr "đã phát hành"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/xml/dashboard_templates.xml:0
+#, python-format
+msgid "Issuing unit"
+msgstr "Đơn vị phát hành"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "List of incoming documents not yet completed"
+msgstr "Danh sách văn bản đến chưa kết thúc"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Not yet issued"
+msgstr "chưa phát hành"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Not yet processed"
+msgstr "chưa xử lý"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Not yet submitted"
+msgstr "chưa trình"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Outgoing documents"
+msgstr "Văn bản đi"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Overdue"
+msgstr "quá hạn"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Pending approval"
+msgstr "chưa duyệt"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Pending issuance"
+msgstr "chờ phát hành"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Processed"
+msgstr "đã xử lý"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Overdue (OVD)"
+msgstr "Quá hạn(CHT)"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Overdue (O/D)"
+msgstr "Quá hạn(HT)"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/xml/dashboard_templates.xml:0
+#, python-format
+msgid "Reference number"
+msgstr "Số ký hiệu"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Submitted"
+msgstr "đã trình"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/xml/dashboard_templates.xml:0
+#, python-format
+msgid "Summary"
+msgstr "Trích yếu"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Quantity"
+msgstr "Số lượng"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Monitoring"
+msgstr "Theo dõi"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Statistics by deadline"
+msgstr "Thống kê theo thời hạn"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Statistics by status"
+msgstr "Thống kê theo trạng thái"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Time-sorted work"
+msgstr "Công việc sắp xếp theo thời gian"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Total number of documents"
+msgstr "Tổng số văn bản"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Total number of documents in process"
+msgstr "Tổng số văn bản đang xử lý"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Total number of documents submitted to leadership"
+msgstr "Tổng số văn bản trình lãnh đạo"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Total number of tasks"
+msgstr "Tổng số công việc"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Submitted to leadership"
+msgstr "Trình LĐ"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Valid"
+msgstr "còn hạn"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Document"
+msgstr "Văn bản"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Work"
+msgstr "Công việc"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Work by completion status"
+msgstr "Công việc theo trạng thái hoàn thành"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/xml/dashboard_templates.xml:0
+#, python-format
+msgid "notifications"
+msgstr "Thông báo"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Completed (CPL)"
+msgstr "Đã hoàn thành(HT)"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "On time (OT)"
+msgstr "Đúng hạn(HT)"
+
+#. module: dashboard_quan_ly_van_ban
+#. odoo-javascript
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#: code:addons/dashboard_quan_ly_van_ban/static/src/js/dashboard.js:0
+#, python-format
+msgid "Registration"
+msgstr "Đăng ký"

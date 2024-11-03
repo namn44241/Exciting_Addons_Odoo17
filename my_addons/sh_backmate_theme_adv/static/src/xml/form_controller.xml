@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-inherit="web.FormView" t-inherit-mode="extension">
+        <xpath expr="//Layout/t[@t-set-slot='control-panel-create-button'][2]" position="inside">
+                <t t-if="disableEditButton()">
+                    <t t-if="shDisplayButtons()">
+                        <button type="button" data-hotkey="c"
+                            t-on-click="_onClickEditView" class="btn btn-outline-primary sh_form_button_edit saved ms-2">Edit</button>
+                    </t>
+                    <t t-else="">
+                        <button type="button" data-hotkey="c"
+                            t-on-click="_onClickEditView" class="btn btn-outline-primary sh_form_button_edit dirty ms-2">Edit</button>
+                    </t>
+                </t>
+        </xpath>
+    </t>
+</templates>

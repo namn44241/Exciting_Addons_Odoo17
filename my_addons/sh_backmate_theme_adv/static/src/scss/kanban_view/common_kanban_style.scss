@@ -1,0 +1,182 @@
+.o_action_manager{
+    .o_kanban_view{
+        .o_content{
+            margin: 10px !important;
+            @include media-breakpoint-down(md) {
+                margin: 0 !important;text-overflow: ellipsis;
+            }
+            @if $body_background_type == 'bg_color'{
+                background:  $body_background_color !important;
+            }
+            @if $body_background_type == 'bg_img'{
+                background:  transparent !important;
+            }
+            .o_kanban_renderer{
+                padding: 0  !important;
+                @if $body_background_type == 'bg_color'{
+                    background:  $body_background_color;
+                }
+                @if $body_background_type == 'bg_img'{
+                    background:  transparent !important;
+                }
+                .o_kanban_group{
+                    .o_kanban_record{
+                        margin: 0.8rem 0 !important;
+                    } 
+                }
+                .o_kanban_record{
+                    margin: 10px!important;
+                    &:empty{
+                        margin: 0 !important;
+                    }
+                    @include media-breakpoint-down(md) {
+                        margin-left: 0px!important; margin-right: 0px!important;
+                    }
+                    > div:not(.o_dropdown_kanban){
+                        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);background-color: #fff;padding: 1.2rem;
+                    }
+                    .oe_module_vignette,.oe_kanban_color_0{
+                        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);background-color: #fff;border: 0px;
+                        .oe_module_desc{
+                            p{
+                                span{
+                                    color: #6f7e92;font-weight: 500;font-size: 13px;
+                                }
+
+                            }
+                            .oe_module_action{
+                                .btn-primary{
+                                    padding: 7px 15px!important;
+                                }
+                                .btn-secondary{
+                                    padding: 7px 15px!important;
+                                }
+                                .btn-info{
+                                    padding: 7px 15px!important;
+                                }
+                               
+                            }
+                          
+                        }
+                    }
+                    .oe_kanban_card{
+                        .o_kanban_record_top{
+                            .o_kanban_record_headings{
+                                .o_kanban_record_title{
+                                    font-size: 14px;
+
+                                }   
+                            }
+                            .o_field_widget{
+                                span{
+                                   color: #6f7e92;font-weight: 500;
+                                }
+                            }
+                        }
+                        .o_kanban_record_bottom{
+                            .oe_kanban_bottom_left{
+                                span{
+                                   color: #6f7e92;font-weight: 500;font-size: 13px;
+                                }
+                            }
+
+                        }
+                      
+                    }
+                }
+                .o_kanban_group{
+                    @if $body_background_type == 'bg_color'{
+                        background:  $body_background_color;
+                    }
+                    @if $body_background_type == 'bg_img'{
+                        background:  transparent !important;
+                    }
+                    .o_kanban_quick_create{
+                        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);padding: 1.1rem;margin: 0.8rem;background: #fff;
+                    }
+                    .oe_kanban_color_0{
+                        .oe_kanban_content{
+                            span{
+                                color: #6f7e92;font-weight: 500;font-size: 14px;
+                            }
+                            .oe_kanban_details{
+                               padding-left: 0px;
+                               .o_kanban_tags_section{
+                                    .oe_kanban_list_many2many{
+                                        .o_field_many2many_tags{
+                                            .gap-1{
+                                                .o_badge.badge {
+                                                   margin: 5px 0px!important;font-size: 12px;
+                                                   .o_tag_badge_text{
+                                                        padding: 1px 5px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                               }
+                            }
+                            .o_kanban_record_subtitle{
+                                .o_field_widget{
+                                    span{
+                                        color: #6f7e92;font-weight: 500;font-size: 14px;
+                                    }
+                                }
+                            }
+                            .o_field_many2many_tags{
+                                margin: 10px 0px;
+                                .o_tag{
+                                    box-shadow: none!important;padding: 4px 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .o_kanban_record.d-flex.flex-grow-1.flex-md-shrink-1.flex-shrink-0 , 
+                .o_kanban_record.d-flex.o_draggable.oe_kanban_card_undefined,
+                .o_kanban_record {
+                    .oe_kanban_global_click{
+                        .o_kanban_image_fill_left{
+                            margin-right:20px; width: 100%;max-height: 100px;max-height: 90px;
+                            img{
+                                box-shadow: 0 1px 3px 0 rgba(0, 0, 0,0.1), 0 1px 2px -1px rgba(0, 0, 0,0.1);
+                            }
+                            .o_kanban_image_inner_pic{
+                                box-shadow: 0 1px 3px 0 rgba(0, 0, 0,0.1), 0 1px 2px -1px rgba(0, 0, 0,0.1);
+                            }
+                        }
+                        .oe_kanban_details{
+                            .o_kanban_record_title{
+                                padding-left: 0px;
+                                span{
+                                    color:$primaryColor;font-size: 16px;
+                                }
+                               
+                            }
+                            ul{
+                                li{
+                                    span{
+                                        color: #6f7e92;font-weight: 500;font-size: 13px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .o_kanban_record.o_kanban_ghost.flex-grow-1.flex-md-shrink-1.flex-shrink-0.my-0{
+                    background-color: transparent;box-shadow: none!important;
+                   
+                }
+                .oe_kanban_details {
+                    .o_kanban_record_bottom{
+                        .oe_kanban_bottom_left{
+                            a{
+                                color: $primaryColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

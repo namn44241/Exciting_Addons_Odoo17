@@ -1,0 +1,139 @@
+// Sticky Header & Footer in List View
+@if $is_sticky_pivot == "True"{
+        .o_pivot_view {
+            .o_pivot.table-responsive {
+                overflow-x: unset;
+                table.table {
+                    thead {
+                        position: sticky;
+                        top: 0;
+                        background: #ffffff;
+                        z-index: 10;
+                        th {
+                            background: #ffffff;
+                            box-shadow: none !important;
+                            outline: 1px solid #dee2e6;
+                            border: 0px;
+                            outline-offset: -1px;
+                            position: sticky !important;
+                        }
+                        tr {
+                            &:first-child {
+                                th {
+                                    &:first-child {
+                                        background: #fff !important;
+                                        box-shadow: none !important;
+                                        z-index: 1;
+                                        left: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            th {
+                                box-shadow: none !important;
+                                background: #fff !important;
+                                position: sticky;
+                                left: 0;
+                                outline: 1px solid #dee2e6;
+                                border: 0px;
+                                outline-offset: -1px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .sh_pivot.o_pivot.table-responsive {
+            table.table {
+                thead {
+                    z-index: 0;
+                    th {
+                        position: unset !important;
+                    }
+                }
+                tbody {
+                    tr {
+                        th {
+                            position: unset !important;
+                        }
+                    }
+                }
+            }
+        }
+        .o_pivot.table-responsive {
+            table.table {
+                tbody {
+                    tr {
+                        th {
+                            &:hover {
+                                background: #E0E2E6 !important;
+                            }
+                        }
+                    }
+                }
+            }
+    }
+    
+
+    @media only screen and (max-width: 767.98px){        
+        html {
+            .o_web_client {
+                >.o_action_manager {
+                    >.o_action.o_pivot_view {
+                        .o_content {
+                            overflow: auto;
+                        }
+                    }
+                }
+            }
+        }
+        .o_pivot.table-responsive {
+            table.table {
+                thead {
+                    tr {
+                        &:first-child {
+                            th {
+                                &:first-child {
+                                    position: unset !important;
+                                }
+                            }
+                        }
+                    }
+                    th {
+                        left: auto;
+                    }
+                }
+                tbody {
+                    tr {
+                        th {
+                            position: unset !important;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    @media only screen and (max-width: 992px){
+        .o_navbar {
+            &:has(.sh_backmate_theme_appmenu_div.sidebar_toggle) {
+                + {
+                    .o_action_manager {
+                        .o_pivot_view {
+                            .o_pivot.table-responsive {
+                                table.table {
+                                    thead {
+                                        z-index: unset;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }        
+    }
+}

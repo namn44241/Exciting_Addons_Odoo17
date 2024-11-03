@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="LanguageTemplate" owl="1">
+        <t t-if="sh_enable_language_selection">
+            <div class="sh_language_selector">
+        <Dropdown position="'bottom-end'" autoOpen="false" beforeOpen.bind="onBeforeOpen">
+        <t t-set-slot="toggler">
+            <i class="fa fa-lg fa-language" role="img" aria-label="Language"> </i>
+        </t>
+            <t t-set-slot="default">
+            <div class="o-mail-ActivityMenu bg-view flex-grow-1 d-flex flex-column">
+                <div class="d-flex flex-column list-group-flush">
+                    <t t-foreach="languages_list" t-as="language" t-key="language">
+                        <div class="o-mail-ActivityGroup list-group-item list-group-item-action d-flex p-2 cursor-pointer "
+                             t-on-click="() => this.change_sh_user_lang(language)">
+                                <img class="sh_lang_flag" t-att-src="language[2]"/>
+                            <span><t t-out="language[1]"/></span>
+                        </div>
+                    </t>
+                </div>
+            </div>
+        </t>
+    </Dropdown>
+        </div>
+        </t>
+    </t>
+</templates>

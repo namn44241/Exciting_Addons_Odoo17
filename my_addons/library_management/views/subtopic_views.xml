@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Form View -->
+    <record id="view_book_subtopic_form" model="ir.ui.view">
+        <field name="name">library.book.subtopic.form</field>
+        <field name="model">library.book.subtopic</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="toggle_is_folder"
+                                type="object"
+                                class="oe_stat_button"
+                                icon="fa-folder">
+                            <field name="is_folder" widget="boolean_button"/>
+                        </button>
+                    </div>
+                    <div class="oe_title">
+                        <label for="name" class="oe_edit_only"/>
+                        <h1><field name="name" placeholder="Tên thể loại"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="book_id"/>
+                            <field name="parent_id"/>
+                            <field name="sequence"/>
+                        </group>
+                        <group>
+                            <field name="icon"/>
+                            <field name="color" widget="color_picker"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Nội dung" name="content">
+                            <field name="content" widget="html"/>
+                        </page>
+                        <page string="Thể loại con" name="child_subtopics">
+                            <field name="child_ids">
+                                <tree>
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="name"/>
+                                    <field name="is_folder"/>
+                                    <field name="child_count"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree View -->
+    <record id="view_book_subtopic_tree" model="ir.ui.view">
+        <field name="name">library.book.subtopic.tree</field>
+        <field name="model">library.book.subtopic</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="sequence" widget="handle"/>
+                <field name="complete_name"/>
+                <field name="book_id"/>
+                <field name="is_folder"/>
+                <field name="child_count"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Search View -->
+    <record id="view_book_subtopic_search" model="ir.ui.view">
+        <field name="name">library.book.subtopic.search</field>
+        <field name="model">library.book.subtopic</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="book_id"/>
+                <field name="parent_id"/>
+                <filter string="Thư mục" name="folders" domain="[('is_folder', '=', True)]"/>
+                <filter string="Nội dung" name="content" domain="[('is_folder', '=', False)]"/>
+                <group expand="0" string="Nhóm vào">
+                    <filter string="Sách" name="group_by_book" context="{'group_by': 'book_id'}"/>
+                    <filter string="Thể loại cha" name="group_by_parent" context="{'group_by': 'parent_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_book_subtopic" model="ir.actions.act_window">
+        <field name="name">Subtopics</field>
+        <field name="res_model">library.book.subtopic</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

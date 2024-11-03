@@ -1,0 +1,280 @@
+/*--body-background-img--*/
+
+@if $body_background_type == 'bg_img'{
+   .o_onboarding_main {
+      margin: 0.8rem 0.8rem 0;
+      border-radius: 10px;
+   }
+   .o_form_view {
+      .o_group {
+         .o_td_label {
+            .o_form_label {
+               color: #4e4b4b !important;
+            }
+         }
+      }
+      .o_form_sheet_bg {
+         .o_form_sheet {
+            background: transparent;
+         }
+      }
+   }
+   html {
+      body {
+         .o_form_view {
+            .o_group {
+               .o_form_label {
+                  color: #4e4b4b !important;
+               }
+            }
+         }
+      }
+      .o_web_client {
+         >.o_main {
+            .o_main_content {
+               .o_content {
+                  background-color: rgba(255, 255, 255, 0.6);
+               }
+            }
+         }
+      }
+   }
+   .o_no_thread_window {
+      .o_mail_thread {
+         .a_right {
+            .o_thread_message_core {
+               .o_mail_info {
+                  color: #000 !important;
+               }
+            }
+         }
+      }
+      .o_mail_activity {
+         .a_right {
+            .o_thread_message_core {
+               .o_mail_info {
+                  color: #000 !important;
+               }
+            }
+         }
+      }
+   }
+   .o_thread_window {
+      .o_mail_thread {
+         .a_right {
+            .o_thread_message_core {
+               .o_mail_info {
+                  color: #000 !important;
+               }
+            }
+         }
+      }
+      .o_mail_activity {
+         .a_right {
+            .o_thread_message_core {
+               .o_mail_info {
+                  color: #000 !important;
+               }
+            }
+         }
+      }
+   }
+   .o_mail_thread {
+      .a_left {
+         .o_thread_message_core {
+            .o_mail_info {
+               color: #000 !important;
+            }
+         }
+      }
+      .o_thread_message {
+         .o_thread_message_core {
+            .o_mail_info {
+               color: #000 !important;
+            }
+         }
+      }
+   }
+   .o_mail_activity {
+      .a_left {
+         .o_thread_message_core {
+            .o_mail_info {
+               color: #000 !important;
+            }
+         }
+      }
+      .o_thread_message {
+         .o_thread_message_core {
+            .o_mail_info {
+               color: #000 !important;
+            }
+         }
+      }
+   }
+   .o_control_panel {
+      background-color: transparent;
+   }
+   .o_kanban_view.o_kanban_grouped {
+      background-color: rgba(255, 255, 255, 0.6);
+   }
+   .o_graph {
+      .o_graph_container {
+         .o_graph_svg_container {
+            svg {
+               background: #ffffffc7;
+            }
+         }
+      }
+   }
+   .o_searchview {
+      padding: 1px 25px 2px 5px;
+      border-bottom: none;
+   }
+   .o_mail_discuss {
+      .o_mail_discuss_content {
+         background-color: transparent !important;
+      }
+   }
+   .o_base_settings {
+      .o_setting_container {
+         .settings {
+            background-color: rgba(255, 255, 255, 0.6);
+         }
+      }
+   }
+   .o_web_settings_dashboard {
+      background: transparent !important;
+   }
+   .o_main_navbar {
+      background-color: transparent;
+   }
+   
+   /*--list--*/
+   @if $predefined_list_view_boolean == "False"{      
+      .o_list_view {
+         background-color: rgba(255, 255, 255, 0.6);
+         thead {
+            background-color: rgba(255, 255, 255, 0.6);
+         }
+      }
+      .table-striped {
+         tbody {
+            tr {
+               &:nth-of-type(odd) {
+                  background-color: rgba(255, 255, 255, 0.6);
+               }
+            }
+         }
+      }
+      .ui-sortable {
+         tr {
+            background-color: rgba(255, 255, 255, 0.6);
+         }
+      }
+      .o_mail_thread {
+         .o_thread_message.o_mail_not_discussion {
+            background-color: rgba(255, 255, 255, 0) !important;
+            border-bottom: 1px solid #9c9c9c;
+         }
+         .o_thread_date_separator {
+            border-bottom: 1px solid #9c9c9c;
+         }
+      }
+      .o_mail_activity {
+         .o_thread_message.o_mail_not_discussion {
+            background-color: rgba(255, 255, 255, 0) !important;
+            border-bottom: 1px solid #9c9c9c;
+         }
+         .o_thread_date_separator {
+            border-bottom: 1px solid #9c9c9c;
+         }
+      }
+   }
+   @media (max-width: 767px){
+      .o_control_panel {
+         .btn.o_enable_searchview {
+            background: transparent;
+            color:#ffff;
+         }
+      }
+      .o_searchview {
+         &:not(.o_mobile_search) {
+            background: transparent !important;
+         }
+      }      
+   }
+   .o_form_view {
+      &:not(.modal-content) {
+         background-color: rgba(255, 255, 255, 0.6);
+      }
+      .o_form_sheet_bg {
+         background: transparent;
+      }
+   }
+   .o_web_client {
+      background: linear-gradient( rgba(252, 251, 255,0.60), rgba(115, 107, 252,0.60) ), url('/web/image?model=sh.back.theme.config.settings&id=1&field=body_background_image');
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: $body_font_family !important;
+      .main-content.sh_main_content {
+         background: rgba(255,255,255,0.5) !important;
+      }
+   }
+   .o_control_panel {
+      font-family: $body_font_family !important;
+   }
+   .breadcrumb {
+      background-color: transparent !important;
+      font-family: $body_font_family !important;
+   }
+   html {
+      .o_web_client {
+         >.o_action_manager {
+            >.o_action {
+               background: rgba(255,255,255,0.5) !important;
+            }
+         }
+         .o_content {
+            background: rgba(255, 255, 255, 0.6) !important;
+         }
+         .o_main_navbar {
+            background: rgba(255, 255, 255, 0.6) !important;
+         }
+      }
+   }
+   .o_notebook {
+      .nav {
+         background: rgba(255, 255, 255, 0.6) !important;
+      }
+   }
+   .o-mail-Chatter-top {
+      background: rgba(255, 255, 255, 0.6) !important;
+   }
+   .o_action_manager {
+      .o_form_view_container {
+         .o_content {
+            .o_form_renderer {
+               .o_form_sheet_bg {
+                  .o_form_sheet {
+                     background: rgba(255, 255, 255, 0.6) !important;
+                  }
+               }
+            }
+         }
+      }
+   }
+   .o_FormRenderer_chatterContainer {
+      .o_ChatterContainer {
+         .o_Chatter {
+            background: rgba(255, 255, 255, 0.6) !important;
+            .o_MessageList {
+               background: rgba(255, 255, 255, 0.6) !important;
+            }
+            .o_ThreadView.o_Chatter_thread {
+               background: rgba(255, 255, 255, 0.6) !important;
+            }
+         }
+      }
+   }
+   
+}

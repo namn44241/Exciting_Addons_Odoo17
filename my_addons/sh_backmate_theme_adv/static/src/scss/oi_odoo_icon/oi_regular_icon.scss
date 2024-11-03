@@ -1,0 +1,411 @@
+@if $backend_all_icon_style == 'style_2'{
+  @font-face {
+    font-family: 'icomoon';
+    src:  url('/sh_backmate_theme_adv/static/src/oi_fonts_regular/fonts/icomoon.eot?rje68m');
+    src:  url('/sh_backmate_theme_adv/static/src/oi_fonts_regular/fonts/icomoon.eot?rje68m#iefix') format('embedded-opentype'),
+      url('/sh_backmate_theme_adv/static/src/oi_fonts_regular/fonts/icomoon.woff2?rje68m') format('woff2'),
+      url('/sh_backmate_theme_adv/static/src/oi_fonts_regular/fonts/icomoon.ttf?rje68m') format('truetype'),
+      url('/sh_backmate_theme_adv/static/src/oi_fonts_regular/fonts/icomoon.woff?rje68m') format('woff'),
+      url('/sh_backmate_theme_adv/static/src/oi_fonts_regular/fonts/icomoon.svg?rje68m#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-oi-alarm:before {
+    content: "\e95c";
+  }
+  .icon-oi-volume-up:before {
+    content: "\e95d";
+  }
+  .icon-oi-volume-up-filled:before {
+    content: "\e95e";
+  }
+  .icon-oi-volume-mute:before {
+    content: "\e95f";
+  }
+  .icon-oi-volume-mute-filled:before {
+    content: "\e960";
+  }
+  .icon-oi-view-next:before {
+    content: "\e961";
+  }
+  .icon-oi-video:before {
+    content: "\e962";
+  }
+  .icon-oi-video-filled:before {
+    content: "\e963";
+  }
+  .icon-oi-user:before {
+    content: "\e964";
+  }
+  .icon-oi-user-multiple:before {
+    content: "\e965";
+  }
+  .icon-oi-user-follow:before {
+    content: "\e966";
+  }
+  .icon-oi-trash-can:before {
+    content: "\e967";
+  }
+  .icon-oi-table:before {
+    content: "\e946";
+  }
+  .icon-oi-table-split:before {
+    content: "\e947";
+  }
+  .icon-oi-subtract:before {
+    content: "\e948";
+  }
+  .icon-oi-star:before {
+    content: "\e949";
+  }
+  .icon-oi-star-half:before {
+    content: "\e94a";
+  }
+  .icon-oi-star-filled:before {
+    content: "\e94b";
+  }
+  .icon-oi-sort-descending:before {
+    content: "\e94c";
+  }
+  .icon-oi-sort-ascending:before {
+    content: "\e94d";
+  }
+  .icon-oi-show-data-cards:before {
+    content: "\e94e";
+  }
+  .icon-oi-settings:before {
+    content: "\e94f";
+  }
+  .icon-oi-screen:before {
+    content: "\e950";
+  }
+  .icon-oi-reminder:before {
+    content: "\e951";
+  }
+  .icon-oi-printer:before {
+    content: "\e952";
+  }
+  .icon-oi-phone:before {
+    content: "\e953";
+  }
+  .icon-oi-phone-voice:before {
+    content: "\e954";
+  }
+  .icon-oi-phone-voice-filled:before {
+    content: "\e955";
+  }
+  .icon-oi-phone-filled:before {
+    content: "\e956";
+  }
+  .icon-oi-phone-application:before {
+    content: "\e957";
+  }
+  .icon-oi-pen:before {
+    content: "\e958";
+  }
+  .icon-oi-overflow-menu-vertical:before {
+    content: "\e959";
+  }
+  .icon-oi-overflow-menu-horizontal:before {
+    content: "\e95a";
+  }
+  .icon-oi-open-panel-filled-right:before {
+    content: "\e95b";
+  }
+  .icon-oi-microphone:before {
+    content: "\e902";
+  }
+  .icon-oi-microphone-off:before {
+    content: "\e903";
+  }
+  .icon-oi-microphone-off-filled:before {
+    content: "\e904";
+  }
+  .icon-oi-microphone-filled:before {
+    content: "\e905";
+  }
+  .icon-oi-menu:before {
+    content: "\e906";
+  }
+  .icon-oi-maximize:before {
+    content: "\e907";
+  }
+  .icon-oi-map:before {
+    content: "\e908";
+  }
+  .icon-oi-headset:before {
+    content: "\e909";
+  }
+  .icon-oi-headphone:before {
+    content: "\e90a";
+  }
+  .icon-oi-filter:before {
+    content: "\e90b";
+  }
+  .icon-oi-event:before {
+    content: "\e90c";
+  }
+  .icon-oi-event-schedule:before {
+    content: "\e90d";
+  }
+  .icon-oi-document-download:before {
+    content: "\e90e";
+  }
+  .icon-oi-debug:before {
+    content: "\e90f";
+  }
+  .icon-oi-data-base-check:before {
+    content: "\e910";
+  }
+  .icon-oi-data-base:before {
+    content: "\e911";
+  }
+  .icon-oi-dashboard:before {
+    content: "\e912";
+  }
+  .icon-oi-cross-tab:before {
+    content: "\e913";
+  }
+  .icon-oi-contrast:before {
+    content: "\e914";
+  }
+  .icon-oi-container-software:before {
+    content: "\e915";
+  }
+  .icon-oi-connection-two-way:before {
+    content: "\e916";
+  }
+  .icon-oi-chevron-mini:before {
+    content: "\e917";
+  }
+  .icon-oi-checkmark:before {
+    content: "\e918";
+  }
+  .icon-oi-chat:before {
+    content: "\e919";
+  }
+  .icon-oi-chat-launch:before {
+    content: "\e91a";
+  }
+  .icon-oi-chart-stacked:before {
+    content: "\e91b";
+  }
+  .icon-oi-chart-pie:before {
+    content: "\e91c";
+  }
+  .icon-oi-chart-line-smooth:before {
+    content: "\e91d";
+  }
+  .icon-oi-chart-column:before {
+    content: "\e91e";
+  }
+  .icon-oi-chart-bullet:before {
+    content: "\e91f";
+  }
+  .icon-oi-caret-sort-down:before {
+    content: "\e920";
+  }
+  .icon-oi-caret-sort-up:before {
+    content: "\e921";
+  }
+  .icon-oi-caret-sort:before {
+    content: "\e922";
+  }
+  .icon-oi-caret-up:before {
+    content: "\e923";
+  }
+  .icon-oi-caret-right:before {
+    content: "\e924";
+  }
+  .icon-oi-caret-left:before {
+    content: "\e925";
+  }
+  .icon-oi-caret-down:before {
+    content: "\e926";
+  }
+  .icon-oi-calendar:before {
+    content: "\e968";
+  }
+  .icon-oi-calendar-heat-map:before {
+    content: "\e927";
+  }
+  .icon-oi-attachment:before {
+    content: "\e928";
+  }
+  .icon-oi-align-vertical-top:before {
+    content: "\e929";
+  }
+  .icon-oi-alarm-add:before {
+    content: "\e92a";
+  }
+  .icon-oi-add:before {
+    content: "\e92b";
+  }
+  .icon-oi-subtract-thick:before {
+    content: "\e92c";
+  }
+  .icon-oi-add-thick:before {
+    content: "\e92d";
+  }
+  .icon-oi-mobile:before {
+    content: "\e92e";
+  }
+  .icon-oi-message-filled:before {
+    content: "\e92f";
+  }
+  .icon-oi-filter-filled:before {
+    content: "\e930";
+  }
+  .icon-oi-chart-cohort:before {
+    content: "\e931";
+  }
+  .icon-oi-chart-area-filled:before {
+    content: "\e932";
+  }
+  .icon-oi-discuss:before {
+    content: "\e933";
+  }
+  .icon-oi-studio-filled:before {
+    content: "\e934";
+  }
+  .icon-oi-unarchive:before {
+    content: "\e863";
+  }
+  .icon-oi-arrow-up:before {
+    content: "\e846";
+  }
+  .icon-oi-arrow-up-right:before {
+    content: "\e845";
+  }
+  .icon-oi-arrow-up-left:before {
+    content: "\e844";
+  }
+  .icon-oi-arrow-down:before {
+    content: "\e841";
+  }
+  .icon-oi-arrow-down-right:before {
+    content: "\e840";
+  }
+  .icon-oi-arrow-down-left:before {
+    content: "\e83f";
+  }
+  .icon-oi-arrows-v:before {
+    content: "\e83e";
+  }
+  .icon-oi-arrows-h:before {
+    content: "\e83d";
+  }
+  .icon-oi-chevron-up:before {
+    content: "\e83c";
+  }
+  .icon-oi-chevron-down:before {
+    content: "\e839";
+  }
+  .icon-oi-apps:before {
+    content: "\e80d";
+  }
+  .icon-oi-text-effect:before {
+    content: "\e827";
+  }
+  .icon-oi-text-wrap:before {
+    content: "\e815";
+  }
+  .icon-oi-text-inline:before {
+    content: "\e802";
+  }
+  .icon-oi-text-break:before {
+    content: "\e801";
+  }
+  .icon-oi-view:before {
+    content: "\e861";
+  }
+  .icon-oi-odoo:before {
+    content: "\e806";
+  }
+  .icon-oi-archive:before {
+    content: "\e862";
+  }
+  .icon-oi-pencil:before {
+    content: "\f040";
+  }
+  .icon-oi-download:before {
+    content: "\f019";
+  }
+  .icon-oi-trash-o:before {
+    content: "\f014";
+  }
+  .icon-oi-draggable:before {
+    content: "\e847";
+  }
+  .icon-oi-gif-picker:before {
+    content: "\e82e";
+  }
+  .icon-oi-smile-add:before {
+    content: "\e84e";
+  }
+  .icon-oi-arrow-left:before {
+    content: "\e842";
+  }
+  .icon-oi-arrow-right:before {
+    content: "\e843";
+  }
+  .icon-oi-chevron-left:before {
+    content: "\e83a";
+  }
+  .icon-oi-chevron-right:before {
+    content: "\e83b";
+  }
+  .icon-oi-launch:before {
+    content: "\e812";
+  }
+  .icon-oi-view-cohort:before {
+    content: "\e816";
+  }
+  .icon-oi-voip:before {
+    content: "\e803";
+  }
+  .icon-oi-studio:before {
+    content: "\e813";
+  }
+  .icon-oi-group:before {
+    content: "\e80a";
+  }
+  .icon-oi-panel-right:before {
+    content: "\e810";
+  }
+  .icon-oi-search:before {
+    content: "\e808";
+  }
+  .icon-oi-view-list:before {
+    content: "\e817";
+  }
+  .icon-oi-view-kanban:before {
+    content: "\e814";
+  }
+  .icon-oi-settings-adjust:before {
+    content: "\e80c";
+  }
+  .icon-oi-close:before {
+    content: "\e852";
+  }
+  .icon-oi-view-pivot:before {
+    content: "\e800";
+  }
+}

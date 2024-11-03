@@ -1,0 +1,45 @@
+
+.multi_tab_section{
+    display: flex;flex-wrap: nowrap;overflow-x: auto;gap: 8px;padding-bottom: 4px;padding-top: 4px;
+    &:empty{
+        padding: 0 !important;
+    }
+}
+.multi_tab_section::-webkit-scrollbar{display: block !important;height: 2px;}
+.multi_tab_section .multi_tab_div{cursor: pointer !important;padding: 0.25rem 0.7rem;border: 1px solid #ccc;white-space: nowrap;position: relative;width: auto !important;margin-right: 1px !important;height: 35px;line-height: 30px;min-width: 170px;}
+.multi_tab_section .multi_tab_div a{ overflow: hidden;text-overflow: ellipsis;white-space: nowrap;padding-right: 10px;color: $primaryColor;}
+.multi_tab_section .remove_tab{margin-left: 4px !important;padding: 2px 3px 1px 3px;border-radius: 50rem;font-size: 12px;cursor: pointer;}
+.multi_tab_section .remove_tab:hover{color: lighten($primaryColor, 20%);transition: all .3s;}
+.multi_tab_section .multi_tab_div.tab_active,.multi_tab_section .multi_tab_div:hover{background-color: lighten($primaryColor, 50%);color: $primaryColor;}
+
+@if $button_style == 'style_1'{
+    .multi_tab_section .multi_tab_div{border-radius: 2px;}
+}
+@if $button_style == 'style_2'{
+    .multi_tab_section .multi_tab_div{border-radius: 4px;}
+}
+@if $button_style == 'style_3'{
+    .multi_tab_section .multi_tab_div{border-radius: 0px 15px 0px 15px;}
+}
+@if $button_style == 'style_4'{
+    .multi_tab_section .multi_tab_div{border-radius: 50rem;}
+}
+@if $button_style == 'style_5'{
+    .multi_tab_section .multi_tab_div{border-radius: 0px;}
+}
+
+@media only screen and (max-width: 991.98px){
+    .multi_tab_section{display: none !important;}
+}
+
+@if $sidebar_collapse_style == 'collapsed'{
+    body.o_web_client .multi_tab_section {
+        margin-left: 80px;
+    }
+}
+
+@if $sidebar_collapse_style == 'expanded'{
+    body.o_web_client .multi_tab_section {
+        margin-left: 260px;
+    }
+}

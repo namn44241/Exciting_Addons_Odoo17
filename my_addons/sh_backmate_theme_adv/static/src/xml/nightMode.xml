@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="NightModeTemplate">
+		<div class="o_night_mode">
+			<t t-if="day_mode">
+				<span class="icon-moon fa fa-moon-o" id="moon_button" t-on-click="_click_moon_button" style="height: 15px; width: 15px;display:inline-flex;"></span>
+				<span class="icon-sun fa fa-sun-o" id="sun_button" t-on-click="_click_sun_button" style="height: 15px; width: 15px;display:none;"></span>
+			</t>
+			<t t-else="">
+				<span class="icon-moon fa fa-moon-o" id="moon_button" t-on-click="_click_moon_button" style="height: 15px; width: 15px;display:none;"></span>
+				<span class="icon-sun fa fa-sun-o" id="sun_button" t-on-click="_click_sun_button" style="height: 15px; width: 15px;display:inline-flex;"></span>
+			</t>
+			 <input type="checkbox" id="night_checkbox" style="display:none;"/>
+        </div>
+	</t>
+</templates>

@@ -1,0 +1,10 @@
+@if $is_sticky_form == True{
+    .o_content{
+        .o_form_statusbar {
+            position: sticky !important;top: 0;z-index: 2;
+            @if $body_background_type == "bg_color"{
+                background: #fff;
+            }
+        }
+    }     
+}

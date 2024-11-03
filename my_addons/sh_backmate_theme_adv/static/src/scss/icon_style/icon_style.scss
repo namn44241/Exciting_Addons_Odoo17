@@ -1,0 +1,274 @@
+@if $icon_style == 'standard' {
+    
+    @if $sidebar_collapse_style == 'collapsed'{
+        .sh_backmate_theme_appmenu_div {
+            span.dropdown-item.o_app {
+                &:hover {
+                    span {
+                        color: $primaryColor !important;
+                    }
+                }
+            }
+            span.dropdown-item.o_app.focus {
+                span {
+                    color: $primaryColor !important;
+                }
+            }
+        }             
+    }
+}
+@if $icon_style == 'line_icon' or $icon_style == 'light_icon' {
+
+    @if $sidebar_collapse_style == 'collapsed'{
+        .sh_backmate_theme_appmenu_div {
+            span.dropdown-item.o_app {
+                &:hover {
+                    span {
+                        color: $primaryColor !important;
+                    }
+                }
+            }
+            span.dropdown-item.o_app.focus {
+                span {
+                    color: $primaryColor !important;
+                }
+            }
+        }        
+    }
+}
+
+@if $icon_style == 'three_d' {
+
+    @if $sidebar_collapse_style == 'collapsed'{
+        .sh_backmate_theme_appmenu_div {
+            span.dropdown-item.o_app2 {
+                padding-left: 13px !important;
+            }
+            span.dropdown-item.o_app {
+                padding-left: 13px !important;
+                &:hover {
+                    span {
+                        color: $primaryColor !important;
+                    }
+                }
+            }
+            span.dropdown-item.o_app.focus {
+                span {
+                    color: $primaryColor !important;
+                }
+            }
+        }
+    }
+}
+@if $icon_style == "dual_tone" {
+    .sh_backmate_theme_appmenu_div {
+        span.dropdown-item.o_app {
+            span.sh_fa_icon {
+                span {
+                    font-family: 'icomoon' !important;
+                }
+            }
+        }
+        span.dropdown-item.o_app2 {
+            span.sh_fa_icon {
+                span {
+                    font-family: 'icomoon' !important;
+                }
+            }
+        }
+    }
+    @if $sidebar_collapse_style == 'expanded'{
+        .sh_backmate_theme_appmenu_div {
+            span.dropdown-item.o_app {
+                span.sh_fa_icon {
+                    font-size: 28px !important;
+                }
+                &:not(:hover) {
+                    &:not(.focus) {
+                        span.sh_fa_icon {
+                            .path1 {
+                                &::before {
+                                    color: $dual_tone_icon_color_1 !important;
+                                    opacity: 1;
+                                }
+                            }
+                            .path2 {
+                                &::before {
+                                    color: $dual_tone_icon_color_2;
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    span {
+                        color: $primaryColor !important;
+                    }
+                }
+            }
+            span.dropdown-item.o_app2 {
+                span.sh_fa_icon {
+                    font-size: 28px !important;
+                    display: inline-flex;
+                }
+                &:not(:hover) {
+                    &:not(.focus) {
+                        &:not(.active) {
+                            span.sh_fa_icon {
+                                .path1 {
+                                    &::before {
+                                        color: $dual_tone_icon_color_1 !important;
+                                        opacity: 1;
+                                    }
+                                }
+                                .path2 {
+                                    &::before {
+                                        color: $dual_tone_icon_color_2;
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        body.o_web_client {
+            .sh_backmate_theme_appmenu_div {
+                span.dropdown-item.o_app.active {
+                    span.sh_fa_icon {
+                        .path2 {
+                            &::before {
+                                color: $primaryColor !important;
+                                display: inline-flex;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        nav.o_main_navbar {
+            .sh_backmate_theme_appmenu_div.o_navbar_apps_menu {
+                ul.dropdown-menu {
+                    .dropdown-header {
+                        .dropdown-item.action_menu {
+                            &:hover {
+                                a {
+                                    span {
+                                        color: $primaryColor !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .cssmenu {
+                    .dropdown-menu.dropdown-menu-right {
+                        .dropdown-header.o_menu_header_lvl_2 {
+                            >.dropdown-item.dropdown-toggle {
+                                &:hover {
+                                    &::after {
+                                        display: inline-flex;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .o_rtl {
+            .sh_backmate_theme_appmenu_div {
+                span.dropdown-item.o_app {
+                    span.sh_fa_icon {
+                        display: inline-flex;
+                    }
+                }
+            }
+        }        
+    }
+    @if $sidebar_collapse_style == 'collapsed'{
+        .sh_backmate_theme_appmenu_div {
+            span.dropdown-item.o_app2 {
+                span.sh_fa_icon {
+                    font-size: 30px !important;
+                    display: inline-flex;
+                }
+                &:not(:hover) {
+                    &:not(.focus) {
+                        &:not(.active) {
+                            span.sh_fa_icon {
+                                .path1 {
+                                    &::before {
+                                        color: $dual_tone_icon_color_1 !important;
+                                        opacity: 1;
+                                    }
+                                }
+                                .path2 {
+                                    &::before {
+                                        color: $dual_tone_icon_color_2 !important;
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            span.dropdown-item.o_app {
+                &:not(:hover) {
+                    &:not(.focus) {
+                        span.sh_fa_icon {
+                            .path1 {
+                                &::before {
+                                    color: $dual_tone_icon_color_1 !important;
+                                    opacity: 1;
+                                }
+                            }
+                            .path2 {
+                                &::before {
+                                    color: $dual_tone_icon_color_2 !important;
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        nav.o_main_navbar {
+            .sh_backmate_theme_appmenu_div.o_navbar_apps_menu {
+                .cssmenu {
+                    .dropdown-menu.dropdown-menu-right {
+                        .dropdown-header.o_menu_header_lvl_2 {
+                            >.dropdown-item.dropdown-toggle {
+                                &:hover {
+                                    &::after {
+                                        color: $sidebar_font_color !important;
+                                    }
+                                }
+                            }
+                            >a.dropdown-item.dropdown-toggle {
+                                &:hover {
+                                    span {
+                                        color: $sidebar_font_color !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .o_rtl {
+            .sh_backmate_theme_appmenu_div {
+                span.dropdown-item.o_app {
+                    span.sh_fa_icon {
+                        display: inline-flex;
+                    }
+                }
+            }
+        }        
+    }
+}

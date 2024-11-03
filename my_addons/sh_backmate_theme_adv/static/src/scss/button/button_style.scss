@@ -1,0 +1,1298 @@
+
+.btn-primary,.btn-info, .btn-secondary:not(.o_arrow_button), .btn-outline-primary, .btn-light, .btn-outline-secondary:not(.oe_stat_button):not(.o_button_more){
+    @if $button_style == 'style_1'{
+        border-radius: 0px !important;
+    }
+    @if $button_style == 'style_2'{
+        border-radius: 5px !important;
+    }
+    @if $button_style == 'style_3'{
+        border-radius: 5px 15px  !important;
+    }
+    @if $button_style == 'style_4'{
+        border-radius: 2rem !important;
+    }
+}   
+//o_main_navbar
+.o_main_navbar{
+    .o_menu_systray{
+        .o_night_mode,
+        .o-dropdown,
+        .sh_search_input,
+        .o_mobile_menu_toggle,
+        .input-group-prepend,
+        .sh_bookmark,.sh_calc_util,.todo,.o_full_screen,
+        .o-mail-MessagingMenu,
+        .o-mail-ActivityMenu,
+        .theme_settings,
+        .o-mail-DiscussSystray-class
+        {
+            @if $button_style == 'style_1'{
+                border-radius: 0px !important;
+            }
+            @if $button_style == 'style_2'{
+                border-radius: 5px !important;
+            }
+            @if $button_style == 'style_3'{
+                border-radius: 5px 15px !important;
+            }
+            @if $button_style == 'style_4'{
+                border-radius: 2rem !important;
+            }
+        }
+    }
+    .o_avatar{
+        @if $button_style == 'style_1'{
+            border-radius: 0px !important;
+        }
+        @if $button_style == 'style_2'{
+            border-radius: 5px !important;
+        }
+        @if $button_style == 'style_3'{
+            border-radius: 5px 15px  !important;
+        }
+        @if $button_style == 'style_4'{
+            border-radius: 2rem !important;
+        }
+    }            
+}  
+//o_main_navbar  
+//backmate_theme_layout
+.backmate_theme_layout{
+    .btn-secondary{
+        @if $button_style == 'style_1'{
+            border-radius: 0px !important;
+        }
+        @if $button_style == 'style_2'{
+            border-radius: 5px !important;
+        }
+        @if $button_style == 'style_3'{
+            border-radius: 5px 15px  !important;
+        }
+        @if $button_style == 'style_4'{
+            border-radius: 2rem !important;
+        }
+    }
+}
+//backmate_theme_layout  
+//secondary-button
+.o_control_panel_main{        
+    .o_control_panel_breadcrumbs{
+        .o_control_panel_main_buttons{
+            .btn-secondary,.btn-primary,.btn-outline-primary{
+                @if $button_style == 'style_1'{
+                    border-radius: 0px !important;
+                }
+                @if $button_style == 'style_2'{
+                    border-radius: 5px !important;
+                }
+                @if $button_style == 'style_3'{
+                    border-radius: 5px 15px  !important;
+                }
+                @if $button_style == 'style_4'{
+                    border-radius: 2rem !important;
+                }
+            }
+        }    
+        .o_cp_buttons {
+            .o_form_buttons_edit{
+                .btn-secondary{
+                    @if $button_style == 'style_1'{
+                        border-radius: 0px !important;
+                    }
+                    @if $button_style == 'style_2'{
+                        border-radius: 5px !important;
+                    }
+                    @if $button_style == 'style_3'{
+                        border-radius: 5px 15px  !important;
+                    }
+                    @if $button_style == 'style_4'{
+                        border-radius: 2rem !important;
+                    }
+                }
+            }
+        }
+    }
+    .o_control_panel_navigation{
+        .o_cp_switch_buttons{
+            .btn-secondary{
+                @if $button_style == 'style_1'{
+                    border-radius: 0px !important;
+                }
+                @if $button_style == 'style_2'{
+                    border-radius: 5px !important;
+                }
+                @if $button_style == 'style_3'{
+                    border-radius: 5px 15px  !important;
+                }
+                @if $button_style == 'style_4'{
+                    border-radius: 2rem !important;
+                }
+            }
+        }
+        .o_cp_pager{
+            .o_pager{
+                .btn-group{
+                    .btn-secondary{
+                        @if $button_style == 'style_1'{
+                            border-radius: 0px !important;
+                        }
+                        @if $button_style == 'style_2'{
+                            border-radius: 5px !important;
+                        }
+                        @if $button_style == 'style_3'{
+                            border-radius: 5px 15px  !important;
+                        }
+                        @if $button_style == 'style_4'{
+                            border-radius: 2rem !important;
+                        }
+                    }
+                }
+            }
+        }
+    }        
+}
+//secondary-button    
+//form_view
+.o_content{
+    .o_form_renderer{
+        .o_form_sheet_bg{
+            .o_form_statusbar{
+                .o_statusbar_buttons{
+                    .btn-primary{
+                        @if $button_style == 'style_1'{
+                            border-radius: 0px !important;
+                        }
+                        @if $button_style == 'style_2'{
+                            border-radius: 5px !important;
+                        }
+                        @if $button_style == 'style_3'{
+                            border-radius: 5px 15px  !important;
+                        }
+                        @if $button_style == 'style_4'{
+                            border-radius: 2rem !important;
+                        }
+                    }
+                    .btn-secondary{
+                        @if $button_style == 'style_1'{
+                            border-radius: 0px !important;
+                        }
+                        @if $button_style == 'style_2'{
+                            border-radius: 5px !important;
+                        }
+                        @if $button_style == 'style_3'{
+                            border-radius: 5px 15px  !important;
+                        }
+                        @if $button_style == 'style_4'{
+                            border-radius: 2rem !important;
+                        }
+                    }
+                }
+            }
+            .o_notebook_content{
+                .o_kanban_view{
+                    .o_x2m_control_panel{
+                        .btn-secondary{
+                            @if $button_style == 'style_1'{
+                                border-radius: 0px !important;
+                            }
+                            @if $button_style == 'style_2'{
+                                border-radius: 5px !important;
+                            }
+                            @if $button_style == 'style_3'{
+                                border-radius: 5px 15px  !important;
+                            }
+                            @if $button_style == 'style_4'{
+                                border-radius: 2rem !important;
+                            }
+                        }
+                    }
+                }    
+            }    
+        }
+        .o-mail-Form-chatter{
+            .o-mail-Chatter{
+                .o-mail-Chatter-top{
+                    .o-mail-Chatter-topbar{
+                        .btn-primary{
+                            @if $button_style == 'style_1'{
+                                border-radius: 0px !important;
+                            }
+                            @if $button_style == 'style_2'{
+                                border-radius: 5px !important;
+                            }
+                            @if $button_style == 'style_3'{
+                                border-radius: 5px 15px  !important;
+                            }
+                            @if $button_style == 'style_4'{
+                                border-radius: 2rem !important;
+                            }
+                        }
+                        .btn-secondary{
+                            @if $button_style == 'style_1'{
+                                border-radius: 0px !important;
+                            }
+                            @if $button_style == 'style_2'{
+                                border-radius: 5px !important;
+                            }
+                            @if $button_style == 'style_3'{
+                                border-radius: 5px 15px  !important;
+                            }
+                            @if $button_style == 'style_4'{
+                                border-radius: 2rem !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//form_view
+//input
+.o_action_manager{
+    .o_view_controller{
+        .o_control_panel{
+            .o_control_panel_main{
+                .o_control_panel_actions{
+                    .o-form-buttonbox{
+                        @if $button_style == 'style_1'{
+                            border-radius: 0px !important;
+                        }
+                        @if $button_style == 'style_2'{
+                            border-radius: 5px !important;
+                        }
+                        @if $button_style == 'style_3'{
+                            border-radius: 5px 15px  !important;
+                        }
+                        @if $button_style == 'style_4'{
+                            border-radius: 2rem !important;
+                        }
+
+                        .oe_stat_button {
+                            &:first-child{
+                                @if $button_style == 'style_1'{
+                                    border-radius: 0px !important;
+                                }
+                                @if $button_style == 'style_2'{
+                                    border-top-left-radius: 5px;
+                                    border-bottom-left-radius: 5px;
+                                }
+                                @if $button_style == 'style_3'{
+                                    border-radius: 5px 15px  !important;
+                                }
+                                @if $button_style == 'style_4'{
+                                    border-top-left-radius: 2rem;
+                                    border-bottom-left-radius: 2rem;
+                                }
+                            }
+                            &:last-child{
+                              
+                                @if $button_style == 'style_1'{
+                                    border-radius: 0px !important;
+                                }
+                                @if $button_style == 'style_2'{
+                                    border-top-left-radius: 5px;
+                                    border-bottom-left-radius: 5px;
+                                }
+                                @if $button_style == 'style_3'{
+                                    border-radius: 5px 15px  !important;
+                                }
+                                @if $button_style == 'style_4'{
+                                    border-top-right-radius: 2rem;
+                                    border-bottom-right-radius: 2rem;
+                                }
+                            }
+                        }
+                    }                    
+                    .o_cp_searchview{
+                        @if $button_style == 'style_1'{
+                            border-radius: 0px !important;
+                        }
+                        @if $button_style == 'style_2'{
+                            border-radius: 5px !important;
+                        }
+                        @if $button_style == 'style_3'{
+                            border-radius: 5px 15px  !important;
+                        }
+                        @if $button_style == 'style_4'{
+                            border-radius: 2rem !important;
+                        }
+                        .o-dropdown{
+                            .o_search_bar_menu{
+                                @if $button_style == 'style_1'{
+                                    border-radius: 0px !important;
+                                }
+                                @if $button_style == 'style_2'{
+                                    border-radius: 5px !important;
+                                }
+                                @if $button_style == 'style_3'{
+                                    border-radius: 5px 15px  !important;
+                                }
+                                @if $button_style == 'style_4'{
+                                    border-radius: 1rem !important;
+                                }
+                            }                                
+                        }
+                        .o_searchview_input_container {
+                            .o_searchview_facet_label{
+                                @if $button_style == 'style_1'{
+                                    border-radius: 0px !important;
+                                }
+                                @if $button_style == 'style_2'{
+                                    border-radius: 5px !important;
+                                }
+                                @if $button_style == 'style_3'{
+                                    border-radius: 5px 15px  !important;
+                                }
+                                @if $button_style == 'style_4'{
+                                    
+                                    border-bottom-left-radius: 0.25rem !important;
+                                    border-top-left-radius: 0.25rem !important;
+                                    border-bottom-right-radius: 0rem !important;
+                                    border-top-right-radius: 0rem !important;
+                                       
+                                }
+                            }
+                        }
+                    }
+                    
+                    .list-group-item.active{
+                        @if $button_style == 'style_1'{
+                            border-radius: 0px !important;
+                        }
+                        @if $button_style == 'style_2'{
+                            border-radius: 5px !important;
+                        }
+                        @if $button_style == 'style_3'{
+                            border-radius: 5px 15px  !important;
+                        }
+                        @if $button_style == 'style_4'{
+                            border-radius: 2rem !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//input  
+//toggal
+#js_bar_toggle_btn_mobile{
+    @if $button_style == 'style_1'{
+        border-radius: 0px !important;
+    }
+    @if $button_style == 'style_2'{
+        border-radius: 5px !important;
+    }
+    @if $button_style == 'style_3'{
+        border-radius: 5px 15px  !important;
+    }
+    @if $button_style == 'style_4'{
+        border-radius: 2rem !important;
+    }
+}
+//calendar_view
+.o_action_manager{
+    .o_calendar_view{
+        .o_content{
+            .o_calendar_container{
+                .o_calendar_header{
+                    .btn-secondary,.btn-light{
+                        @if $button_style == 'style_1'{
+                            border-radius: 0px !important;
+                        }
+                        @if $button_style == 'style_2'{
+                            border-radius: 5px !important;
+                        }
+                        @if $button_style == 'style_3'{
+                            border-radius: 5px 15px  !important;
+                        }
+                        @if $button_style == 'style_4'{
+                            border-radius: 2rem !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .o_onboarding_container{
+        .o_onboarding_main{
+            .o_onboarding_wrap{
+                .o_onboarding_steps{
+                    .o_onboarding_step{
+                        .o_onboarding_step_action{
+                            @if $button_style == 'style_1'{
+                                border-radius: 0px !important;
+                            }
+                            @if $button_style == 'style_2'{
+                                border-radius: 5px !important;
+                            }
+                            @if $button_style == 'style_3'{
+                                border-radius: 5px 15px  !important;
+                            }
+                            @if $button_style == 'style_4'{
+                                border-radius: 2rem !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//calendar_view
+//settings
+.o_action_manager{
+    .o-settings-form-view{
+        .o_form_view_container{
+            .o_control_panel{
+                .o_control_panel_main{
+                    .o_control_panel_breadcrumbs{
+                        .o_cp_buttons{
+                            .o_form_buttons_edit{
+                                .btn-primary{
+                                    @if $button_style == 'style_1'{
+                                        border-radius: 0px !important;
+                                    }
+                                    @if $button_style == 'style_2'{
+                                        border-radius: 5px !important;
+                                    }
+                                    @if $button_style == 'style_3'{
+                                        border-radius: 5px 15px  !important;
+                                    }
+                                    @if $button_style == 'style_4'{
+                                        border-radius: 2rem !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .o_content{
+                .o_form_renderer{
+                    .settings{
+                        .app_settings_block{
+                            .o_setting_right_pane{
+                                .btn-secondary{
+                                    @if $button_style == 'style_1'{
+                                        border-radius: 0px !important;
+                                    }
+                                    @if $button_style == 'style_2'{
+                                        border-radius: 5px !important;
+                                    }
+                                    @if $button_style == 'style_3'{
+                                        border-radius: 5px 15px  !important;
+                                    }
+                                    @if $button_style == 'style_4'{
+                                        border-radius: 2rem !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//modal dialog  
+//apps
+.o_kanban_renderer{
+    .o_kanban_record{
+        .oe_kanban_global_click{
+            .o_kanban_detail_ungrouped{
+                .w_visitor_kanban_actions_ungrouped{
+                    .btn-secondary{
+                        @if $button_style == 'style_1'{
+                            border-radius: 0px !important;
+                        }
+                        @if $button_style == 'style_2'{
+                            border-radius: 5px !important;
+                        }
+                        @if $button_style == 'style_3'{
+                            border-radius: 5px 15px  !important;
+                        }
+                        @if $button_style == 'style_4'{
+                            border-radius: 2rem !important;
+                        }
+                    }
+                }
+            }
+            .oe_kanban_details{
+                .btn-secondary{
+                    @if $button_style == 'style_1'{
+                        border-radius: 0px !important;
+                    }
+                    @if $button_style == 'style_2'{
+                        border-radius: 5px !important;
+                    }
+                    @if $button_style == 'style_3'{
+                        border-radius: 5px 15px  !important;
+                    }
+                    @if $button_style == 'style_4'{
+                        border-radius: 2rem !important;
+                    }
+                }
+            }
+        }
+        .oe_module_vignette{
+            .oe_module_desc{
+                .oe_module_action{
+                    .btn-secondary{
+                        @if $button_style == 'style_1'{
+                            border-radius: 0px !important;
+                        }
+                        @if $button_style == 'style_2'{
+                            border-radius: 5px !important;
+                        }
+                        @if $button_style == 'style_3'{
+                            border-radius: 5px 15px  !important;
+                        }
+                        @if $button_style == 'style_4'{
+                            border-radius: 2rem !important;
+                        }
+                    }
+                    .btn-info{
+                        @if $button_style == 'style_1'{
+                            border-radius: 0px !important;
+                        }
+                        @if $button_style == 'style_2'{
+                            border-radius: 5px !important;
+                        }
+                        @if $button_style == 'style_3'{
+                            border-radius: 5px 15px  !important;
+                        }
+                        @if $button_style == 'style_4'{
+                            border-radius: 2rem !important;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    .o_kanban_group{
+        .o_kanban_quick_create{
+            .btn-secondary{
+                @if $button_style == 'style_1'{
+                    border-radius: 0px !important;
+                }
+                @if $button_style == 'style_2'{
+                    border-radius: 5px !important;
+                }
+                @if $button_style == 'style_3'{
+                    border-radius: 5px 15px  !important;
+                }
+                @if $button_style == 'style_4'{
+                    border-radius: 2rem !important;
+                }
+            }
+        }
+    }
+    .o_column_quick_create{
+        .o_quick_create_folded{
+            .btn-light{
+                @if $button_style == 'style_1'{
+                    border-radius: 0px !important;
+                }
+                @if $button_style == 'style_2'{
+                    border-radius: 5px !important;
+                }
+                @if $button_style == 'style_3'{
+                    border-radius: 5px 15px  !important;
+                }
+                @if $button_style == 'style_4'{
+                    border-radius: 2rem !important;
+                }
+            }
+        }
+    }
+}    
+//apps  
+//graph_view
+.o_action_manager{
+    .o_graph_view{
+        .o_content{
+            .o_graph_renderer{
+                .btn-group{
+                    .btn-secondary{
+                        @if $button_style == 'style_1'{
+                            border-radius: 0px !important;
+                        }
+                        @if $button_style == 'style_2'{
+                            border-radius: 5px !important;
+                        }
+                        @if $button_style == 'style_3'{
+                            border-radius: 5px 15px  !important;
+                        }
+                        @if $button_style == 'style_4'{
+                            border-radius: 2rem !important;
+                        }
+                    }
+                    .o-dropdown{
+                        .o-dropdown--menu{
+                            @if $button_style == 'style_1'{
+                                border-radius: 0px !important;
+                            }
+                            @if $button_style == 'style_2'{
+                                border-radius: 5px !important;
+                            }
+                            @if $button_style == 'style_3'{
+                                border-radius: 5px 15px  !important;
+                            }
+                            @if $button_style == 'style_4'{
+                                border-radius: 2rem !important;
+                            }
+                            .focus{
+                                @if $button_style == 'style_1'{
+                                    border-radius: 0px !important;
+                                }
+                                @if $button_style == 'style_2'{
+                                    border-radius: 5px !important;
+                                }
+                                @if $button_style == 'style_3'{
+                                    border-radius: 5px 15px  !important;
+                                }
+                                @if $button_style == 'style_4'{
+                                    border-radius: 2rem !important;
+                                }
+                            }
+                        } 
+                    }
+                }
+            }
+        }
+    }
+    .o_pivot_buttons{
+        align-items: center;
+        .btn-secondary{
+            @if $button_style == 'style_1'{
+                border-radius: 0px !important;
+            }
+            @if $button_style == 'style_2'{
+                border-radius: 5px !important;
+            }
+            @if $button_style == 'style_3'{
+                border-radius: 5px 15px  !important;
+            }
+            @if $button_style == 'style_4'{
+                border-radius: 2rem !important;
+            }
+        }            
+    }
+}
+//graph_view
+
+//list_view
+.o_list_view{
+    .o_control_panel{
+        .o_control_panel_main{
+            .o_control_panel_actions{
+                .btn-secondary{
+                    @if $button_style == 'style_1'{
+                        border-radius: 0px !important;
+                    }
+                    @if $button_style == 'style_2'{
+                        border-radius: 5px !important;
+                    }
+                    @if $button_style == 'style_3'{
+                        border-radius: 5px 15px  !important;
+                    }
+                    @if $button_style == 'style_4'{
+                        border-radius: 2rem !important;
+                    }
+                }
+            }                
+        }
+    }
+} 
+.o_control_panel_navigation{
+    .btn-light{
+        @if $button_style == 'style_1'{
+            border-radius: 0px !important;
+        }
+        @if $button_style == 'style_2'{
+            border-radius: 5px !important;
+        }
+        @if $button_style == 'style_3'{
+            border-radius: 5px 15px  !important;
+        }
+        @if $button_style == 'style_4'{
+            border-radius: 2rem !important;
+        }     
+    }
+}    
+.sh_zoom_view_layout {
+    .btn.sh_zoom{
+        @if $button_style == 'style_1'{
+            border-radius: 0px !important;
+        }
+        @if $button_style == 'style_2'{
+            border-radius: 5px !important;
+        }
+        @if $button_style == 'style_3'{
+            border-radius: 5px 15px  !important;
+        }
+        @if $button_style == 'style_4'{
+            border-radius: 1rem 0rem 0rem 1rem!important;
+        }
+    }
+    .sh-zoom-panel{
+        .btn-secondary{
+            @if $button_style == 'style_1'{
+                border-radius: 0px !important;
+            }
+            @if $button_style == 'style_2'{
+                border-radius: 5px !important;
+            }
+            @if $button_style == 'style_3'{
+                border-radius: 5px 15px  !important;
+            }
+            @if $button_style == 'style_4'{
+                border-radius: 2rem !important;
+            }
+            
+        }
+    }
+
+}
+.sh_search{
+    .sh_search_container{
+        .sh_search_input{
+            @if $button_style == 'style_2'{
+                border-radius: 5px !important;
+            }
+            @if $button_style == 'style_3'{
+                border-radius: 5px 15px ;
+            }
+            @if $button_style == 'style_4'{
+                border-radius: 2rem;
+            }
+        }
+        .sh_search_results{
+            @if $button_style == 'style_2'{
+                border-radius: 5px !important;
+            }
+            @if $button_style == 'style_4'{
+                border-radius: 1rem;
+            }
+        }
+    }
+}
+.o-dropdown--menu{
+    a{
+        &:hover{
+            @if $button_style == 'style_2'{
+                border-radius: 5px !important;
+            }
+            @if $button_style == 'style_3'{
+                border-radius: 0px 10px 0px 10px;
+            }
+        }
+    }
+}
+.o_list_view{
+    .o_onboarding_step_action{
+        @if $button_style == 'style_2'{
+            border-radius: 5px !important;
+        }
+        @if $button_style == 'style_3'{
+            border-radius: 5px 15px ;
+        }
+    }
+}
+
+.o_dropdown_container{
+    .o_menu_item{
+        &:hover{
+            @if $button_style == 'style_2'{
+                border-radius: 5px !important;
+            }
+            @if $button_style == 'style_3'{
+                border-radius: 5px 15px ;border: 1px solid $primaryColor!important;
+            }
+        }
+    }
+    .selected{
+        @if $button_style == 'style_2'{
+            border-radius: 5px !important;
+        }
+        @if $button_style == 'style_3'{
+            border-radius: 5px 15px ;
+        }
+    }
+    .o_accordion{
+        .o_accordion_values{
+            .btn-primary{
+                @if $button_style == 'style_2'{
+                    border-radius: 5px !important;
+                }
+                @if $button_style == 'style_3'{
+                    border-radius: 5px 15px ;
+                }
+            }
+        }
+    }
+    span{
+        &:hover{
+            @if $button_style == 'style_2'{
+                border-radius: 5px !important;
+            }
+            @if $button_style == 'style_3'{
+                border-radius: 5px 15px ;
+            }
+        }
+    }
+    .focus{
+        @if $button_style == 'style_2'{
+            border-radius: 5px !important;
+        }
+        @if $button_style == 'style_3'{
+            border-radius: 5px 15px ;
+        }
+    }
+}
+
+
+.o_dropdown_container {
+    .o_menu_item {
+        &:hover {
+            @if $button_style == 'style_2'{
+                border-radius: 5px !important;
+            }
+            @if $button_style == 'style_4'{
+                border-radius: 20px;
+            }
+        }
+    }
+
+    .selected {
+        @if $button_style == 'style_2'{
+            border-radius: 5px !important;
+        }
+        @if $button_style == 'style_4'{
+            border-radius: 20px;
+        }
+    }
+
+    .o_accordion {
+        .o_accordion_values {
+            .btn-primary {
+                @if $button_style == 'style_2'{
+                    border-radius: 5px !important;
+                }
+                @if $button_style == 'style_4'{
+                    border-radius: 9999px;
+                }
+            }
+        }
+    }
+
+    span {
+        &:hover {
+            @if $button_style == 'style_2'{
+                border-radius: 5px !important;
+            }
+            @if $button_style == 'style_4'{
+                border-radius: 20px;
+            }
+        }
+    }
+}
+
+.o-dropdown--menu {
+    .o-mail-Follower-details {
+        span {
+            color: $primaryColor;
+        }
+    }
+}
+
+.o-dropdown--menu {
+    @if $button_style == 'style_2'{
+        border-radius: 5px !important;
+    }
+    @if $button_style == 'style_4'{
+        border-radius: 1rem !important;
+    }
+        .dropdown-item{
+            @if $button_style == 'style_2'{
+                border-radius: 5px !important;
+            }
+            @if $button_style == 'style_4'{
+                border-radius: 1rem !important;
+            }
+        }
+    }
+
+.o_kanban_record {
+    .o_dropdown_kanban {
+        .o-dropdown--menu {
+            a {
+                &:hover {
+                    @if $button_style == 'style_2'{
+                        border-radius: 5px !important;
+                    }
+                    @if $button_style == 'style_4'{
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+.o-form-buttonbox>div.oe_stat_button:last-child>.o_button_more {
+    @if $button_style == 'style_4'{
+        border-top-right-radius: 0.25rem !important;
+        border-bottom-right-radius: 0.25rem !important;
+        border-bottom-left-radius: 0rem !important;
+        border-top-left-radius: 0rem !important;
+    }
+}
+
+.o_kanban_dashboard {
+    .o_kanban_renderer {
+        .o_kanban_record {
+            .dropdown-menu {
+                .container {
+                    div[class*="col-"] {
+                        >div:not(.o_kanban_card_manage_title) {
+                            >a:hover {
+                                @if $button_style == 'style_2'{
+                                    border-radius: 5px !important;
+                                }
+                                @if $button_style == 'style_4'{
+                                    border-radius: 20px;
+                                }
+                            }
+                        }
+                    }
+
+                    .row.o_kanban_card_manage_settings {
+                        >div:last-child {
+                            >a:hover {
+                                @if $button_style == 'style_2'{
+                                    border-radius: 5px !important;
+                                }
+                                @if $button_style == 'style_4'{
+                                    border-radius: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.o_kanban_record {
+    .o_dropdown_kanban {
+        .o-dropdown--menu {
+            a {
+                &:hover {
+                    @if $button_style == 'style_2'{
+                        border-radius: 5px !important;
+                    }
+                    @if $button_style == 'style_4'{
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+    .o_action_manager {
+        .o_calendar_view {
+            .o_content {
+                .o_calendar_container {
+                    .o_calendar_header {
+                        .btn-secondary {
+                            @if $button_style == 'style_2'{
+                                border-radius: 5px !important;
+                            }
+                            @if $button_style == 'style_4'{
+                            border-radius: 2rem;
+                        }
+                    }
+
+                        .btn-light {
+                            @if $button_style == 'style_2'{
+                                border-radius: 5px !important;
+                            }
+                            @if $button_style == 'style_4'{
+                            border-radius: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .o_onboarding_container {
+                .o_onboarding_main {
+                    .o_onboarding_wrap {
+                        .o_onboarding_steps {
+                            .o_onboarding_step {
+                                .o_onboarding_step_action {
+                                    @if $button_style == 'style_2'{
+                                        border-radius: 5px !important;
+                                    }
+                                    @if $button_style == 'style_4'{
+                                        border-radius: 2rem;
+                                        }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .o_main_navbar {
+        .o_menu_systray {
+            .sh_calc_util {
+                .sh_calc_results {
+                    @if $button_style == 'style_1'{
+                        border-radius: 0px;
+                        }
+                    @if $button_style == 'style_2'{
+                        border-radius: 5px !important;
+                    }
+                    @if $button_style == 'style_3'{
+                        border-radius: 5px 15px  !important;
+                        }
+                    @if $button_style == 'style_4'{
+                        border-radius: 1rem!important;
+                        }
+
+                    .numberPad {
+
+                        .clear,
+                        #sqrt,
+                        #square,
+                        #divide,
+                        #multiply,
+                        #subtract,
+                        #add,
+                        #equals {
+                            @if $button_style == 'style_1'{
+                                border-radius: 0px;
+                                }
+                            @if $button_style == 'style_2'{
+                                border-radius: 5px !important;
+                            }
+                            @if $button_style == 'style_3'{
+                                border-radius: 5px 15px  !important;
+                                }
+                            @if $button_style == 'style_4'{
+                            border-radius: 20px;
+                            }
+                           
+                        }
+
+                        button.btn-calc {
+                            @if $button_style == 'style_1'{
+                                border-radius: 0px;
+                                }
+                            @if $button_style == 'style_2'{
+                                border-radius: 5px !important;
+                            }
+                            @if $button_style == 'style_3'{
+                                border-radius: 5px 15px  !important;
+                                }
+                            @if $button_style == 'style_4'{
+                            border-radius: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sh_bookmark{
+        .sh_wqm_quick_menu_submenu_list_cls{
+            @if $button_style == 'style_1'{
+            border-radius: 0rem !important;
+            }
+            @if $button_style == 'style_2'{
+                border-radius: 5px !important;
+            }
+            @if $button_style == 'style_4'{
+                border-radius: 1rem !important;
+            }
+
+        }
+    }
+
+    .todo_layout {
+        @if $button_style == 'style_1'{
+            border-radius: 0px;
+            }
+        @if $button_style == 'style_2'{
+            border-radius: 5px !important;
+        }
+        @if $button_style == 'style_3'{
+            border-radius: 5px 15px !important;
+        }
+        @if $button_style == 'style_4'{
+        border-radius: 20px 0px 0px 20px;
+        }
+       .theme_header{
+        @if $button_style == 'style_1'{
+            border-radius: 0px;
+            }
+            @if $button_style == 'style_2'{
+                border-radius: 5px !important;
+            }
+            @if $button_style == 'style_3'{
+                border-radius: 5px 15px !important;
+            }
+        @if $button_style == 'style_4'{
+            border-radius: 30px; 
+        }
+        }
+        .add_todo_section{
+            .sh_add_todo_input{
+                @if $button_style == 'style_1'{
+                    border-radius: 0px;
+                    }
+                    @if $button_style == 'style_2'{
+                        border-radius: 5px !important;
+                    }
+                    @if $button_style == 'style_3'{
+                        border-radius: 5px 15px !important;
+                    }
+                @if $button_style == 'style_4'{
+               border-radius: 25px 0px 0px 25px;
+                }
+            }
+        }
+        #accordion{
+            .card-header{
+                @if $button_style == 'style_1'{
+                    border-radius: 0px;
+                    }
+                    @if $button_style == 'style_2'{
+                        border-radius: 5px !important;
+                    }
+                @if $button_style == 'style_4'{
+               border-radius: 11px;   
+                }             
+            }
+            .card-body{
+                @if $button_style == 'style_1'{
+                    border-radius: 0px;
+                    }
+                    @if $button_style == 'style_2'{
+                        border-radius: 5px !important;
+                    }
+                @if $button_style == 'style_4'{
+                border-radius: 10px!important;
+                }
+                textarea{
+                    @if $button_style == 'style_1'{
+                        border-radius: 0px;
+                        }
+                        @if $button_style == 'style_2'{
+                            border-radius: 5px !important;
+                        }
+                    @if $button_style == 'style_4'{
+                    border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .sh_backmate_theme_appmenu_div{
+        .o-dropdown--menu{
+            .cssmenu{
+                .dropdown-item{
+                    &:hover{
+                        @if $button_style == 'style_1'{
+                            border-radius: 0px!important;
+                            }
+                        @if $button_style == 'style_2'{
+                            border-radius: 5px!important;
+                            }
+                        @if $button_style == 'style_3'{
+                            border-radius: 5px 15px!important;
+                            }
+                        @if $button_style == 'style_4'{
+                            border-radius: 6px!important;
+                            }
+                    }
+                }
+                .active{
+                    @if $button_style == 'style_1'{
+                        border-radius: 0px!important;
+                        }
+                    @if $button_style == 'style_2'{
+                        border-radius: 5px!important;
+                        }
+                    @if $button_style == 'style_3'{
+                        border-radius: 5px 15px!important;
+                        }
+                    @if $button_style == 'style_4'{
+                        border-radius: 6px!important;
+                        }
+                }
+               
+            }
+            
+        }
+       
+    }
+    .o_form_view_container{
+        .o_content{
+            .o_form_renderer{
+                .o_form_sheet_bg{
+                    .o_form_sheet{
+                        @if $button_style == 'style_1'{
+                            border-radius: 0px;
+                            }
+                        @if $button_style == 'style_2'{
+                            border-radius: 5px!important;
+                            }
+                        @if $button_style == 'style_4'{
+                        border-radius: 11px;
+                        }
+                        .img.img-fluid{
+                            @if $button_style == 'style_1'{
+                                border-radius: 0px;
+                                }
+                            @if $button_style == 'style_2'{
+                                border-radius: 5px!important;
+                                }
+                            @if $button_style == 'style_4'{
+                            border-radius: 50px;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    .o_kanban_renderer{
+        .o_kanban_record{
+            .o_kanban_record_has_image_fill{
+                .o_kanban_image{
+                    > img:not(.o_kanban_image_inner_pic){
+                        @if $button_style == 'style_4'{
+                            border-radius: 100%;
+                            }
+                    }
+                    .o_kanban_image_inner_pic{
+                        @if $button_style == 'style_4'{
+                            border-radius: 100%;
+                            }
+                    }
+                }
+            }
+        }
+    }    

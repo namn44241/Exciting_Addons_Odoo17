@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<template>
+   <t t-name="sh_backmate_theme_adv.NavFooter" owl="1">
+        <div class="sh_abc">
+            <h1>22222222</h1>
+        </div>
+    </t>
+
+    
+
+     <t t-name="sh_backmate_theme_adv.NavTab" owl="1">
+         <t t-if="sh_enable_multi_tab">
+        <div class="main-content sh_main_content">
+            <div class="owl-carousel owl-theme" id="sh_owl_items">
+               
+            </div>
+            <div class="owl-theme">
+                <div class="owl-controls">
+                    <div class="custom-nav owl-nav"></div>
+                </div>
+            </div>
+        </div>
+        </t>
+    </t>
+
+   <t t-name="sh_backmate_theme_adv.ActionContainer" owl="1">
+        <div class="o_action_manager">
+        <NavBar/>
+        <t t-raw="notification_template"/>
+        </div>
+    </t>
+
+ <t t-extend="Throbber">
+        <t t-jquery=".oe_blockui_spin" t-operation="replace"> 
+            <div class="oe_blockui_spin"></div>
+        </t>
+        <t t-jquery=".oe_throbber_message" t-operation="replace"> 
+             <div class="oe_throbber_message" style="color:white;display:none;"></div>
+        </t>
+    </t>
+</template>
