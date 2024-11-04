@@ -23,15 +23,15 @@ records.action_mark_available()
         </field>
     </record>
 
-        <record id="action_mark_all_borrow" model="ir.actions.server">
-            <field name="name">Đánh dấu tất cả là đã được mượn</field>
-            <field name="model_id" ref="model_library_book"/>
-            <field name="binding_model_id" ref="model_library_book"/>
-            <field name="state">code</field>
-            <field name="code">
-    records.action_mark_borrowed()
-            </field>
-        </record>
+    <record id="action_mark_all_borrow" model="ir.actions.server">
+        <field name="name">Đánh dấu tất cả là đã được mượn</field>
+        <field name="model_id" ref="model_library_book"/>
+        <field name="binding_model_id" ref="model_library_book"/>
+        <field name="state">code</field>
+        <field name="code">
+records.action_mark_borrowed()
+        </field>
+    </record>
 
     <!-- Client Action -->
     <record id="action_book_dashboard" model="ir.actions.client">

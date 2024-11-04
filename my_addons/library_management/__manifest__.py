@@ -6,13 +6,13 @@
     'depends': ['base', 'mail', 'web'],
     'data': [
         'security/ir.model.access.csv',
-        'views/menu.xml',
         'views/library_views.xml',
         'reports/book_report_template.xml',
         'views/subtopic_views.xml',
         'views/ebook_views.xml',
         'views/audiobook_views.xml',
         'views/book_search_view.xml',
+        'views/menu.xml',
     ],
     'assets': {
         'web.assets_backend': [

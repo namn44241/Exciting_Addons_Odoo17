@@ -9,6 +9,10 @@
                     <group>
                         <group>
                             <field name="book_id" domain="[('state','=','available')]"/>
+                            <field name="name"/>
+                            <field name="author"/>
+                            <field name="isbn"/>
+
                             <!-- Các trường bổ sung từ book -->
                         </group>
                         <group>
