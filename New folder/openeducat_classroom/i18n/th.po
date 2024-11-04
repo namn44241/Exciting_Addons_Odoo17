@@ -1,0 +1,165 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version:Odoo Server 17.0"
+"Report-Msgid-Bugs-To:"
+"POT-Creation-Date:2024-02-15 09:10+0000"
+"PO-Revision-Date:2024-02-15 09:10+0000"
+"Last-Translator:"
+"Language-Team:"
+"MIME-Version:1.0"
+"Content-Type:text/plain; charset=UTF-8"
+"Content-Transfer-Encoding:"
+"Plural-Forms:"
+
+#. module: openeducat_classroom
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_classroom__active
+msgid "Active"
+msgstr "คล่องแคล่ว"
+
+#. module: openeducat_classroom
+#: model_terms:ir.ui.view,arch_db:openeducat_classroom.view_op_classroom_form
+#: model_terms:ir.ui.view,arch_db:openeducat_classroom.view_op_classroom_search
+msgid "Archived"
+msgstr "เก็บถาวรแล้ว"
+
+#. module: openeducat_classroom
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_asset__asset_id
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_classroom__asset_line
+msgid "Asset"
+msgstr "สินทรัพย์"
+
+#. module: openeducat_classroom
+#: model_terms:ir.ui.view,arch_db:openeducat_classroom.view_op_classroom_form
+msgid "Asset Management"
+msgstr "การจัดการสินทรัพย์"
+
+#. module: openeducat_classroom
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_classroom__batch_id
+msgid "Batch"
+msgstr "แบทช์"
+
+#. module: openeducat_classroom
+#: model_terms:ir.ui.view,arch_db:openeducat_classroom.view_op_classroom_search
+msgid "Capacity"
+msgstr "ความจุ"
+
+#. module: openeducat_classroom
+#: model:ir.ui.menu,name:openeducat_classroom.menu_op_school_config_class_room
+msgid "Class Room Management"
+msgstr "การจัดการห้องเรียน"
+
+#. module: openeducat_classroom
+#: model:ir.actions.act_window,name:openeducat_classroom.act_open_op_classroom_view
+#: model:ir.ui.menu,name:openeducat_classroom.menu_op_classroom_sub
+msgid "Class Rooms"
+msgstr "ห้องเรียน"
+
+#. module: openeducat_classroom
+#: model:ir.model,name:openeducat_classroom.model_op_classroom
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_facility_line__classroom_id
+#: model_terms:ir.ui.view,arch_db:openeducat_classroom.view_op_classroom_form
+#: model_terms:ir.ui.view,arch_db:openeducat_classroom.view_op_classroom_search
+#: model_terms:ir.ui.view,arch_db:openeducat_classroom.view_op_classroom_tree
+msgid "Classroom"
+msgstr "ห้องเรียน"
+
+#. module: openeducat_classroom
+#: model:ir.model,name:openeducat_classroom.model_op_asset
+msgid "Classroom Assets"
+msgstr "ทรัพย์สินในห้องเรียน"
+
+#. module: openeducat_classroom
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_asset__code
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_classroom__code
+#: model_terms:ir.ui.view,arch_db:openeducat_classroom.view_op_classroom_search
+msgid "Code"
+msgstr "รหัส"
+
+#. module: openeducat_classroom
+#: model:ir.model.constraint,message:openeducat_classroom.constraint_op_classroom_unique_classroom_code
+msgid "Code should be unique per classroom!"
+msgstr "รหัสไม่ควรซ้ำกันในแต่ละห้องเรียน!"
+
+#. module: openeducat_classroom
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_classroom__course_id
+msgid "Course"
+msgstr "คอร์ส"
+
+#. module: openeducat_classroom
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_asset__create_uid
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_classroom__create_uid
+msgid "Created by"
+msgstr "สร้างโดย"
+
+#. module: openeducat_classroom
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_asset__create_date
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_classroom__create_date
+msgid "Created on"
+msgstr "สร้างบน"
+
+#. module: openeducat_classroom
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_asset__display_name
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_classroom__display_name
+msgid "Display Name"
+msgstr "ชื่อที่แสดง"
+
+#. module: openeducat_classroom
+#: model_terms:ir.ui.view,arch_db:openeducat_classroom.view_op_classroom_form
+msgid "Facilities"
+msgstr "สิ่งอำนวยความสะดวก"
+
+#. module: openeducat_classroom
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_classroom__facilities
+msgid "Facility Lines"
+msgstr "เส้นสิ่งอำนวยความสะดวก"
+
+#. module: openeducat_classroom
+#: model_terms:ir.ui.view,arch_db:openeducat_classroom.view_op_classroom_search
+msgid "Group By..."
+msgstr "จัดกลุ่มตาม..."
+
+#. module: openeducat_classroom
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_asset__id
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_classroom__id
+msgid "ID"
+msgstr "บัตรประจำตัวประชาชน"
+
+#. module: openeducat_classroom
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_asset__write_uid
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_classroom__write_uid
+msgid "Last Updated by"
+msgstr "อัปเดตล่าสุดโดย"
+
+#. module: openeducat_classroom
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_asset__write_date
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_classroom__write_date
+msgid "Last Updated on"
+msgstr "อัปเดตล่าสุดเมื่อ"
+
+#. module: openeducat_classroom
+#: model:ir.model,name:openeducat_classroom.model_op_facility_line
+msgid "Manage Facility Line"
+msgstr "จัดการสิ่งอำนวยความสะดวก"
+
+#. module: openeducat_classroom
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_classroom__name
+#: model_terms:ir.ui.view,arch_db:openeducat_classroom.view_op_classroom_search
+msgid "Name"
+msgstr "ชื่อ"
+
+#. module: openeducat_classroom
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_classroom__capacity
+msgid "No of Person"
+msgstr "หมายเลขบุคคล"
+
+#. module: openeducat_classroom
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_asset__product_id
+msgid "Product"
+msgstr "ผลิตภัณฑ์"
+
+#. module: openeducat_classroom
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_asset__product_uom_qty
+msgid "Quantity"
+msgstr "ปริมาณ"
+

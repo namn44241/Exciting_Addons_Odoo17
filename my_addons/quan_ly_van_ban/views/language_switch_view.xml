@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<odoo>
-    <template id="language_switch_buttons" name="Language Switch Buttons">
-        <div class="language-switch-container">
-            <button type="button" class="btn btn-primary switch-en">English</button>
-            <button type="button" class="btn btn-primary switch-vi">Tiếng Việt</button>
-        </div>
-    </template>
-</odoo>

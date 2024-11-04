@@ -1,0 +1,1301 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version:Odoo Server 17.0"
+"Report-Msgid-Bugs-To:"
+"POT-Creation-Date:2024-02-16 10:00+0000"
+"PO-Revision-Date:2024-02-16 10:00+0000"
+"Last-Translator:"
+"Language-Team:"
+"MIME-Version:1.0"
+"Content-Type:text/plain; charset=UTF-8"
+"Content-Transfer-Encoding:"
+"Plural-Forms:"
+
+#. module: openeducat_admission
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.report_admission_analysis
+msgid "<b>Course:</b>"
+msgstr "<b>Kursus:</b>"
+
+#. module: openeducat_admission
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.report_admission_analysis
+msgid "<b>From Date:</b>"
+msgstr "<b>Fra dato:</b>"
+
+#. module: openeducat_admission
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.report_admission_analysis
+msgid "<b>To Date:</b>"
+msgstr "<b>Til dato:</b>"
+
+#. module: openeducat_admission
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.report_admission_analysis
+msgid ""
+"<br/>\n"
+"                            <b>Total Number of Students :</b>"
+msgstr ""
+"<br/>\n"
+" <b>Samlet antal elever:</b>"
+
+#. module: openeducat_admission
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.report_admission_analysis
+msgid "<strong>Admission Analysis</strong>"
+msgstr "<strong>Optagelsesanalyse</strong>"
+
+#. module: openeducat_admission
+#: model:op.admission,first_name:openeducat_admission.op_admission_20
+msgid "Abdul"
+msgstr "Abdul"
+
+#. module: openeducat_admission
+#: model:op.admission,name:openeducat_admission.op_admission_20
+msgid "Abdul Hajjar"
+msgstr "Abdul Hajjar"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__academic_years_id
+msgid "Academic Year"
+msgstr "Akademi år"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__message_needaction
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__message_needaction
+msgid "Action Needed"
+msgstr "Handling nødvendig"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__active
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__active
+msgid "Active"
+msgstr "Aktiv"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__activity_ids
+msgid "Activities"
+msgstr "Aktiviteter"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Aktivitet Undtagelse Dekoration"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__activity_state
+msgid "Activity State"
+msgstr "Aktivitetstilstand"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Ikon for aktivitetstype"
+
+#. module: openeducat_admission
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_form
+msgid "Address"
+msgstr "Adresse"
+
+#. module: openeducat_admission
+#: model:ir.model,name:openeducat_admission.model_op_admission
+#: model:ir.module.category,name:openeducat_admission.module_category_all_op_admission
+#: model:ir.module.category,name:openeducat_admission.module_category_openeducat_admission
+msgid "Admission"
+msgstr "Adgang"
+
+#. module: openeducat_admission
+#: model:ir.actions.report,name:openeducat_admission.action_report_report_admission_analysis
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.admission_analysis_form
+msgid "Admission Analysis"
+msgstr "Optagelsesanalyse"
+
+#. module: openeducat_admission
+#: model:ir.actions.act_window,name:openeducat_admission.admission_analysis_act
+#: model:ir.model,name:openeducat_admission.model_report_openeducat_admission_report_admission_analysis
+msgid "Admission Analysis Report"
+msgstr "Optagelsesanalyserapport"
+
+#. module: openeducat_admission
+#: model:ir.model,name:openeducat_admission.model_admission_analysis
+msgid "Admission Analysis Wizard"
+msgstr "Guiden til optagelsesanalyse"
+
+#. module: openeducat_admission
+#: model:ir.model.fields.selection,name:openeducat_admission.selection__op_admission__state__admission
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_form
+msgid "Admission Confirm"
+msgstr "Bekræftelse af optagelse"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__admission_date
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_search
+msgid "Admission Date"
+msgstr "Optagelsesdato"
+
+#. module: openeducat_admission
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_form
+msgid "Admission Detail"
+msgstr "Optagelse detaljer"
+
+#. module: openeducat_admission
+#: model:ir.model.fields.selection,name:openeducat_admission.selection__op_admission_register__state__admission
+msgid "Admission Process"
+msgstr "Optagelsesproces"
+
+#. module: openeducat_admission
+#: model:ir.model,name:openeducat_admission.model_op_admission_register
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__register_id
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_register_form
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_register_graph
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_register_pivot
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_register_search
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_register_tree
+msgid "Admission Register"
+msgstr "Optagelsesregister"
+
+#. module: openeducat_admission
+#: model:ir.actions.act_window,name:openeducat_admission.act_open_op_admission_register_view
+#: model:ir.ui.menu,name:openeducat_admission.menu_admission_register
+msgid "Admission Registers"
+msgstr "Optagelsesregistre"
+
+#. module: openeducat_admission
+#: model:ir.ui.menu,name:openeducat_admission.menu_admission_analysis
+msgid "Admission Report"
+msgstr "Optagelsesrapport"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__admission_ids
+#: model:ir.ui.menu,name:openeducat_admission.menu_op_admission_root
+#: model:ir.ui.menu,name:openeducat_admission.menu_op_admission_submenu
+msgid "Admissions"
+msgstr "Indlæggelser"
+
+#. module: openeducat_admission
+#: model:op.admission,first_name:openeducat_admission.op_admission_11
+msgid "Ahmed"
+msgstr "Ahmed"
+
+#. module: openeducat_admission
+#: model:op.admission,name:openeducat_admission.op_admission_11
+msgid "Ahmed Malik"
+msgstr "Ahmed Malik"
+
+#. module: openeducat_admission
+#: model:op.admission,first_name:openeducat_admission.op_admission_10
+msgid "Alex"
+msgstr "Alex"
+
+#. module: openeducat_admission
+#: model:op.admission,name:openeducat_admission.op_admission_10
+msgid "Alex Johnson"
+msgstr "Alex Johnson"
+
+#. module: openeducat_admission
+#: model:op.admission,last_name:openeducat_admission.op_admission_13
+msgid "Andrew"
+msgstr "Andrew"
+
+#. module: openeducat_admission
+#: model:op.admission,first_name:openeducat_admission.op_admission_17
+msgid "Anna"
+msgstr "Anna"
+
+#. module: openeducat_admission
+#: model:op.admission,name:openeducat_admission.op_admission_17
+msgid "Anna Taylor"
+msgstr "Anna Taylor"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__application_date
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_search
+msgid "Application Date"
+msgstr "Ansøgnings dato"
+
+#. module: openeducat_admission
+#. odoo-python
+#: code:addons/openeducat_admission/models/admission.py:0
+#, python-format
+msgid ""
+"Application Date should be between Start Date &                     End Date"
+" of Admission Register."
+msgstr ""
+"Ansøgningsdatoen skal være mellem startdato og slutdato for "
+"optagelsesregistret."
+
+#. module: openeducat_admission
+#: model:ir.model.fields.selection,name:openeducat_admission.selection__op_admission_register__state__application
+msgid "Application Gathering"
+msgstr "Ansøgningsindsamling"
+
+#. module: openeducat_admission
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.report_admission_analysis
+msgid "Application No."
+msgstr "Ansøgning nr."
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__application_number
+msgid "Application Number"
+msgstr "Applikations nummer"
+
+#. module: openeducat_admission
+#: model:ir.model.constraint,message:openeducat_admission.constraint_op_admission_unique_application_number
+msgid "Application Number must be unique per Application!"
+msgstr "Ansøgningsnummer skal være unikt pr. ansøgning!"
+
+#. module: openeducat_admission
+#: model:ir.ui.menu,name:openeducat_admission.menu_admission
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_register_form
+msgid "Applications"
+msgstr "Ansøgninger"
+
+#. module: openeducat_admission
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_form
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_register_form
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_register_search
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_search
+msgid "Archived"
+msgstr "Arkiveret"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__message_attachment_count
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__message_attachment_count
+msgid "Attachment Count"
+msgstr "Antal vedhæftede filer"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__batch_id
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_search
+msgid "Batch"
+msgstr "Parti"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__birth_date
+msgid "Birth Date"
+msgstr "Fødselsdato"
+
+#. module: openeducat_admission
+#. odoo-python
+#: code:addons/openeducat_admission/models/admission.py:0
+#, python-format
+msgid "Birth Date can't be greater than current date!"
+msgstr "Fødselsdatoen kan ikke være større end den nuværende dato!"
+
+#. module: openeducat_admission
+#: model:op.admission,last_name:openeducat_admission.op_admission_9
+msgid "Brown"
+msgstr "Brun"
+
+#. module: openeducat_admission
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.admission_analysis_form
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_form
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_register_form
+msgid "Cancel"
+msgstr "Afbestille"
+
+#. module: openeducat_admission
+#: model:ir.model.fields.selection,name:openeducat_admission.selection__op_admission__state__cancel
+#: model:ir.model.fields.selection,name:openeducat_admission.selection__op_admission_register__state__cancel
+msgid "Cancelled"
+msgstr "Aflyst"
+
+#. module: openeducat_admission
+#: model:op.admission,last_name:openeducat_admission.op_admission_2
+msgid "Carter"
+msgstr "Carter"
+
+#. module: openeducat_admission
+#: model:op.admission,first_name:openeducat_admission.op_admission_24
+msgid "Charles"
+msgstr "Charles"
+
+#. module: openeducat_admission
+#: model:op.admission,name:openeducat_admission.op_admission_24
+msgid "Charles Miller"
+msgstr "Charles Miller"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__city
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_form
+msgid "City"
+msgstr "By"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__company_id
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__company_id
+msgid "Company"
+msgstr "Selskab"
+
+#. module: openeducat_admission
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_form
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_register_form
+msgid "Confirm"
+msgstr "Bekræfte"
+
+#. module: openeducat_admission
+#: model:ir.model.fields.selection,name:openeducat_admission.selection__op_admission__state__confirm
+#: model:ir.model.fields.selection,name:openeducat_admission.selection__op_admission_register__state__confirm
+msgid "Confirmed"
+msgstr "Bekræftet"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__country_id
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_form
+msgid "Country"
+msgstr "Land"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_admission_analysis__course_id
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__course_id
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__course_id
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_register_search
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_search
+msgid "Course"
+msgstr "Rute"
+
+#. module: openeducat_admission
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_graph
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_pivot
+msgid "Course By Admission"
+msgstr "Kursus ved optagelse"
+
+#. module: openeducat_admission
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_registration_graph
+msgid "Course By Admission Register"
+msgstr "Kursus Efter Adgangsregister"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__product_id
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_student_course__product_id
+msgid "Course Fees"
+msgstr "Kursusgebyrer"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_admission_analysis__create_uid
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__create_uid
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__create_uid
+msgid "Created by"
+msgstr "Lavet af"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_admission_analysis__create_date
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__create_date
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__create_date
+msgid "Created on"
+msgstr "Oprettet den"
+
+#. module: openeducat_admission
+#: model:op.admission,last_name:openeducat_admission.op_admission_1
+#: model:op.admission,last_name:openeducat_admission.op_admission_4
+msgid "Dani"
+msgstr "Dani"
+
+#. module: openeducat_admission
+#: model:op.admission,first_name:openeducat_admission.op_admission_8
+msgid "David"
+msgstr "David"
+
+#. module: openeducat_admission
+#: model:op.admission,name:openeducat_admission.op_admission_8
+msgid "David A Smith"
+msgstr "David A Smith"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__discount
+msgid "Discount (%)"
+msgstr "Rabat (%)"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_admission_analysis__display_name
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__display_name
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__display_name
+msgid "Display Name"
+msgstr "Vist navn"
+
+#. module: openeducat_admission
+#: model:ir.model.fields.selection,name:openeducat_admission.selection__op_admission__state__done
+#: model:ir.model.fields.selection,name:openeducat_admission.selection__op_admission_register__state__done
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_register_form
+msgid "Done"
+msgstr "Færdig"
+
+#. module: openeducat_admission
+#: model:ir.model.fields.selection,name:openeducat_admission.selection__op_admission__state__draft
+#: model:ir.model.fields.selection,name:openeducat_admission.selection__op_admission_register__state__draft
+msgid "Draft"
+msgstr "Udkast"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__due_date
+msgid "Due Date"
+msgstr "Afleveringsdato"
+
+#. module: openeducat_admission
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_form
+msgid "Educational Detail"
+msgstr "Pædagogisk detalje"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__email
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_form
+msgid "Email"
+msgstr "E-mail"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_admission_analysis__end_date
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__end_date
+msgid "End Date"
+msgstr "Slutdato"
+
+#. module: openeducat_admission
+#. odoo-python
+#: code:addons/openeducat_admission/models/admission_register.py:0
+#: code:addons/openeducat_admission/wizard/admission_analysis_wizard.py:0
+#, python-format
+msgid "End Date cannot be set before Start Date."
+msgstr "Slutdato kan ikke indstilles før startdato."
+
+#. module: openeducat_admission
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_form
+msgid "Enroll"
+msgstr "Indskrive"
+
+#. module: openeducat_admission
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_search
+msgid "Enrolled"
+msgstr "indskrevet"
+
+#. module: openeducat_admission
+#: model:op.admission,first_name:openeducat_admission.op_admission_9
+msgid "Eric"
+msgstr "Erik"
+
+#. module: openeducat_admission
+#: model:op.admission,name:openeducat_admission.op_admission_9
+msgid "Eric A Brown"
+msgstr "Eric A Brown"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__family_business
+msgid "Family Business"
+msgstr "Familievirksomhed"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__family_income
+msgid "Family Income"
+msgstr "Familieindkomst"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__fees
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_register_search
+msgid "Fees"
+msgstr "Gebyrer"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__fees_start_date
+msgid "Fees Start Date"
+msgstr "Gebyrer Startdato"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__fees_term_id
+msgid "Fees Term"
+msgstr "Gebyrperiode"
+
+#. module: openeducat_admission
+#: model:ir.model.fields.selection,name:openeducat_admission.selection__op_admission__gender__f
+msgid "Female"
+msgstr "Kvinde"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__first_name
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_form
+msgid "First Name"
+msgstr "Fornavn"
+
+#. module: openeducat_admission
+#: model:op.admission,last_name:openeducat_admission.op_admission_15
+msgid "Flynn"
+msgstr "Flynn"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__message_follower_ids
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__message_follower_ids
+msgid "Followers"
+msgstr "Tilhængere"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__message_partner_ids
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Følgere (partnere)"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,help:openeducat_admission.field_op_admission__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Font fantastisk ikon f.eks. fa-opgaver"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__gender
+msgid "Gender"
+msgstr "Køn"
+
+#. module: openeducat_admission
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_register_search
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_search
+msgid "Group By..."
+msgstr "Gruppér efter..."
+
+#. module: openeducat_admission
+#: model:op.admission,last_name:openeducat_admission.op_admission_20
+msgid "Hajjar"
+msgstr "Hajjar"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__has_message
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__has_message
+msgid "Has Message"
+msgstr "Har besked"
+
+#. module: openeducat_admission
+#: model:ir.module.category,description:openeducat_admission.module_category_all_op_admission
+#: model:ir.module.category,description:openeducat_admission.module_category_openeducat_admission
+msgid "Helps you manage your institutes different-different users."
+msgstr ""
+"Hjælper dig med at administrere dine institutter forskellige-forskellige "
+"brugere."
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_admission_analysis__id
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__id
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__id
+msgid "ID"
+msgstr "ID"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__activity_exception_icon
+msgid "Icon"
+msgstr "Ikon"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,help:openeducat_admission.field_op_admission__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Ikon for at angive en undtagelsesaktivitet."
+
+#. module: openeducat_admission
+#: model:ir.model.fields,help:openeducat_admission.field_op_admission__message_needaction
+#: model:ir.model.fields,help:openeducat_admission.field_op_admission_register__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Hvis markeret, kræver nye beskeder din opmærksomhed."
+
+#. module: openeducat_admission
+#: model:ir.model.fields,help:openeducat_admission.field_op_admission__message_has_error
+#: model:ir.model.fields,help:openeducat_admission.field_op_admission__message_has_sms_error
+#: model:ir.model.fields,help:openeducat_admission.field_op_admission_register__message_has_error
+#: model:ir.model.fields,help:openeducat_admission.field_op_admission_register__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Hvis markeret, har nogle meddelelser en leveringsfejl."
+
+#. module: openeducat_admission
+#. odoo-python
+#: code:addons/openeducat_admission/models/admission.py:0
+#, python-format
+msgid "Import Template for Admission"
+msgstr "Importer skabelon til optagelse"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__is_student
+msgid "Is Already Student"
+msgstr "Er allerede studerende"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__message_is_follower
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__message_is_follower
+msgid "Is Follower"
+msgstr "Er Tilhænger"
+
+#. module: openeducat_admission
+#: model:op.admission,first_name:openeducat_admission.op_admission_6
+msgid "Jack"
+msgstr "Jack"
+
+#. module: openeducat_admission
+#: model:op.admission,name:openeducat_admission.op_admission_6
+msgid "Jack S Peeters"
+msgstr "Jack S Peeters"
+
+#. module: openeducat_admission
+#: model:op.admission,last_name:openeducat_admission.op_admission_22
+msgid "Jacobs"
+msgstr "Jacobs"
+
+#. module: openeducat_admission
+#: model:op.admission,first_name:openeducat_admission.op_admission_12
+msgid "James"
+msgstr "James"
+
+#. module: openeducat_admission
+#: model:op.admission,name:openeducat_admission.op_admission_12
+msgid "James Wilson"
+msgstr "James Wilson"
+
+#. module: openeducat_admission
+#: model:op.admission,last_name:openeducat_admission.op_admission_10
+msgid "Johnson"
+msgstr "Johnson"
+
+#. module: openeducat_admission
+#: model:op.admission,last_name:openeducat_admission.op_admission_16
+msgid "Jones"
+msgstr "Jones"
+
+#. module: openeducat_admission
+#: model:op.admission,first_name:openeducat_admission.op_admission_25
+msgid "Kate"
+msgstr "Kate"
+
+#. module: openeducat_admission
+#: model:op.admission,last_name:openeducat_admission.op_admission_25
+#: model:op.admission,name:openeducat_admission.op_admission_25
+msgid "Kate Anderson"
+msgstr "Kate Andersen"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__last_name
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_form
+msgid "Last Name"
+msgstr "Efternavn"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_admission_analysis__write_uid
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__write_uid
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__write_uid
+msgid "Last Updated by"
+msgstr "Sidst opdateret af"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_admission_analysis__write_date
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__write_date
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__write_date
+msgid "Last Updated on"
+msgstr "Sidst opdateret den"
+
+#. module: openeducat_admission
+#: model:op.admission,first_name:openeducat_admission.op_admission_13
+msgid "Lily"
+msgstr "Lily"
+
+#. module: openeducat_admission
+#: model:op.admission,name:openeducat_admission.op_admission_13
+msgid "Lily Andrew"
+msgstr "Lily Andrew"
+
+#. module: openeducat_admission
+#: model:op.admission,first_name:openeducat_admission.op_admission_5
+msgid "Lukas"
+msgstr "Lukas"
+
+#. module: openeducat_admission
+#: model:op.admission,name:openeducat_admission.op_admission_5
+msgid "Lukas Simon"
+msgstr "Lukas Simon"
+
+#. module: openeducat_admission
+#: model:ir.model.fields.selection,name:openeducat_admission.selection__op_admission__gender__m
+msgid "Male"
+msgstr "Han"
+
+#. module: openeducat_admission
+#: model:op.admission,last_name:openeducat_admission.op_admission_11
+msgid "Malik"
+msgstr "Malik"
+
+#. module: openeducat_admission
+#: model:res.groups,name:openeducat_admission.group_op_admission_admin
+msgid "Manager"
+msgstr "Manager"
+
+#. module: openeducat_admission
+#: model:op.admission,first_name:openeducat_admission.op_admission_23
+msgid "Maria"
+msgstr "Maria"
+
+#. module: openeducat_admission
+#: model:op.admission,name:openeducat_admission.op_admission_23
+msgid "Maria J Swartz"
+msgstr "Maria J Swartz"
+
+#. module: openeducat_admission
+#: model:op.admission,first_name:openeducat_admission.op_admission_2
+msgid "Mark"
+msgstr "Mærke"
+
+#. module: openeducat_admission
+#: model:op.admission,name:openeducat_admission.op_admission_2
+msgid "Mark R Carter"
+msgstr "Mark R Carter"
+
+#. module: openeducat_admission
+#: model:op.admission,last_name:openeducat_admission.op_admission_18
+msgid "Martin"
+msgstr "Martin"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__max_count
+msgid "Maximum No. of Admission"
+msgstr "Maksimalt antal adgang"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__message_has_error
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__message_has_error
+msgid "Message Delivery error"
+msgstr "Fejl ved levering af besked"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__message_ids
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__message_ids
+msgid "Messages"
+msgstr "Beskeder"
+
+#. module: openeducat_admission
+#: model:op.admission,first_name:openeducat_admission.op_admission_4
+msgid "Michael"
+msgstr "Michael"
+
+#. module: openeducat_admission
+#: model:op.admission,name:openeducat_admission.op_admission_4
+msgid "Michael S Dani"
+msgstr "Michael S Dani"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__middle_name
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_form
+msgid "Middle Name"
+msgstr "Mellemnavn"
+
+#. module: openeducat_admission
+#: model:op.admission,last_name:openeducat_admission.op_admission_24
+msgid "Miller"
+msgstr "Miller"
+
+#. module: openeducat_admission
+#. odoo-python
+#: code:addons/openeducat_admission/models/admission_register.py:0
+#, python-format
+msgid "Min Admission can't be greater than Max Admission"
+msgstr "Minimum Admission kan ikke være større end Max Admission"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__min_count
+msgid "Minimum No. of Admission"
+msgstr "Minimum antal adgang"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__minimum_age_criteria
+msgid "Minimum Required Age(Years)"
+msgstr "Minimum påkrævet alder (år)"
+
+#. module: openeducat_admission
+#: model:op.admission,first_name:openeducat_admission.op_admission_3
+msgid "Mitzi"
+msgstr "Mitzi"
+
+#. module: openeducat_admission
+#: model:op.admission,name:openeducat_admission.op_admission_3
+msgid "Mitzi R Russell"
+msgstr "Mitzi R Russell"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__mobile
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_form
+msgid "Mobile"
+msgstr "Mobil"
+
+#. module: openeducat_admission
+#: model:op.admission,last_name:openeducat_admission.op_admission_7
+msgid "Moore"
+msgstr "Moore"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Deadline for min aktivitet"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__name
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__name
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_form
+msgid "Name"
+msgstr "Navn"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "Næste aktivitetskalenderbegivenhed"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Næste aktivitetsfrist"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__activity_summary
+msgid "Next Activity Summary"
+msgstr "Næste aktivitetsoversigt"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__activity_type_id
+msgid "Next Activity Type"
+msgstr "Næste aktivitetstype"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__nbr
+msgid "No of Admission"
+msgstr "Adgangsnummer"
+
+#. module: openeducat_admission
+#. odoo-python
+#: code:addons/openeducat_admission/models/admission_register.py:0
+#, python-format
+msgid "No of Admission should be positive!"
+msgstr "Antal optagelser skal være positivt!"
+
+#. module: openeducat_admission
+#: model:op.admission,first_name:openeducat_admission.op_admission_16
+msgid "Nora"
+msgstr "Nora"
+
+#. module: openeducat_admission
+#: model:op.admission,name:openeducat_admission.op_admission_16
+msgid "Nora R Jones"
+msgstr "Nora R Jones"
+
+#. module: openeducat_admission
+#. odoo-python
+#: code:addons/openeducat_admission/models/admission.py:0
+#, python-format
+msgid "Not Eligible for Admission minimum required age is : %s "
+msgstr "Ikke berettiget til optagelse minimumsalderen er: %s"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__message_needaction_counter
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Antal handlinger"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__message_has_error_counter
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__message_has_error_counter
+msgid "Number of errors"
+msgstr "Antal fejl"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,help:openeducat_admission.field_op_admission__message_needaction_counter
+#: model:ir.model.fields,help:openeducat_admission.field_op_admission_register__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Antal meddelelser, der kræver handling"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,help:openeducat_admission.field_op_admission__message_has_error_counter
+#: model:ir.model.fields,help:openeducat_admission.field_op_admission_register__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Antal meddelelser med leveringsfejl"
+
+#. module: openeducat_admission
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_form
+msgid "Open Student Profile"
+msgstr "Åbn elevprofil"
+
+#. module: openeducat_admission
+#: model:ir.model.fields.selection,name:openeducat_admission.selection__op_admission__gender__o
+msgid "Other"
+msgstr "Andet"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__partner_id
+msgid "Partner"
+msgstr "Partner"
+
+#. module: openeducat_admission
+#: model:op.admission,first_name:openeducat_admission.op_admission_19
+msgid "Patrick"
+msgstr "Patrick"
+
+#. module: openeducat_admission
+#: model:op.admission,name:openeducat_admission.op_admission_19
+msgid "Patrick Richard"
+msgstr "Patrick Richard"
+
+#. module: openeducat_admission
+#: model:op.admission,first_name:openeducat_admission.op_admission_21
+msgid "Paul"
+msgstr "Paul"
+
+#. module: openeducat_admission
+#: model:op.admission,name:openeducat_admission.op_admission_21
+msgid "Paul M Scott"
+msgstr "Paul M Scott"
+
+#. module: openeducat_admission
+#: model:op.admission,last_name:openeducat_admission.op_admission_6
+msgid "Peeters"
+msgstr "Peeters"
+
+#. module: openeducat_admission
+#: model:ir.model.fields.selection,name:openeducat_admission.selection__op_admission__state__pending
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_form
+msgid "Pending"
+msgstr "Verserende"
+
+#. module: openeducat_admission
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_form
+msgid "Personal Detail"
+msgstr "Personlige detaljer"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__phone
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_form
+msgid "Phone"
+msgstr "telefon"
+
+#. module: openeducat_admission
+#. odoo-python
+#: code:addons/openeducat_admission/models/admission.py:0
+#, python-format
+msgid "Please fill in the mobile number"
+msgstr "Udfyld venligst mobilnummeret"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__prev_course_id
+msgid "Previous Course"
+msgstr "Tidligere kursus"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__prev_institute_id
+msgid "Previous Institute"
+msgstr "Tidligere Institut"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__prev_result
+msgid "Previous Result"
+msgstr "Tidligere resultat"
+
+#. module: openeducat_admission
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.admission_analysis_form
+msgid "Print"
+msgstr "Print"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__rating_ids
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__rating_ids
+msgid "Ratings"
+msgstr "Bedømmelser"
+
+#. module: openeducat_admission
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_search
+msgid "Register"
+msgstr "Tilmeld"
+
+#. module: openeducat_admission
+#: model:ir.actions.act_window,name:openeducat_admission.act_open_op_admission_view
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_form
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_register_form
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_search
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_tree
+msgid "Registration"
+msgstr "Registrering"
+
+#. module: openeducat_admission
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_form
+msgid "Reject"
+msgstr "Afvise"
+
+#. module: openeducat_admission
+#: model:ir.model.fields.selection,name:openeducat_admission.selection__op_admission__state__reject
+msgid "Rejected"
+msgstr "Afvist"
+
+#. module: openeducat_admission
+#: model:ir.ui.menu,name:openeducat_admission.menu_admission_report_root
+msgid "Reports"
+msgstr "Rapporter"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__activity_user_id
+msgid "Responsible User"
+msgstr "Ansvarlig bruger"
+
+#. module: openeducat_admission
+#: model:op.admission,last_name:openeducat_admission.op_admission_19
+msgid "Richard"
+msgstr "Richard"
+
+#. module: openeducat_admission
+#: model:op.admission,first_name:openeducat_admission.op_admission_14
+msgid "Robert"
+msgstr "Robert"
+
+#. module: openeducat_admission
+#: model:op.admission,name:openeducat_admission.op_admission_14
+msgid "Robert M Stevens"
+msgstr "Robert M Stevens"
+
+#. module: openeducat_admission
+#: model:op.admission,first_name:openeducat_admission.op_admission_7
+msgid "Ruby"
+msgstr "Rubin"
+
+#. module: openeducat_admission
+#: model:op.admission,name:openeducat_admission.op_admission_7
+msgid "Ruby J Moore"
+msgstr "Ruby J Moore"
+
+#. module: openeducat_admission
+#: model:op.admission,last_name:openeducat_admission.op_admission_3
+msgid "Russell"
+msgstr "Russell"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__message_has_sms_error
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "SMS-leveringsfejl"
+
+#. module: openeducat_admission
+#: model:op.admission,first_name:openeducat_admission.op_admission_1
+msgid "Sara"
+msgstr "Sara"
+
+#. module: openeducat_admission
+#: model:op.admission,name:openeducat_admission.op_admission_1
+msgid "Sara S Dani"
+msgstr "Sarah S Dani"
+
+#. module: openeducat_admission
+#: model:op.admission,last_name:openeducat_admission.op_admission_21
+msgid "Scott"
+msgstr "Scott"
+
+#. module: openeducat_admission
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_form
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_register_form
+msgid "Set to Draft"
+msgstr "Indstil til Kladde"
+
+#. module: openeducat_admission
+#: model:op.admission,last_name:openeducat_admission.op_admission_5
+msgid "Simon"
+msgstr "Simon"
+
+#. module: openeducat_admission
+#: model:op.admission,last_name:openeducat_admission.op_admission_8
+msgid "Smith"
+msgstr "Smith"
+
+#. module: openeducat_admission
+#: model:op.admission,first_name:openeducat_admission.op_admission_18
+msgid "Sophia"
+msgstr "Sophia"
+
+#. module: openeducat_admission
+#: model:op.admission,name:openeducat_admission.op_admission_18
+msgid "Sophia Martin"
+msgstr "Sophia Martin"
+
+#. module: openeducat_admission
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_register_form
+msgid "Start Admission"
+msgstr "Start optagelse"
+
+#. module: openeducat_admission
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_register_form
+msgid "Start Application"
+msgstr "Start applikation"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_admission_analysis__start_date
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__start_date
+msgid "Start Date"
+msgstr "Start dato"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__state
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_form
+msgid "State"
+msgstr "Stat"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__state_id
+msgid "States"
+msgstr "stater"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__state
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_register_search
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_search
+msgid "Status"
+msgstr "Status"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,help:openeducat_admission.field_op_admission__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Status baseret på aktiviteter\n"
+"Forsinket: Forfaldsdatoen er allerede passeret\n"
+"I dag: Aktivitetsdatoen er i dag\n"
+"Planlagt: Fremtidige aktiviteter."
+
+#. module: openeducat_admission
+#: model:op.admission,last_name:openeducat_admission.op_admission_14
+msgid "Stevens"
+msgstr "Stevens"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__street
+msgid "Street"
+msgstr "Gade"
+
+#. module: openeducat_admission
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_form
+msgid "Street 2..."
+msgstr "Gade 2..."
+
+#. module: openeducat_admission
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_form
+msgid "Street..."
+msgstr "Gade..."
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__street2
+msgid "Street2"
+msgstr "Gade 2"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__student_id
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_form
+msgid "Student"
+msgstr "Studerende"
+
+#. module: openeducat_admission
+#: model:ir.model,name:openeducat_admission.model_op_student_course
+msgid "Student Course Details"
+msgstr "Kursusdetaljer for studerende"
+
+#. module: openeducat_admission
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.report_admission_analysis
+msgid "Student Name"
+msgstr "Elevnavn"
+
+#. module: openeducat_admission
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_form
+msgid "Submit"
+msgstr "Indsend"
+
+#. module: openeducat_admission
+#: model:ir.model.fields.selection,name:openeducat_admission.selection__op_admission__state__submit
+msgid "Submitted"
+msgstr "Indsendt"
+
+#. module: openeducat_admission
+#: model:op.admission,last_name:openeducat_admission.op_admission_23
+msgid "Swartz"
+msgstr "Swartz"
+
+#. module: openeducat_admission
+#: model:op.admission,last_name:openeducat_admission.op_admission_17
+msgid "Taylor"
+msgstr "Taylor"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__academic_term_id
+msgid "Terms"
+msgstr "Betingelser"
+
+#. module: openeducat_admission
+#. odoo-python
+#: code:addons/openeducat_admission/models/admission.py:0
+#, python-format
+msgid "The value of the deposit amount must be positive."
+msgstr "Værdien af ​​indskudsbeløbet skal være positiv."
+
+#. module: openeducat_admission
+#. odoo-python
+#: code:addons/openeducat_admission/models/admission.py:0
+#, python-format
+msgid ""
+"There is no income account defined for this product: \"%s\"."
+"                    You may have to install a chart of account from "
+"Accounting                    app, settings menu."
+msgstr ""
+"Der er ikke defineret nogen indkomstkonto for dette produkt: \"%s\". Du skal"
+" muligvis installere en kontoplan fra Accounting-appen, menuen "
+"Indstillinger."
+
+#. module: openeducat_admission
+#: model:op.admission,first_name:openeducat_admission.op_admission_15
+msgid "Thomas"
+msgstr "Thomas"
+
+#. module: openeducat_admission
+#: model:op.admission,name:openeducat_admission.op_admission_15
+msgid "Thomas B Flynn"
+msgstr "Thomas B Flynn"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__title
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_form
+msgid "Title"
+msgstr "Titel"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,help:openeducat_admission.field_op_admission__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Type af den registrerede undtagelsesaktivitet."
+
+#. module: openeducat_admission
+#: model:res.groups,name:openeducat_admission.group_op_admission_user
+msgid "User"
+msgstr "Bruger"
+
+#. module: openeducat_admission
+#: model:op.admission,first_name:openeducat_admission.op_admission_22
+msgid "Victor"
+msgstr "Victor"
+
+#. module: openeducat_admission
+#: model:op.admission,name:openeducat_admission.op_admission_22
+msgid "Victor A Jacobs"
+msgstr "Victor A Jacobs"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__website_message_ids
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__website_message_ids
+msgid "Website Messages"
+msgstr "Hjemmeside beskeder"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,help:openeducat_admission.field_op_admission__website_message_ids
+#: model:ir.model.fields,help:openeducat_admission.field_op_admission_register__website_message_ids
+msgid "Website communication history"
+msgstr "Hjemmeside kommunikation historie"
+
+#. module: openeducat_admission
+#: model:op.admission,last_name:openeducat_admission.op_admission_12
+msgid "Wilson"
+msgstr "Wilson"
+
+#. module: openeducat_admission
+#: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_form
+msgid "ZIP"
+msgstr "ZIP"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__zip
+msgid "Zip"
+msgstr "Lynlås"
+
+#. module: openeducat_admission
+#: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__image
+msgid "image"
+msgstr "billede"
+
