@@ -8,9 +8,9 @@ services:
       POSTGRES_DB: ${POSTGRES_DB:-postgres}
       POSTGRES_USER: ${db_user:-odoo}
       POSTGRES_PASSWORD: ${db_password:-odoo}
-      PGDATA: /data/postgres
+      PGDATA: /var/lib/postgresql/data  # Thay đổi đường dẫn PGDATA cho đúng với volume trong container
     volumes:
-       - ../data/postgres:/data/postgres
+       - /mnt/c/Users/ASUS/Documents/GitHub/data/postgres:/var/lib/postgresql/data  # Đường dẫn chỉnh sửa
     ports:
       - "${db_port}:5599"
     networks:
@@ -24,17 +24,15 @@ services:
       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pgadmin4@pgadmin.org}
       PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin}
       PGADMIN_CONFIG_SERVER_MODE: 'False'
-
     ports:
       - "${PGADMIN_PORT:-5050}:80"
     networks:
       - postgres_17
     restart: unless-stopped
 
-
 networks:
   postgres_17:
     driver: bridge
 
 volumes:
-    postgres_17:
+  postgres_17:
